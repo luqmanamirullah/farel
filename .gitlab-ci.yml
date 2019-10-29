@@ -33,7 +33,7 @@ deploy_production:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | ssh-add -
     - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]]' && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     - ssh zamrud@180.250.18.114 -p 4322 'cd /home/aplikasi/cyclone/svara-company-web; git pull'
   environment:
     name: prod
