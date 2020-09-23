@@ -28,6 +28,7 @@ export default class JssDocument extends Document {
             type="text/css"
           />
           <style id="server-side-styles">{registry.toString()}</style>
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
         </>
       ),
     };

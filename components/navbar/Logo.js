@@ -29,11 +29,14 @@ const useStyles = createUseStyles((theme) => ({
       display: "block",
       height: 100,
       float: "none",
-      margin: "0 auto 0 !important",
+      margin: "0 auto 0",
       maxWidth: "none",
       textAlign: "center",
-      border: "0 !important",
-      padding: "0 !important",
+      border: 0,
+      padding: 0,
+    },
+    link: {
+      display: "inline-block",
     },
   },
 }));
