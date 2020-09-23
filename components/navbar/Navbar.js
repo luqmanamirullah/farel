@@ -1,4 +1,5 @@
-import { useState } from "react";
+import clsx from "clsx";
+import { useEffect, useState } from "react";
 import { createUseStyles } from "react-jss";
 import { useMediaQuery } from "utils/hooks/useMedia";
 import Logo from "./Logo";
@@ -7,20 +8,36 @@ import SecondaryMenu from "./SecondaryMenu";
 const useStyles = createUseStyles((theme) => ({
   base: {
     lineHeight: 1.5,
-
     boxSizing: "border-box",
     display: "block",
     position: "relative",
     backgroundColor: "#fff",
     height: 100,
+    maxHeight: 100,
     transition: "height .4s ease, opacity .3s ease",
+  },
+  stickyHeader: {
+    display: "block",
+    position: "relative",
+    backgroundColor: "#fff",
+    transition: "height .4s ease, opacity .3s ease",
+    height: 60,
   },
   wrapper: {
     height: 100,
     transition: "height .4s ease, opacity .3s ease",
     position: "relative",
-    height: "100%",
+    height: 100,
     zIndex: 199,
+  },
+  stickyWrapper: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    height: 60,
+    width: "100%",
+    backgroundColor: "#fff",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
   },
   container: {
     boxSizing: "border-box",
@@ -101,19 +118,41 @@ const Navbar = () => {
   const classes = useStyles();
 
   const [isOpen, setIsOpen] = useState();
+  const [isSticky, setIsSticky] = useState(false);
+
   const isSmall = useMediaQuery("(max-width: 991.98px)", true);
   const onClick = () => setIsOpen((isOpen) => !isOpen);
 
+  const handleScroll = () => {
+    if (window.scrollY < 1) setIsSticky(false);
+    else setIsSticky(true);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className={classes.base}>
-      <div className={classes.wrapper}>
+    <header
+      className={clsx(classes.base, isSticky ? classes.stickyHeader : null)}
+    >
+      <div
+        className={clsx(
+          classes.wrapper,
+          isSticky ? classes.stickyWrapper : null
+        )}
+      >
         <div className={classes.container}>
           <MiniMenu onClick={onClick} />
-          <Logo />
-          {!isSmall ? <PrimaryMenu /> : isOpen && <SecondaryMenu />}
+          <Logo isSticky={isSticky} />
+          {!isSmall ? (
+            <PrimaryMenu isSticky={isSticky} />
+          ) : (
+            isOpen && <SecondaryMenu />
+          )}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

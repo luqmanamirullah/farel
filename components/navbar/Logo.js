@@ -24,6 +24,9 @@ const useStyles = createUseStyles((theme) => ({
     height: "100%",
     transition: "height .4s ease, margin .4s ease, opacity .2s .2s ease",
   },
+  imageLogo: {
+    transition: "height .4s ease, opacity .3s ease",
+  },
   "@media (max-width: 991.98px)": {
     logo: {
       display: "block",
@@ -41,7 +44,7 @@ const useStyles = createUseStyles((theme) => ({
   },
 }));
 
-const Logo = () => {
+const Logo = ({ isSticky }) => {
   const classes = useStyles();
   return (
     <div className={classes.logo}>
@@ -50,7 +53,8 @@ const Logo = () => {
           <img
             src="logo.PNG"
             alt="Svara Logo"
-            style={{ padding: 10, height: "100%" }}
+            className={classes.imageLogo}
+            style={{ padding: 10, height: isSticky ? 60 : "100%" }}
           ></img>
         </a>
       </Link>

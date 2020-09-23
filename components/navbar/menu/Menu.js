@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 import { createUseStyles } from "react-jss";
 
@@ -17,14 +18,14 @@ const menuStyles = createUseStyles({
   link: {
     textDecoration: "none ",
     display: "block",
-    lineHeight: 22,
     padding: "39px 15px",
     fontWeight: "bold",
-    fontSize: 13,
-    letterSpacing: 1,
-    textTransform: "uppercase",
     transition: "margin .4s ease, padding .4s ease",
     color: "#1abc9c",
+  },
+  stickyLink: {
+    paddingTop: 19,
+    paddingBottom: 19,
   },
   textMenu: {
     listStyle: "none",
@@ -84,12 +85,12 @@ const menuStyles = createUseStyles({
   },
 });
 
-export const Menu = ({ menu }) => {
+export const Menu = ({ menu, isSticky = false }) => {
   const classes = menuStyles();
   return (
     <li className={classes.menu} key={menu.name}>
       <Link href={menu.slug} as={menu.as} passHref>
-        <a className={classes.link}>
+        <a className={clsx(classes.link, isSticky ? classes.stickyLink : null)}>
           <div className={classes.textMenu}>{menu.name}</div>
         </a>
       </Link>

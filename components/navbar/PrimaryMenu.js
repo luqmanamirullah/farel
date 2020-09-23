@@ -22,13 +22,15 @@ const useStyles = createUseStyles((theme) => ({
   },
 }));
 
-const PrimaryMenu = () => {
+const PrimaryMenu = ({ isSticky }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.base}>
       <ul className={classes.menuList}>
-        {useMemo(() => menus.map((menu) => <Menu menu={menu} />, [menus]))}
+        {useMemo(() =>
+          menus.map((menu) => <Menu menu={menu} isSticky={isSticky} />, [menus])
+        )}
       </ul>
     </div>
   );
