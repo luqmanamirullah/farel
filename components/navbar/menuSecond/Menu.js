@@ -105,16 +105,14 @@ const useStyles = createUseStyles({
 const Menu = ({ menu }) => {
   const classes = useStyles();
   return (
-    <>
-      <li className={classes.list}>
-        <Link href={menu.slug} passHref>
-          <a className={classes.link}>
-            <div className={classes.linkDiv}>{menu.name}</div>
-          </a>
-        </Link>
-        {menu.childrens && <DropdownMenu childrens={menu.childrens} />}
-      </li>
-    </>
+    <li className={classes.list}>
+      <Link href={menu.slug} passHref>
+        <a className={classes.link}>
+          <div className={classes.linkDiv}>{menu.name}</div>
+        </a>
+      </Link>
+      <div>{menu.childrens && <DropdownMenu childrens={menu.childrens} />}</div>
+    </li>
   );
 };
 

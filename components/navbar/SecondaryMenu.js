@@ -16,6 +16,7 @@ const useStyles = createUseStyles({
     boxSizing: "border-box",
     display: "block",
     float: "none",
+    backgroundColor: "white",
   },
   container: {
     display: "block !important",
@@ -28,17 +29,18 @@ const useStyles = createUseStyles({
     transition: "height .4s ease, margin .4s ease, opacity .2s .2s ease",
   },
 });
-const SecondaryMenu = () => {
+const SecondaryMenu = ({ isOpen }) => {
   const classes = useStyles();
 
-  const renderMenu = () => {
-    return menus.map((menu) => <Menu menu={menu} />);
-  };
-  return (
-    <nav className={classes.base}>
-      <ul className={classes.container}>{renderMenu()}</ul>
-    </nav>
-  );
+  return isOpen ? (
+    <div className={classes.base}>
+      <ul className={classes.container}>
+        {menus.map((menu) => (
+          <Menu menu={menu} />
+        ))}
+      </ul>
+    </div>
+  ) : null;
 };
 
 export default SecondaryMenu;

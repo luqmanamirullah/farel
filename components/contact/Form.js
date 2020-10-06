@@ -14,12 +14,22 @@ const useStyles = createUseStyles({
   },
   column: {
     flex: "1 1 ",
+    width: "100%",
     display: "block",
     position: "relative",
     paddingRight: "4%",
     float: "left",
     marginBottom: 25,
     fontSize: "0.875rem",
+  },
+  textFieldWrapper: {
+    display: "flex",
+  },
+  "@media (max-width: 767.98px)": {
+    textFieldWrapper: {
+      display: "block",
+      width: "100%",
+    },
   },
 });
 
@@ -45,7 +55,7 @@ const Form = ({
             marginRight: "-4%",
           }}
         >
-          <div style={{ display: "flex" }}>
+          <div className={classes.textFieldWrapper}>
             <div className={classes.column}>
               <TextField label="name" required />
             </div>

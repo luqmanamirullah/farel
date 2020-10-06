@@ -28,12 +28,9 @@ const PrimaryMenu = ({ isSticky }) => {
   return (
     <div className={classes.base}>
       <ul className={classes.menuList}>
-        {useMemo(() =>
-          menus.map(
-            (menu) => <Menu menu={menu} isSticky={isSticky} key={menu.name} />,
-            [menus]
-          )
-        )}
+        {menus.map((menu) => (
+          <Menu menu={menu} isSticky={isSticky} key={menu.name} />
+        ))}
       </ul>
     </div>
   );

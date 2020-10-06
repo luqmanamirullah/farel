@@ -1,8 +1,13 @@
+import Contact from "~/components/contact/Contact";
 import ClearFix from "~/components/container/ClearFix";
 import BasicLayout from "~/components/layouts/BasicLayout";
 
-const Contact = () => {
-  return <BasicLayout></BasicLayout>;
+const ContactPage = () => {
+  return (
+    <BasicLayout>
+      <Contact />
+    </BasicLayout>
+  );
 };
 
-export default Contact;
+export default ContactPage;

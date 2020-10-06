@@ -1,10 +1,11 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { createUseStyles } from "react-jss";
-import { useMediaQuery } from "utils/hooks/useMedia";
+import { useWindowSize } from "../context/WindowSizeContext";
 import Logo from "./Logo";
 import PrimaryMenu from "./PrimaryMenu";
 import SecondaryMenu from "./SecondaryMenu";
+
 const useStyles = createUseStyles((theme) => ({
   base: {
     lineHeight: 1.5,
@@ -58,6 +59,7 @@ const useStyles = createUseStyles((theme) => ({
     top: "50%",
     marginTop: "-25px",
     width: 50,
+    left: 0,
     height: 50,
     lineHeight: "50px",
     textAlign: "center",
@@ -117,20 +119,27 @@ const useStyles = createUseStyles((theme) => ({
 const Navbar = () => {
   const classes = useStyles();
 
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
-  const isSmall = useMediaQuery("(max-width: 991.98px)", true);
+  const [isSmall, setIsSmall] = useState(false);
   const onClick = () => setIsOpen((isOpen) => !isOpen);
+  const { width } = useWindowSize();
 
   const handleScroll = () => {
     if (window.scrollY < 1) setIsSticky(false);
     else setIsSticky(true);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    width <= 991.98 ? setIsSmall(true) : setIsSmall(false);
+
+    console.log(width);
+  }, [width]);
 
   return (
     <header
@@ -145,10 +154,11 @@ const Navbar = () => {
         <div className={classes.container}>
           <MiniMenu onClick={onClick} />
           <Logo isSticky={isSticky} />
+
           {!isSmall ? (
             <PrimaryMenu isSticky={isSticky} />
           ) : (
-            isOpen && <SecondaryMenu />
+            <SecondaryMenu isOpen={isOpen} />
           )}
         </div>
       </div>
