@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React from "react";
 import { createUseStyles } from "react-jss";
 
@@ -27,23 +28,35 @@ const useStyles = createUseStyles({
 
     "& span": {
       lineHeight: 1.5,
-      fontFamily: "Lato",
-      textAlign: "center",
+      fontFamily: "'Lato', sans-serif",
       boxSizing: "border-box",
-      fontSize: 24,
+      fontSize: 22,
       display: "block",
       marginTop: 10,
       fontWeight: 300,
       color: "#777",
-      maxWidth: 700,
-      marginLeft: "auto",
-      marginRight: "auto",
+    },
+    "& span:after #withBorder": {
+      content: "''",
+      display: "block",
+      marginTop: 30,
+      width: 40,
+      borderTop: "2px solid #444",
+      boxSizing: "border-box",
     },
   },
 });
-const HeadingBlock = ({ children }) => {
+const HeadingBlock = ({ children, className, style, withBorder }) => {
   const classes = useStyles();
-  return <div className={classes.headingBlock}>{children}</div>;
+  return (
+    <div
+      className={clsx(classes.headingBlock, className)}
+      style={style}
+      id={withBorder && "withBorder"}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default HeadingBlock;
