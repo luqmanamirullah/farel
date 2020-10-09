@@ -81,12 +81,12 @@ const SvaraProfile = () => {
     <div className={classes.wrapper}>
       <ClearFix>
         <Row style={{ marginRight: "-4%" }}>
-          <Col lg={6} sm={12}>
+          <Col lg={6} sm={6} xs={12}>
             <div className={classes.imageWrapper}>
               <img src="all-team.jpg" alt="Image" />
             </div>
           </Col>
-          <Col lg={6} sm={12}>
+          <Col lg={6} sm={6} xs={12}>
             <div className={classes.imageWrapper}>
               <HeadingBlock style={{ marginBottom: 15 }} withBorder>
                 <h2 style={{ textAlign: "left" }}>Svara</h2>

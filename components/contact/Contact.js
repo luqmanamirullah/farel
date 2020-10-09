@@ -20,7 +20,7 @@ const useStyles = createUseStyles({
     fontSize: "0.875rem",
     lineHeight: 1.5,
     color: "#555",
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     boxSizing: "border-box",
     position: "relative",
     marginBottom: 30,

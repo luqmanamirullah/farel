@@ -84,7 +84,7 @@ const useStyles = createUseStyles((theme) => ({
       cursor: "pointer",
       fontSize: 14,
       position: "absolute",
-      width: 50,
+      width: "auto",
       height: 50,
       lineHeight: "50px",
       textAlign: "center",

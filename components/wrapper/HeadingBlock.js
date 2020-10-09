@@ -8,7 +8,7 @@ const useStyles = createUseStyles({
     fontSize: "0.875rem",
     lineHeight: 1.5,
     color: "#555",
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     boxSizing: "border-box",
     borderBottom: "none ",
     textAlign: "center ",
@@ -36,7 +36,7 @@ const useStyles = createUseStyles({
       fontWeight: 300,
       color: "#777",
     },
-    "& span:after #withBorder": {
+    "&#withBorder span:after": {
       content: "''",
       display: "block",
       marginTop: 30,

@@ -94,7 +94,7 @@ const useStyles = createUseStyles({
     textAlign: "left",
     lineHeight: "22px",
     letterSpacing: 0,
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     fontSize: 13,
     textTransform: "none",
     fontWeight: 400,

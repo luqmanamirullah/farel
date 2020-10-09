@@ -70,7 +70,7 @@ const menuStyles = createUseStyles({
     paddingBottom: 10,
     border: 0,
     letterSpacing: 0,
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     transition: "all .2s ease-in-out",
   },
   childDiv: {
@@ -80,7 +80,7 @@ const menuStyles = createUseStyles({
     fontSize: 12,
     fontWeight: 700,
     color: "#666",
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     boxSizing: "border-box",
   },
 });
