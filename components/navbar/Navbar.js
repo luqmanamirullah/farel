@@ -14,7 +14,6 @@ const useStyles = createUseStyles((theme) => ({
     position: "relative",
     backgroundColor: "#fff",
     height: 100,
-    maxHeight: 100,
     transition: "height .4s ease, opacity .3s ease",
   },
   stickyHeader: {
@@ -25,7 +24,6 @@ const useStyles = createUseStyles((theme) => ({
     height: 60,
   },
   wrapper: {
-    height: 100,
     transition: "height .4s ease, opacity .3s ease",
     position: "relative",
     height: 100,
@@ -78,14 +76,13 @@ const useStyles = createUseStyles((theme) => ({
   },
   "@media (max-width: 991.98px)": {
     base: {
-      height: "auto",
+      height: "auto !important",
+      position: "unset  !important",
     },
     menuTrigger: {
-      cursor: "pointer",
       fontSize: 14,
       position: "absolute",
       width: "auto",
-      height: 50,
       lineHeight: "50px",
       textAlign: "center",
       pointerEvents: "auto",
@@ -97,9 +94,15 @@ const useStyles = createUseStyles((theme) => ({
       transition: "opacity .2s .2s ease, top .4s ease",
     },
     container: {
+      height: "100%",
       padding: "0 15px",
       margin: "0 auto",
       width: 750,
+    },
+    wrapper: {
+      height: "auto !important",
+      position: "unset !important",
+      boxShadow: "0 0 0 !important",
     },
   },
   "@media (max-width: 767.98px) and (min-width: 576px)": {

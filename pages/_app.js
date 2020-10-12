@@ -5,8 +5,9 @@ import Theme from "theme/Theme";
 import "~/styles/globals.scss";
 import "~/styles/font-icons.css";
 import Head from "next/head";
+import PageTransition from "~/components/wrapper/PageTransition";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     const style = document.getElementById("server-side-styles");
 
@@ -26,7 +27,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Theme>
         <WindowSizeProvider>
-          <Component {...pageProps} />
+          <PageTransition>
+            <Component {...pageProps} key={router.route} />
+          </PageTransition>
         </WindowSizeProvider>
       </Theme>
 

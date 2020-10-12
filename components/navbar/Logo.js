@@ -41,6 +41,9 @@ const useStyles = createUseStyles((theme) => ({
     link: {
       display: "inline-block",
     },
+    imageLogo: {
+      height: "100% !important",
+    },
   },
 }));
 

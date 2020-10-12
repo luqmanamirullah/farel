@@ -98,8 +98,16 @@ const useStyles = createUseStyles({
     fontSize: 13,
     textTransform: "none",
     fontWeight: 400,
+    textTransform: "uppercase",
     color: "#444 !important",
     boxSizing: "border-box",
+  },
+  "@media (max-width: 991.98px)": {
+    dropdownBox: {
+      "& li :hover div": {
+        fontWeight: "700",
+      },
+    },
   },
 });
 const Menu = ({ menu }) => {

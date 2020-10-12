@@ -11,11 +11,11 @@ const Blog = () => {
       <ClearFix>
         <ContentWrap>
           <ClearFix>
-            <Row>
+            <Row style={{ transition: "all .4s ease" }}>
               {useMemo(
                 () =>
                   blogContents.map((content) => (
-                    <Col lg={3} sm={4} xs={6}>
+                    <Col lg={3} md={4} sm={12} xs={12}>
                       <BlogCard {...content} />
                     </Col>
                   )),

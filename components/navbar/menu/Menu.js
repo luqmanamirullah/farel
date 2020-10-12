@@ -72,6 +72,13 @@ const menuStyles = createUseStyles({
     letterSpacing: 0,
     fontFamily: "'Lato',sans-serif",
     transition: "all .2s ease-in-out",
+    "&:hover": {
+      backgroundColor: "#f9f9f9",
+      paddingLeft: 18,
+    },
+    "&:hover div": {
+      color: "#1abc9c !important",
+    },
   },
   childDiv: {
     listStyle: "none",
@@ -107,13 +114,13 @@ export const DropdownMenu = React.memo(
       <>
         <ul className={classes.dropdownBox} id="dropdown">
           {childrens.map((child) => (
-            <li key={child.name} className={classes.childLink}>
-              <Link href={child.slug} passHref>
-                <a>
+            <Link href={child.slug} passHref>
+              <a>
+                <li key={child.name} className={classes.childLink}>
                   <div className={classes.childDiv}>{child.name}</div>
-                </a>
-              </Link>
-            </li>
+                </li>
+              </a>
+            </Link>
           ))}
         </ul>
       </>
