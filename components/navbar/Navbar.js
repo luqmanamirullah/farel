@@ -12,7 +12,7 @@ const useStyles = createUseStyles((theme) => ({
     boxSizing: "border-box",
     display: "block",
     position: "relative",
-    backgroundColor: "#fff",
+    backgroundColor: "transparent",
     height: 100,
     transition: "height .4s ease, opacity .3s ease",
   },
@@ -78,6 +78,7 @@ const useStyles = createUseStyles((theme) => ({
     base: {
       height: "auto !important",
       position: "unset  !important",
+      backgroundColor: "#fff",
     },
     menuTrigger: {
       fontSize: 14,
@@ -140,8 +141,6 @@ const Navbar = () => {
 
   useEffect(() => {
     width <= 991.98 ? setIsSmall(true) : setIsSmall(false);
-
-    console.log(width);
   }, [width]);
 
   return (

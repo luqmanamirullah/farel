@@ -15,12 +15,14 @@ const useStyles = createUseStyles({
     backgroundColor: "#fff",
     marginBottom: 0,
   },
-  "@media (min-width: 576px)": {
+  "@media (max-width: 576px)": {
     container: {
       maxWidth: 540,
+      paddingLeft: "40px !important",
+      paddingRight: "40px !important",
     },
 
-    "@media (min-width: 768px)": {
+    "@media (min-width: 576px)": {
       container: {
         maxWidth: 750,
       },
