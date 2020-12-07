@@ -8,27 +8,27 @@ export default [
 		slug: '#',
 		childrens: [
 			{
-				name: 'SVARA for radio am fm',
-				slug: '/svaraonair',
-				as: '/svaraonair'
-			},
-			{
-				name: 'SVARA for user',
+				name: 'SVARA APPS',
 				slug: '/product/svaraonline',
 				as: '/product/svaraonline'
 			},
 			{
-				name: 'SVARA for retail store',
+				name: 'SVARA AIRCAST',
+				slug: '/svaraonair',
+				as: '/svaraonair'
+			},
+			{
+				name: 'SVARA SOUNDSIGHT',
 				slug: '/audioland',
 				as: '/audioland'
 			},
 			{
-				name: 'SVARA for comunity',
+				name: 'SVARA CASTLINE',
 				slug: '/maintenance',
 				as: '/maintenance'
 			},
 			{
-				name: 'Radio Airtime',
+				name: 'Radio ADS',
 				slug: '/svaraairtime',
 				as: '/svaraairtime'
 			}

@@ -63,7 +63,7 @@ const Logo = ({ isSticky }) => {
 						src="Asset 1.png"
 						alt="Svara Logo"
 						className={classes.imageLogo}
-						style={{ padding: !isSticky ? 10 : null, height: isSticky ? 50 : '100%' }}
+						style={{ padding: !isSticky ? 10 : '0px 10px 30px 10px', height: isSticky ? 50 : '100%' }}
 					></img>
 				</a>
 			</Link>
