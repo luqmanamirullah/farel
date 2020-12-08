@@ -9,8 +9,8 @@ export default [
 		childrens: [
 			{
 				name: 'SVARA APPS',
-				slug: '/product/svaraonline',
-				as: '/product/svaraonline'
+				slug: '/svaraonline',
+				as: '/svaraonline'
 			},
 			{
 				name: 'SVARA AIRCAST',

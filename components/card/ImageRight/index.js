@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
 	fontCaption: {
 		fontSize: '35pt',
 		fontWeight: 400,
-		fontFamily: 'Raleway',
+		fontFamily: 'Montserrat',
 		lineHeight: 1.8,
 		marginBottom: '30px',
 		display: 'block',
@@ -26,13 +26,16 @@ const useStyles = createUseStyles({
 		marginBlockEnd: '1em',
 		marginInlineStart: '0px',
 		marginInlineEnd: '0px',
-		boxSizing: 'border-box'
+		boxSizing: 'border-box',
+		textAlign: 'center'
 	},
 	fontTitle: {
 		marginBottom: 10,
 		fontWeight: 700,
 		fontSize: '64px',
-		letterSpacing: '-2px'
+		letterSpacing: '-2px',
+		fontFamily: 'Nunito',
+		textAlign: 'center'
 	}
 });
 
@@ -42,12 +45,16 @@ export default function CenteredGrid(props) {
 	return (
 		<Container className={classes.root}>
 			<Row container style={{ margin: 0 }}>
-				<Col item xs={5} style={{ marginRight: 60 }}>
+				<Col item xs={5} style={{ marginRight: 70, marginLeft: 20 }}>
 					<img src={props.img} style={{ width: 500 }} data-animate="fadeInUp" data-delay="100" alt="Chrome" />
 				</Col>
 				<Col item xs={12} sm={6}>
-					<h2 className={classes.fontTitle}>{props.title}</h2>
-					<p className={classes.fontCaption}>{props.desc}</p>
+					<h2 className={classes.fontTitle} style={{ color: props.colorFont ? props.colorFont : '#eee' }}>
+						{props.title}
+					</h2>
+					<p className={classes.fontCaption} style={{ color: props.colorFont ? props.colorFont : '#eee' }}>
+						{props.desc}
+					</p>
 				</Col>
 			</Row>
 		</Container>

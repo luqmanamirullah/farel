@@ -12,7 +12,8 @@ const useStyles = createUseStyles({
 		paddingLeft: 60,
 		paddingRight: 0,
 		paddingBottom: 50,
-		backgroundColor: '#f9f9f9'
+		backgroundColor: '#f9f9f9',
+		backgroundImage: ''
 	},
 	fontCaption: {
 		fontSize: '30px',

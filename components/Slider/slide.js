@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel, CarouselItem, Container } from 'react-bootstrap';
-// import ImgSliders from '../..1.jpg';
+// import ImgSliders from '../..assets_bg-apps.png';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -17,14 +17,24 @@ const Slider = () => {
 		<section>
 			<Carousel>
 				<Carousel.Item>
-					<img className="d-block w-100" src="1.jpg" className={classes.imgSlider} alt="First slide" />
+					<img
+						className="d-block w-100"
+						src="assets_bg-apps.png"
+						className={classes.imgSlider}
+						alt="First slide"
+					/>
 					<Carousel.Caption>
 						<h3>First slide label</h3>
 						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="d-block w-100" src="1.jpg" className={classes.imgSlider} alt="Third slide" />
+					<img
+						className="d-block w-100"
+						src="assets_bg-apps.png"
+						className={classes.imgSlider}
+						alt="Third slide"
+					/>
 
 					<Carousel.Caption>
 						<h3>Second slide label</h3>
@@ -32,7 +42,12 @@ const Slider = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="d-block w-100" src="1.jpg" className={classes.imgSlider} alt="Third slide" />
+					<img
+						className="d-block w-100"
+						src="assets_bg-apps.png"
+						className={classes.imgSlider}
+						alt="Third slide"
+					/>
 
 					<Carousel.Caption>
 						<h3>Third slide label</h3>

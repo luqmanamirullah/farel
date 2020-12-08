@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import list from './ListFitur';
+import listRadio from './RadioPartner';
 const useStyles = createUseStyles({
 	root: {
 		flexGrow: 1,
@@ -49,27 +49,16 @@ const useStyles = createUseStyles({
 
 export default function FiturList() {
 	const classes = useStyles();
-
+	console.log(listRadio);
 	return (
 		<div className={classes.root}>
-			<h2 className={classes.fontTitle}>MODUL-MODUL SVARA ON-AIR</h2>
-			<Row style={{ margin: 0 }}>
-				{list.map((fitur) => {
+			<h2 className={classes.fontTitle}>Radio Partners</h2>
+			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }}>
+				{listRadio.map((imageRadio) => {
+					console.log('img', imageRadio);
 					return (
-						<Col xs={12} md={4}>
-							<Row style={{ marginLeft: 15, marginRight: 15 }}>
-								<Row>
-									<Col style={{ padding: 0, marginLeft: 30, width: 50 }}>
-										<i className={fitur.icon} />
-									</Col>
-									<Col style={{ paddingLeft: 0 }}>
-										<h2 className={classes.fontTitleFitur}>{fitur.title}</h2>
-									</Col>
-								</Row>
-								<div>
-									<p className={classes.fontDesc}>{fitur.desc}</p>
-								</div>
-							</Row>
+						<Col xs={12} md={1}>
+							<img src={imageRadio.radioImage} />
 						</Col>
 					);
 				})}

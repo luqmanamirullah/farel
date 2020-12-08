@@ -13,9 +13,10 @@ export default function CenteredGrid() {
 	return (
 		<div>
 			<CardTitle
-				img="undraw_media_player_ylg8.svg"
-				title="AUDIOLAND"
-				desc="Bangun suasana musik di tempat anda"
+				img="assets_undraw_best_place_r685.svg"
+				title="SOUNDSIGHT"
+				desc="Bangun suasana musik di tempat Anda"
+				colorFont="#7fa882"
 			/>
 			<Description />
 		</div>

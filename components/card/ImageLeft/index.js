@@ -52,7 +52,8 @@ const useStyles = createUseStyles({
 		marginBottom: 30,
 		fontSize: 15,
 		lineHeight: 1.8,
-		textAlign: 'left'
+		textAlign: 'left',
+		fontFamily: 'Montserrat'
 	},
 	svaraLogo: {
 		textAlign: 'center !important',
@@ -73,12 +74,30 @@ export default function CenteredGrid(props) {
 					<Col lg={6} sm={6} xs={12}>
 						<div className={classes.imageWrapper}>
 							<HeadingBlock style={{ marginBottom: 15 }} withBorder>
-								<h2 style={{ textAlign: 'left' }}>{props.headline}</h2>
-								<span id="subtitle" style={{ textAlign: 'left' }}>
+								<h2
+									style={{
+										textAlign: 'left',
+										fontFamily: 'Nunito',
+										color: props.colorFont ? props.colorFont : '#eee'
+									}}
+								>
+									{props.headline}
+								</h2>
+								<span
+									id="subtitle"
+									style={{
+										textAlign: 'left'
+									}}
+								>
 									{props.subheadline}
 								</span>
 							</HeadingBlock>
-							<p className={classes.paragraph}>{props.description}</p>
+							<p
+								className={classes.paragraph}
+								style={{ color: props.colorFont ? props.colorFont : '#eee' }}
+							>
+								{props.description}
+							</p>
 						</div>
 					</Col>
 					<Col lg={6} sm={6} xs={12}>
