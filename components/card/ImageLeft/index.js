@@ -68,7 +68,7 @@ export default function CenteredGrid(props) {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.wrapper}>
+		<div className={classes.wrapper} style={{ backgroundImage: props.background ? props.background : null }}>
 			<ClearFix>
 				<Row style={{ marginRight: '-4%' }}>
 					<Col lg={6} sm={6} xs={12}>
@@ -102,7 +102,7 @@ export default function CenteredGrid(props) {
 					</Col>
 					<Col lg={6} sm={6} xs={12}>
 						<div className={classes.imageWrapper}>
-							<img src={props.img} alt="Image" />
+							{props.img ? <img src={props.img} alt="Image" /> : null}
 						</div>
 					</Col>
 				</Row>

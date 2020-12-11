@@ -43,8 +43,8 @@ export default function CenteredGrid(props) {
 	const classes = useStyles();
 
 	return (
-		<Container className={classes.root}>
-			<Row container style={{ margin: 0 }}>
+		<Container className={classes.root} style={{ height: props.height ? props.height : null }}>
+			<Row container style={{ margin: 0, marginTop: props.marginTop ? props.marginTop : null }}>
 				<Col item xs={5} style={{ marginRight: 70, marginLeft: 20 }}>
 					<img src={props.img} style={{ width: 500 }} data-animate="fadeInUp" data-delay="100" alt="Chrome" />
 				</Col>

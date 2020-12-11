@@ -13,7 +13,7 @@ const useStyles = createUseStyles({
 		paddingRight: 0,
 		paddingBottom: 50,
 		backgroundColor: '#f9f9f9',
-		backgroundImage: ''
+		backgroundImage: "url('assets_Mask Group-dark.png')"
 	},
 	fontCaption: {
 		fontSize: '30px',
@@ -42,16 +42,16 @@ export default function CenteredGrid(props) {
 
 	return (
 		<div className={classes.root}>
-			<h1 className={classes.fontTitle}>PROMOSIKAN BRAND ANDA LEBIH LUAS</h1>
+			<h1 className={classes.fontTitle}>SVARA FOR RETAIL</h1>
 			<Row style={{ margin: 0 }}>
 				<Col item xs={12} sm={7}>
 					<p className={classes.fontCaption}>
-						Sampaikan pesan brand anda lebih luas dengan beriklan di radio. Tingkatkan frekuensi pesan yang
-						dikomunikasikan sehingga terciptanya brand awareness terhadap produk dan iklan yang sedang di
-						promosikan.
+						Cara cepat, mudah dan terjangkau dari SVARA yang dibuat untuk membuat brand dan bisnis anda
+						menjadi lebih dekat dengan pelanggan melalui musik dan konten. Dapat diaplikasikan pada tempat
+						seperti Bar, Gym, Kafe, Hotel, Kantor, Restoran, Toko retail, Rumah sakit, Ruang tunggu, dll.
 					</p>
 				</Col>
-				<Col item xs={5}>
+				{/* <Col item xs={5}>
 					<img
 						src="undraw_online_ad_mg4t.svg"
 						style={{ width: 500 }}
@@ -59,7 +59,7 @@ export default function CenteredGrid(props) {
 						data-delay="100"
 						alt="Chrome"
 					/>
-				</Col>
+				</Col> */}
 			</Row>
 		</div>
 	);
