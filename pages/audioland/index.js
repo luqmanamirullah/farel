@@ -6,7 +6,7 @@ import Audioland from '~/components/audioland/audioland';
 
 const AudiolandPage = () => {
 	return (
-		<BasicLayout>
+		<BasicLayout colorMenu="#7FA882" logoIcon="">
 			<Audioland />
 		</BasicLayout>
 	);

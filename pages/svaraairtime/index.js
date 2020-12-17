@@ -6,7 +6,7 @@ import Airtime from '~/components/airtime/airtime';
 
 const AirtimePage = () => {
 	return (
-		<BasicLayout>
+		<BasicLayout colorMenu="#91b3c2">
 			<Airtime />
 		</BasicLayout>
 	);
