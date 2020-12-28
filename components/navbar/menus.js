@@ -9,28 +9,28 @@ export default [
 		childrens: [
 			{
 				name: 'SVARA APPS',
-				slug: '/svaraonline',
-				as: '/svaraonline'
+				slug: '/apps',
+				as: '/apps'
 			},
 			{
 				name: 'SVARA AIRCAST',
-				slug: '/svaraonair',
-				as: '/svaraonair'
+				slug: '/aircast',
+				as: '/aircast'
 			},
 			{
 				name: 'SVARA SOUNDSIGHT',
-				slug: '/audioland',
-				as: '/audioland'
+				slug: '/soundsight',
+				as: '/soundsight'
 			},
 			{
 				name: 'SVARA CASTLINE',
-				slug: '/maintenance',
-				as: '/maintenance'
+				slug: '/castline',
+				as: '/castline'
 			},
 			{
 				name: 'Radio ADS',
-				slug: '/svaraairtime',
-				as: '/svaraairtime'
+				slug: '/ads',
+				as: '/ads'
 			}
 		]
 	},
