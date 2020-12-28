@@ -108,9 +108,8 @@ const useStyles = createUseStyles({
 	}
 });
 
-export default function CenteredGrid(props) {
+export default function CenteredGrid(props, color) {
 	const classes = useStyles();
-
 	const HeadingBlock = ({ children, className, style, withBorder }) => {
 		const classes = useStyles();
 		return (
@@ -137,11 +136,12 @@ export default function CenteredGrid(props) {
 											fontSize: '20px'
 										}}
 									>
-										{fitur.title} <strong style={{ color: '#7fa882' }}>{fitur.sub}</strong>.
+										{fitur.title}{' '}
+										<strong style={{ color: color ? color : '#7fa882' }}>{fitur.sub}</strong>.
 									</h4>
 									<span></span>
 								</HeadingBlock>
-								<p className={classes.paragraph} style={{ color: '#889b8a' }}>
+								<p className={classes.paragraph} style={{ color: color ? color : '#889b8a' }}>
 									{fitur.desc}
 								</p>
 							</Col>
