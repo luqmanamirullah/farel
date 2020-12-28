@@ -1,4 +1,5 @@
 import Navbar from '~/components/navbar';
+import Footer from '~/components/footer';
 import { AnimatePresence, motion } from 'framer-motion';
 const BasicLayout = ({ colorMenu, children }) => {
 	return (
@@ -11,6 +12,7 @@ const BasicLayout = ({ colorMenu, children }) => {
 			>
 				<Navbar colorMenu={colorMenu} />
 				{children}
+				<Footer colorMenu={colorMenu} />
 			</motion.div>
 		</>
 	);

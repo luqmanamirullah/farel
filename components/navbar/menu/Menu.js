@@ -104,13 +104,13 @@ export const Menu = ({ menu, isSticky = false, colorMenu }) => {
 					</div>
 				</a>
 			</Link>
-			{menu.childrens && <DropdownMenu childrens={menu.childrens} />}
+			{menu.childrens && <DropdownMenu childrens={menu.childrens} colorMenu={colorMenu} />}
 		</li>
 	);
 };
 
 export const DropdownMenu = React.memo(
-	({ childrens }) => {
+	({ childrens, colorMenu }) => {
 		const classes = menuStyles();
 
 		return (
@@ -120,7 +120,12 @@ export const DropdownMenu = React.memo(
 						<Link href={child.slug} passHref>
 							<a>
 								<li key={child.name} className={classes.childLink}>
-									<div className={classes.childDiv}>{child.name}</div>
+									<div
+										className={classes.childDiv}
+										style={{ color: colorMenu ? colorMenu : '#6d7893' }}
+									>
+										{child.name}
+									</div>
 								</li>
 							</a>
 						</Link>
