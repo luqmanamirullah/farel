@@ -68,30 +68,52 @@ export default function CenteredGrid(props) {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.wrapper} style={{ backgroundImage: props.background ? props.background : null }}>
-			<ClearFix>
+		<div className={classes.wrapper} style={{ backgroundImage: props.background ? props.background : '' }}>
+			<ClearFix style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}>
 				<Row style={{ marginRight: '-4%' }}>
 					<Col lg={6} sm={6} xs={12}>
 						<div className={classes.imageWrapper}>
-							<HeadingBlock style={{ marginBottom: 15 }} withBorder>
-								<h2
-									style={{
-										textAlign: 'left',
-										fontFamily: 'Nunito',
-										color: props.colorFont ? props.colorFont : '#eee'
-									}}
-								>
-									{props.headline}
-								</h2>
-								<span
-									id="subtitle"
-									style={{
-										textAlign: 'left'
-									}}
-								>
-									{props.subheadline}
-								</span>
-							</HeadingBlock>
+							{props.headingblock ? (
+								<HeadingBlock style={{ marginBottom: 15 }} withBorder>
+									<h2
+										style={{
+											textAlign: 'left',
+											fontFamily: 'Nunito',
+											color: props.colorFont ? props.colorFont : '#eee'
+										}}
+									>
+										{props.headline}
+									</h2>
+									<span
+										id="subtitle"
+										style={{
+											textAlign: 'left'
+										}}
+									>
+										{props.subheadline}
+									</span>
+								</HeadingBlock>
+							) : (
+								<div>
+									<h2
+										style={{
+											textAlign: 'left',
+											fontFamily: 'Nunito',
+											color: props.colorFont ? props.colorFont : '#eee'
+										}}
+									>
+										{props.headline}
+									</h2>
+									<span
+										id="subtitle"
+										style={{
+											textAlign: 'left'
+										}}
+									>
+										{props.subheadline}
+									</span>
+								</div>
+							)}
 							<p
 								className={classes.paragraph}
 								style={{ color: props.colorFont ? props.colorFont : '#eee' }}
