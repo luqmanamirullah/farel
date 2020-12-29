@@ -147,7 +147,7 @@ const Navbar = (props) => {
 			<div className={clsx(classes.wrapper, isSticky ? classes.stickyWrapper : null)}>
 				<div className={classes.container}>
 					<MiniMenu onClick={onClick} />
-					<Logo isSticky={isSticky} />
+					<Logo isSticky={isSticky} logo={props.logo} />
 
 					{!isSmall ? (
 						<PrimaryMenu isSticky={isSticky} colorMenu={props.colorMenu} />

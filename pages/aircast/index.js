@@ -6,7 +6,7 @@ import List from '~/components/List/List';
 
 const AudiolandPage = () => {
 	return (
-		<BasicLayout colorMenu="#437096">
+		<BasicLayout colorMenu="#437096" logo="assets_aircast.png">
 			<Onair />
 			{/* <List /> */}
 		</BasicLayout>

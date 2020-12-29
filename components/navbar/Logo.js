@@ -49,7 +49,7 @@ const useStyles = createUseStyles((theme) => ({
 	}
 }));
 
-const Logo = ({ isSticky }) => {
+const Logo = ({ isSticky, logo }) => {
 	const classes = useStyles();
 	console.log(isSticky);
 	return (
@@ -60,7 +60,7 @@ const Logo = ({ isSticky }) => {
 			<Link href="/" passHref>
 				<a className={classes.link}>
 					<img
-						src="Asset 1.png"
+						src={logo ? logo : 'Asset 1.png'}
 						alt="Svara Logo"
 						className={classes.imageLogo}
 						style={{ padding: !isSticky ? 10 : '0px 10px 30px 10px', height: isSticky ? 50 : '100%' }}
