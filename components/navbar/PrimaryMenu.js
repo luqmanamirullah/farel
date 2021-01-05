@@ -22,14 +22,20 @@ const useStyles = createUseStyles((theme) => ({
 	}
 }));
 
-const PrimaryMenu = ({ colorMenu, isSticky }) => {
+const PrimaryMenu = ({ colorMenu, transparant, whiteLogo, isSticky }) => {
 	const classes = useStyles();
-
 	return (
 		<div className={classes.base}>
 			<ul className={classes.menuList}>
 				{menus.map((menu) => (
-					<Menu menu={menu} isSticky={isSticky} key={menu.name} colorMenu={colorMenu} />
+					<Menu
+						menu={menu}
+						isSticky={isSticky}
+						key={menu.name}
+						colorMenu={colorMenu}
+						transparant={transparant}
+						whiteLogo={whiteLogo}
+					/>
 				))}
 			</ul>
 		</div>

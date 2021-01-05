@@ -4,7 +4,7 @@ import SvaraOnline from '~/components/product/svaraOnline/SvaraOnline';
 
 const SvarOnlineIndex = () => {
 	return (
-		<BasicLayout colorMenu="#545437" logo="assets_logo-4.svg">
+		<BasicLayout colorMenu="#a45437" logo="assets_logo-4.svg" transparant="true" whiteLogo="assets_logo-5.svg">
 			<SvaraOnline />
 		</BasicLayout>
 	);

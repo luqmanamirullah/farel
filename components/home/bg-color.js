@@ -35,7 +35,6 @@ const useStyles = createUseStyles({
 });
 
 const Slider = () => {
-	// console.log(ImgSliders);
 	const classes = useStyles();
 	return (
 		<section className={classes.body}>

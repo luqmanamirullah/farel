@@ -49,13 +49,11 @@ const useStyles = createUseStyles({
 
 export default function FiturList() {
 	const classes = useStyles();
-	console.log(listRadio);
 	return (
 		<div className={classes.root}>
 			<h2 className={classes.fontTitle}>Radio Partners</h2>
 			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }}>
 				{listRadio.map((imageRadio) => {
-					console.log('img', imageRadio);
 					return (
 						<Col xs={12} md={1}>
 							<img src={imageRadio.radioImage} />

@@ -147,10 +147,15 @@ const Navbar = (props) => {
 			<div className={clsx(classes.wrapper, isSticky ? classes.stickyWrapper : null)}>
 				<div className={classes.container}>
 					<MiniMenu onClick={onClick} />
-					<Logo isSticky={isSticky} logo={props.logo} />
+					<Logo
+						isSticky={isSticky}
+						logo={props.logo}
+						transparant={props.transparant}
+						whiteLogo={props.whiteLogo}
+					/>
 
 					{!isSmall ? (
-						<PrimaryMenu isSticky={isSticky} colorMenu={props.colorMenu} />
+						<PrimaryMenu isSticky={isSticky} colorMenu={props.colorMenu} transparant={props.transparant} />
 					) : (
 						<SecondaryMenu isOpen={isOpen} colorMenu={props.colorMenu} />
 					)}

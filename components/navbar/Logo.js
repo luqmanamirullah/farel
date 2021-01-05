@@ -49,9 +49,8 @@ const useStyles = createUseStyles((theme) => ({
 	}
 }));
 
-const Logo = ({ isSticky, logo }) => {
+const Logo = ({ isSticky, logo, transparant, whiteLogo }) => {
 	const classes = useStyles();
-	console.log(isSticky);
 	return (
 		<div
 			className={classes.logo}
@@ -60,7 +59,8 @@ const Logo = ({ isSticky, logo }) => {
 			<Link href="/" passHref>
 				<a className={classes.link}>
 					<img
-						src={logo ? logo : 'Asset 1.png'}
+						// src={isSticky && transparant ? (whiteLogo ? whiteLogo : logo) : 'Asset 1.png'}
+						src={transparant && !isSticky ? whiteLogo : logo ? logo : 'Asset 1.png'}
 						alt="Svara Logo"
 						className={classes.imageLogo}
 						style={{ padding: !isSticky ? 10 : '0px 10px 30px 10px', height: isSticky ? 50 : '100%' }}

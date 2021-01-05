@@ -93,13 +93,18 @@ const menuStyles = createUseStyles({
 	}
 });
 
-export const Menu = ({ menu, isSticky = false, colorMenu }) => {
+export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
 	const classes = menuStyles();
 	return (
 		<li className={classes.menu} key={menu.name}>
 			<Link href={menu.slug} as={menu.as} passHref>
 				<a className={clsx(classes.link, isSticky ? classes.stickyLink : null)}>
-					<div className={classes.textMenu} style={{ color: colorMenu ? colorMenu : '#6d7893' }}>
+					<div
+						className={classes.textMenu}
+						style={
+							transparant && !isSticky ? { color: '#fff' } : { color: colorMenu ? colorMenu : '#6d7893' }
+						}
+					>
 						{menu.name}
 					</div>
 				</a>
