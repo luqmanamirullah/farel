@@ -35,9 +35,8 @@ export default function CenteredGrid() {
 				background="url('assets_Mask Group-dark.png')"
 				headingblock="true"
 			/>
-			<Row style={{ margin: 0 }}>
+			{/* <Row style={{ margin: 0 }}>
 				<Col>
-					{/* <i class="i-plain i-xlarge divcenter nobottommargin icon-music" style="color: #7fa882"></i> */}
 					<div style={{ color: '#7fa882' }}>
 						<span
 							data-from="100"
@@ -50,7 +49,7 @@ export default function CenteredGrid() {
 					</div>
 					<h5 style={{ color: '#7fa882' }}>Lagu</h5>
 				</Col>
-			</Row>
+			</Row> */}
 
 			<Description
 				title="TINGKATKAN PENJUALAN BRAND DAN BISNIS ANDA"

@@ -55,7 +55,7 @@ export default function FiturList() {
 			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }}>
 				{listRadio.map((imageRadio) => {
 					return (
-						<Col xs={12} md={1}>
+						<Col xs={3} md={1}>
 							<img src={imageRadio.radioImage} />
 						</Col>
 					);

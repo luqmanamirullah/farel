@@ -33,6 +33,26 @@ const useStyles = createUseStyles({
 		letterSpacing: '-2px',
 		fontFamily: 'Nunito',
 		textAlign: 'center'
+	},
+	'@media (max-width : 999.98px)': {
+		root: {
+			flexGrow: 1,
+			marginTop: 10,
+			marginBottom: 20,
+			textAlign: 'center'
+		},
+		fontCaption: {
+			// fontSize: '22px',
+			// fontWeight: 300,
+			// fontFamily: 'Montserrat',
+			// lineHeight: 1.8,
+			// marginBottom: '30px',
+			// display: 'block',
+			// marginTop: 10,
+			marginLeft: 20,
+			marginRight: 20,
+			textAlign: 'center'
+		}
 	}
 });
 

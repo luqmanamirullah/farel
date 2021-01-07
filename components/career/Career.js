@@ -2,6 +2,8 @@ import clsx from 'clsx';
 import React, { useMemo } from 'react';
 import { createUseStyles } from 'react-jss';
 import ClearFix from '../container/ClearFix';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import ContentWrap from '../wrapper/ContentWrap';
 import HeadingBlock from '../wrapper/HeadingBlock';
 const useStyles = createUseStyles({
@@ -114,14 +116,18 @@ const Career = () => {
 							<span style={{ fontFamily: 'Montserrat' }}>Please check back in sometime.</span>
 						</HeadingBlock>
 						<div style={{ display: 'flex', marginRight: '-4%' }}>
-							{useMemo(() =>
-								contents.map(
-									({ title, subtitle, icon }) => (
-										<FeaturedBox title={title} subtitle={subtitle} icon={icon} />
-									),
-									contents
-								)
-							)}
+							<Row>
+								{useMemo(() =>
+									contents.map(
+										({ title, subtitle, icon }) => (
+											<Col sm={6} xs={12}>
+												<FeaturedBox title={title} subtitle={subtitle} icon={icon} />
+											</Col>
+										),
+										contents
+									)
+								)}
+							</Row>
 						</div>
 					</ClearFix>
 				</ContentWrap>

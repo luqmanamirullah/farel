@@ -205,7 +205,7 @@ const InsideSvara = () => {
 							className="fadeInUp animated"
 						/>
 						<img
-							src="fbrowser2.png"
+							src="Group 13.png"
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeIn"
 							data-delay="1200"

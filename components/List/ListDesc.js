@@ -125,7 +125,7 @@ export default function CenteredGrid(props, color) {
 				<Row style={{ marginRight: '-4%' }}>
 					{list.map((fitur) => {
 						return (
-							<Col lg={4} md={4} xs={12}>
+							<Col lg={4} md={6} sm={6} xs={12}>
 								<HeadingBlock style={{ marginBottom: 15 }} withBorder>
 									<h4
 										style={{
