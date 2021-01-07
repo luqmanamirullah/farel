@@ -41,10 +41,24 @@ const useStyles = createUseStyles({
 		marginRight: 70,
 		marginLeft: 20
 	},
+	imageSize: {
+		width: 500
+	},
 	'@media (max-width : 980.98px)': {
+		root: {
+			flexGrow: 1,
+			marginLeft: 0,
+			marginBottom: 20
+		},
 		images: {
 			marginRight: 0,
 			marginLeft: 0
+		},
+		imageSize: {
+			display: 'block',
+			marginLeft: 'auto',
+			marginRight: 'auto',
+			width: '50%'
 		},
 		fontCaption: {
 			fontSize: '25pt',
@@ -72,9 +86,15 @@ export default function CenteredGrid(props) {
 		<Container className={classes.root} style={{ height: props.height ? props.height : null }}>
 			<Row container style={{ margin: 0, marginTop: props.marginTop ? props.marginTop : null }}>
 				<Col item xs={12} sm={12} lg={5} md={12} className={classes.images}>
-					<img src={props.img} style={{ width: 500 }} data-animate="fadeInUp" data-delay="100" alt="Chrome" />
+					<img
+						src={props.img}
+						className={classes.imageSize}
+						data-animate="fadeInUp"
+						data-delay="100"
+						alt="Chrome"
+					/>
 				</Col>
-				<Col item xs={12} sm={12} lg={7} md={12}>
+				<Col item xs={12} sm={12} lg={6} md={12}>
 					<h2 className={classes.fontTitle} style={{ color: props.colorFont ? props.colorFont : '#eee' }}>
 						{props.title}
 					</h2>
