@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import { createUseStyles } from 'react-jss';
 import Container from 'react-bootstrap/Container';
@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ClearFix from '../container/ClearFix';
 import ContentWrap from '../wrapper/ContentWrap';
-import list from './ListDescription';
+// import list from './ListDescription';
 
 const useStyles = createUseStyles({
 	headingBlock: {
@@ -108,8 +108,9 @@ const useStyles = createUseStyles({
 	}
 });
 
-export default function CenteredGrid(props, color) {
+export default function CenteredGrid(props) {
 	const classes = useStyles();
+	const [list, setList] = useState(props.data);
 	const HeadingBlock = ({ children, className, style, withBorder }) => {
 		const classes = useStyles();
 		return (
@@ -119,6 +120,7 @@ export default function CenteredGrid(props, color) {
 		);
 	};
 
+	console.log('props', props);
 	return (
 		<div className={classes.wrapper}>
 			<ClearFix>
@@ -137,11 +139,17 @@ export default function CenteredGrid(props, color) {
 										}}
 									>
 										{fitur.title}{' '}
-										<strong style={{ color: color ? color : '#7fa882' }}>{fitur.sub}</strong>.
+										<strong style={{ color: props.color ? props.color : '#7fa882' }}>
+											{fitur.sub}
+										</strong>
+										.
 									</h4>
 									<span></span>
 								</HeadingBlock>
-								<p className={classes.paragraph} style={{ color: color ? color : '#889b8a' }}>
+								<p
+									className={classes.paragraph}
+									style={{ color: props.color ? props.color : '#889b8a' }}
+								>
 									{fitur.desc}
 								</p>
 							</Col>

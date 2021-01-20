@@ -1,0 +1,45 @@
+{
+	"section1": {
+		"image": "assets_undraw_conference_call_b0w6.svg",
+		"title": "CASTLINE",
+		"desc": "For Community (Non-AM/FM Radio, Online Radio & TV)",
+		"colorFont": "#ecac55"
+	},
+	"section2": {
+		"headline": "SVARA CASTLINE",
+		"description": "SVARA Platform implementation in various communities, including but not limited to Citizen Online Radio, Campus Radio, Government Radio",
+		"colorFont": "#fff",
+		"background": "url('assets_SVARA Pitchdeck V.1a - Id (2).jpg')"
+	},
+	"section3": {
+		"desc": "Dengan kemudahan dalam penerapan di seluruh Total Partnership SVARA Castline: 10 Online Radios (Radio UNISBA, Radio BKKBN, Radio PAUD, Radio Batak Diaro, Radio Sekolah Al- Mumtaz, Radio Sekolah Al-Mustarih, School Radio Nur Hikmah, Radio IBIMA, Radio IOI, Radio BKTI) The average SVARA Platform license fee is 50 million - 200 million / year",
+		"colorFont": "#ecac55"
+    },
+    "section4":[
+        {
+			"title": "AUDIO SYSTEM",
+			"sub": "TERINTEGRASI",
+			"desc": "Mengintegrasikan musik sebagai bagian dari pesan Brand kepada pelanggan anda"
+		},
+		{
+			"title": "STATISTIK MUSIK",
+			"sub": "REALTIME",
+			"desc": "Perhitungan pemutaran setiap konten diseluruh jaringan toko/outlet dapat dimonitor secara langsung."
+		},
+		{
+			"title": "LISENSI",
+			"sub": "LEGAL MUSIK",
+			"desc": "Seluruh musik playlist/konten yang diputar berlisensi resmi atas pengawasan lembaga kolektif musik."
+		},
+		{
+			"title": "MUSIK/KONTEN",
+			"sub": "KONSULTAN",
+			"desc": "Menyediakan konsultasi musik/konten agar sesuai dengan demografi dan kebiasaan pelanggan anda."
+		},
+		{
+			"title": "KARYA",
+			"sub": "ANAK BANGSA",
+			"desc": "Didedikasikan anak-anak terbaik bangsa untuk mendukung brand dan bisnis didalam negeri."
+		}
+    ]
+}

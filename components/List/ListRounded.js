@@ -54,25 +54,12 @@ export default function FiturList() {
 		<div className={classes.root}>
 			<h2 className={classes.fontTitle}>MODUL-MODUL SVARA ON-AIR</h2>
 			<Row style={{ margin: 0 }}>
-				{listFitur.listFitur.map((fitur) => {
-					return (
-						<Col xs={12} md={4}>
-							<Row style={{ marginLeft: 15, marginRight: 15 }}>
-								<Row>
-									<Col style={{ padding: 0, marginLeft: 30, width: 50 }}>
-										<i className={fitur.icon} />
-									</Col>
-									<Col style={{ paddingLeft: 0 }}>
-										<h2 className={classes.fontTitleFitur}>{fitur.title}</h2>
-									</Col>
-								</Row>
-								<div>
-									<p className={classes.fontDesc}>{fitur.desc}</p>
-								</div>
-							</Row>
-						</Col>
-					);
-				})}
+				<Navbar bg="dark" variant="dark">
+					<Navbar.Brand href="#home">
+						<img alt="" src="/logo.svg" width="30" height="30" className="d-inline-block align-top" /> React
+						Bootstrap
+					</Navbar.Brand>
+				</Navbar>
 			</Row>
 		</div>
 	);

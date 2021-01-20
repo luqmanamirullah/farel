@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import listRadio from './RadioPartner';
+import listRadio from '../../contents/radioPartner.json';
 const useStyles = createUseStyles({
 	root: {
 		flexGrow: 1,
@@ -53,10 +53,10 @@ export default function FiturList() {
 		<div className={classes.root}>
 			<h2 className={classes.fontTitle}>Radio Partners</h2>
 			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }}>
-				{listRadio.map((imageRadio) => {
+				{listRadio.listRadio.map((imageRadio) => {
 					return (
 						<Col xs={3} md={1}>
-							<img src={imageRadio.radioImage} />
+							<img src={imageRadio.image} />
 						</Col>
 					);
 				})}

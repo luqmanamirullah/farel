@@ -7,6 +7,7 @@ import CardTitle from '../Card/ImageRight';
 import CardTitleLeft from '../Card/ImageLeft';
 import ListFitur from '../List/ListDesc';
 import ClearFix from '../container/ClearFix';
+import detail from '../../contents/castline.json';
 
 const useStyles = createUseStyles({
 	img: {
@@ -21,25 +22,22 @@ export default function CenteredGrid() {
 	return (
 		<div>
 			<CardTitle
-				img="assets_undraw_conference_call_b0w6.svg"
-				title="CASTLINE"
-				desc="For Community (Non-AM/FM Radio, Online Radio & TV)"
-				colorFont="#ecac55"
+				img={detail.section1.image}
+				title={detail.section1.title}
+				desc={detail.section1.desc}
+				colorFont={detail.section1.colorFont}
 				height="460px"
 				marginTop="95px"
 			/>
 			<CardTitleLeft
-				headline="SVARA CASTLINE"
-				description="SVARA Platform implementation in various communities, including but not limited to Citizen Online Radio, Campus Radio, Government Radio"
-				colorFont="#fff"
-				background="url('assets_SVARA Pitchdeck V.1a - Id (2).jpg')"
+				headline={detail.section2.headline}
+				description={detail.section2.description}
+				colorFont={detail.section2.colorFont}
+				background={detail.section2.background}
 				headingblock="true"
 			/>
-			<Description
-				desc="Dengan kemudahan dalam penerapan di seluruh Total Partnership SVARA Castline: 10 Online Radios (Radio UNISBA, Radio BKKBN, Radio PAUD, Radio Batak Diaro, Radio Sekolah Al- Mumtaz, Radio Sekolah Al-Mustarih, School Radio Nur Hikmah, Radio IBIMA, Radio IOI, Radio BKTI) The average SVARA Platform license fee is 50 million - 200 million / year"
-				colorFont="#ecac55"
-			/>
-			<ListFitur color="#ecac55" />
+			<Description desc={detail.section3.desc} colorFont={detail.section3.colorFont} />
+			<ListFitur color="#ecac55" data={detail.section4} />
 			{/* <ClearFix>
 				<Row style={{ margin: 0 }}>
 					<Col lg={6} md={6} xs={12}>

@@ -1,0 +1,332 @@
+{
+	"image": "opening.png",
+	"headline": "SVARA ONAIR",
+	"description": "Sebuah platform berupa Radio Automation atau Software as a Service (SaaS) untuk membantu industri radio dalam menjalankan proses bisnis radionya secara end-to-end agar lebih efektif dan efisien. Svara On-Air ini dapat digunakan mulai dari perencanaan, pelaksanaan, hingga pelaporan siaran. Platform ini tidak hanya dapat digunakan untuk Industri Radio am fm swasta namun juga untuk Radio komunitas berbasis internet dan juga seperti Fashion & Food Store dalam mengelola audio system di seluruh cabangnya.",
+	"colorFont": "#437096",
+	"listFitur": [
+		{
+			"title": "PROGRAM",
+			"icon": "icon-desktop",
+			"desc": "Modul Program adalah modul yang digunakan untuk menyusun program acara dalam periode tertentu. Termasuk di dalamnya setting deskripsi, periode siar, dll."
+		},
+		{
+			"title": "MUSIC",
+			"icon": "icon-music",
+			"desc": "Modul Music adalah modul untuk membantu Music Director dalam pengelolaan data Music, data Penyanyi, Composer, dll."
+		},
+		{
+			"title": "INFORMATION",
+			"icon": "icon-info",
+			"desc": "Modul Information adalah modul untuk melakukan pengarsipan, penyusunan, pencarian dan penampilan berita/informasi."
+		},
+		{
+			"title": "PRODUCTION",
+			"icon": "icon-bell",
+			"desc": "Modul Production adalah modul untuk melakukan pengelolaan hasil-hasil audio production, diantaranya pengarsipan sesuai dengan jenis produksi:iklan, jingle, dll."
+		},
+		{
+			"title": "TRAFFICS",
+			"icon": "icon-buysellads",
+			"desc": "Modul Traffic adalah modul untuk mengelola iklan, seperti: daftar klien, kontrak, jumlah pemutaran iklan, harga iklan, penjadwalan& pelaporan tayang iklan hingga invoicing &billing monitoring, dll."
+		},
+		{
+			"title": "MESSAGING",
+			"icon": "icon-mail-bulk",
+			"desc": "Modul Messaging adalah modul untuk mengelola pesan interaktif yang terintegrasi via SMS, Telepon, Mobile Apps, Website, Facebook, Twitter."
+		},
+		{
+			"title": "REPORT",
+			"icon": "icon-chart",
+			"desc": "Modul Report adalah modul untuk membuat laporan On-Air (pra dan pasca), log aktivitas user/crew, presensi penyiar, dan log iklan."
+		},
+		{
+			"title": "DASHBOARD MONITORING",
+			"icon": "icon-chart-line",
+			"desc": "Modul Monitoring adalah modul untuk pihak eksekutif radio memonitor advertisement, prestasi penjualan, rencana & realisasi tayang iklan, dll."
+		},
+		{
+			"title": "ONAIR",
+			"icon": "icon-microphone",
+			"desc": "Modul On-Air digunakan oleh penyiar untuk menyiarkan acaranya. Modul ini memiliki fitur: voice track,live assist, warning iklan renteng, time signal, auto shuffle, dll."
+		},
+		{
+			"title": "LOGGER",
+			"icon": "icon-tape",
+			"desc": "Modul RISE-Logger berfungsi merekam siaran sesuai dengan persyaratan yang diatur dalam Undang-Undang Penyiaran. Logger ini memiliki fasilitas pencarian arsip siaran yang disiarkan pada tanggal dan jam tertentu."
+		},
+		{
+			"title": "ADMINISTRATOR",
+			"icon": "icon-folder-settings",
+			"desc": "Modul Administrator adalah modul untuk mengelola user yang dapat mengakses aplikasi beserta otoritasnya."
+		}
+	],
+	"listRadio": [
+		{
+			"image": "/Profile radio/A radio 945 purwakarta.png"
+		},
+		{
+			"image": "/Profile radio/Amandit FM Kalsel.png"
+		},
+		{
+			"image": "/Profile radio/Boss FM.png"
+		},
+		{
+			"image": "/Profile radio/BP Trijaya FM Palembang.png"
+		},
+		{
+			"image": "/Profile radio/Cek Radio.png"
+		},
+		{
+			"image": "/Profile radio/Citra FM Kendal.png"
+		},
+		{
+			"image": "/Profile radio/Cosmo.jpg"
+		},
+		{
+			"image": "/Profile radio/cs03.jpeg"
+		},
+		{
+			"image": "/Profile radio/Dahlia FM.jpg"
+		},
+		{
+			"image": "/Profile radio/Dairi FM.jpg"
+		},
+		{
+			"image": "/Profile radio/DB FM Cirebon.png"
+		},
+		{
+			"image": "/Profile radio/Diaro FM.jpeg"
+		},
+		{
+			"image": "/Profile radio/Djati FM aceh.png"
+		},
+		{
+			"image": "/Profile radio/Emdikei Tasik.png"
+		},
+		{
+			"image": "/Profile radio/Fast Fm.png"
+		},
+		{
+			"image": "/Profile radio/Fortuna FM.jpg"
+		},
+		{
+			"image": "/Profile radio/Garuda.jpg"
+		},
+		{
+			"image": "/Profile radio/Gesma FM Sukoharjo.png"
+		},
+		{
+			"image": "/Profile radio/GPN FM Blora.jpg"
+		},
+		{
+			"image": "/Profile radio/Grass FM.png"
+		},
+		{
+			"image": "/Profile radio/Harmoni 97.0 fm Makasar.png"
+		},
+		{
+			"image": "/Profile radio/Harmoni FM - serang.jpeg"
+		},
+		{
+			"image": "/Profile radio/Heartline 92.2 fm Bali.png"
+		},
+		{
+			"image": "/Profile radio/Heartline 94.4 fm Samarinda.png"
+		},
+		{
+			"image": "/Profile radio/Heartline fm Bandar Lampung.png"
+		},
+		{
+			"image": "/Profile radio/Heartline Tangerang.png"
+		},
+		{
+			"image": "/Profile radio/Ichthus FM.png"
+		},
+		{
+			"image": "/Profile radio/Irama FM.png"
+		},
+		{
+			"image": "/Profile radio/Istana FM Ternate.png"
+		},
+		{
+			"image": "/Profile radio/Jusyan Sumedang.png"
+		},
+		{
+			"image": "/Profile radio/Klite FM.png"
+		},
+		{
+			"image": "/Profile radio/Lazuar FM Karawang.jpg"
+		},
+		{
+			"image": "/Profile radio/Madu FM Madura.jpg"
+		},
+		{
+			"image": "/Profile radio/Madura FM.jpeg"
+		},
+		{
+			"image": "/Profile radio/Mandala FM Banyuwangi.jpeg"
+		},
+		{
+			"image": "/Profile radio/Manggis FM Jambi.jpg"
+		},
+		{
+			"image": "/Profile radio/Mas FM Kebumen.png"
+		},
+		{
+			"image": "/Profile radio/Motion Banjar baru.jpg"
+		},
+		{
+			"image": "/Profile radio/Motion FM Bangka.png"
+		},
+		{
+			"image": "/Profile radio/Motion FM Jakarta.png"
+		},
+		{
+			"image": "/Profile radio/Motion FM Malang.png"
+		},
+		{
+			"image": "/Profile radio/Motion FM Manado.png"
+		},
+		{
+			"image": "/Profile radio/MQ FM.png"
+		},
+		{
+			"image": "/Profile radio/NBS FM.png"
+		},
+		{
+			"image": "/Profile radio/Palupi FM Bangka.png"
+		},
+		{
+			"image": "/Profile radio/Piss FM Ciamis.jpg"
+		},
+		{
+			"image": "/Profile radio/Prima FM Bangka.png"
+		},
+		{
+			"image": "/Profile radio/Raka FM Bandung.jpg"
+		},
+		{
+			"image": "/Profile radio/RAL FM Manado.jpg"
+		},
+		{
+			"image": "/Profile radio/Rasika Usa Semarang.jpg"
+		},
+		{
+			"image": "/Profile radio/Rasika Usa Ungaran.jpg"
+		},
+		{
+			"image": "/Profile radio/RAU FM.png"
+		},
+		{
+			"image": "/Profile radio/RDI FM Banyuasin.jpg"
+		},
+		{
+			"image": "/Profile radio/RDI FM Sekayu.jpg"
+		},
+		{
+			"image": "/Profile radio/Respon Padang.png"
+		},
+		{
+			"image": "/Profile radio/Ria FM Solo.png"
+		},
+		{
+			"image": "/Profile radio/Romansa FM.png"
+		},
+		{
+			"image": "/Profile radio/RPD KUTIM.png"
+		},
+		{
+			"image": "/Profile radio/salman.png"
+		},
+		{
+			"image": "/Profile radio/Serambi FM Banda Aceh.png"
+		},
+		{
+			"image": "/Profile radio/setiawana - bengkulu.png"
+		},
+		{
+			"image": "/Profile radio/SGP FM Lampung.png"
+		},
+		{
+			"image": "/Profile radio/Shelter FM Cirebon.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Balikpapan.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Banjarmasin.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Jakarta.jpg"
+		},
+		{
+			"image": "/Profile radio/Smart FM Makassar.jpg"
+		},
+		{
+			"image": "/Profile radio/Smart FM Manado.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Medan.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Palembang.png"
+		},
+		{
+			"image": "/Profile radio/Smart FM Pekanbaru.jpg"
+		},
+		{
+			"image": "/Profile radio/Smart FM Surabaya.jpg"
+		},
+		{
+			"image": "/Profile radio/Smart FM Yogyakarta.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora Bali 98,9 FM.png"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Bandung.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Bangka.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Jakarta.png"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Palembang.png"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Pontianak.png"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Purwokerto.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Semarang.png"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Surabaya.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora FM Yogyakarta.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora Lampung.jpg"
+		},
+		{
+			"image": "/Profile radio/Sonora medan.png"
+		},
+		{
+			"image": "/Profile radio/StudioEast.png"
+		},
+		{
+			"image": "/Profile radio/Sukapura FM.jpg"
+		},
+		{
+			"image": "/Profile radio/Top FM Bumiayu.jpg"
+		},
+		{
+			"image": "/Profile radio/Utari FM Cilacap.png"
+		}
+	]
+}
