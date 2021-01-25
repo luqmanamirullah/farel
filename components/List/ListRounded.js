@@ -9,7 +9,8 @@ const useStyles = createUseStyles({
 	root: {
 		flexGrow: 1,
 		width: '100%',
-		padding: 30
+		padding: 30,
+		paddingBottom: 100
 	},
 	paper: {
 		padding: 30,
@@ -47,19 +48,40 @@ const useStyles = createUseStyles({
 	}
 });
 
-export default function FiturList() {
+export default function FiturList(props) {
 	const classes = useStyles();
 
 	return (
 		<div className={classes.root}>
-			<h2 className={classes.fontTitle}>MODUL-MODUL SVARA ON-AIR</h2>
-			<Row style={{ margin: 0 }}>
-				<Navbar bg="dark" variant="dark">
-					<Navbar.Brand href="#home">
-						<img alt="" src="/logo.svg" width="30" height="30" className="d-inline-block align-top" /> React
-						Bootstrap
-					</Navbar.Brand>
-				</Navbar>
+			<Row style={{ margin: 0 }} className="justify-content-md-center">
+				{props.data.map((data) => {
+					return (
+						<Col lg={4} md={6} xs={12} style={{ marginTop: 40 }}>
+							<Row>
+								<Col style={{ paddingRight: 0 }}>
+									<div
+										style={{
+											background: '#fff',
+											border: '1px solid #91b3c2',
+											borderRadius: '50%',
+											height: '62px',
+											width: '62px',
+											textAlign: 'center'
+										}}
+									>
+										<i
+											class={data.icon}
+											style={{ paddingTop: 10, fontSize: '2em', color: '#91b3c2' }}
+										/>
+									</div>
+								</Col>
+								<Col style={{ paddingLeft: 0, marginLeft: -230 }}>
+									<div style={{ fontSize: 18, color: '#91b3c2' }}>{data.deskripsi}</div>
+								</Col>
+							</Row>
+						</Col>
+					);
+				})}
 			</Row>
 		</div>
 	);
