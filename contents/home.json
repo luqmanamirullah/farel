@@ -1,0 +1,68 @@
+{
+	"title": "SVARA",
+	"headline": "Media & Broadcasting Platform",
+	"subheadline1": "Become World Leading Media &",
+	"subheadline2": "Broadcasting Platform and Unicorn Startup in",
+	"year": "2025",
+	"titleCompany": "PT. SVARA INOVASI INDONESIA",
+	"deskripsi": "SVARA merupakan sebuah Startup yang bergerak dibidang media, broadcasting, & community Platform. Platform SVARA terbagi menjadi 2 macam, yaitu SVARA On-Air (Broadcasting Automation, SaaS) untuk Broadcaster memudahkan content management dan SVARA Online (Mobile Apps, Web Apps, dan IoT seperti Smart Speaker, Connected Car, dan SmartTV) untuk user memiliki experience baru menikmati berbagai konten seperti Streaming Radio, Playlist Music, Podcast, dan Video.",
+	"productHighlight": "Group 1.png",
+	"titleInnovation": "Innovation SVARA Platform",
+	"innovation": [
+		{
+			"logo": "logo/logo.png",
+			"deskripsi": "Broadcasting platform for listeners to enjoy a new way of listening to radio, music and podcasts. There are several main features offered, including; Modernization on-air platform, monetize on-line platform."
+		},
+		{
+			"logo": "logo/SVARA B2B LOGO-COLORED-03.png",
+			"deskripsi": "Broadcaster automation platform for broadcast professionals, both AM / FM radio and TV, integrating all end-to-end broadcast activities comprehensively."
+		},
+		{
+			"logo": "logo/SVARA B2B LOGO-COLORED-02.png",
+			"deskripsi": "Audio background or visual services can be in the form of music, information, and promotional ads. Can be implemented in various business locations such as bars, gyms, cafes, hotels etc."
+		},
+		{
+			"logo": "logo/SVARA B2B LOGO-COLORED-01.png",
+			"deskripsi": "A platform as well as a community-based communication media, which supports remote / online activities. Intended to support creativity and a means of self-expression."
+		},
+		{
+			"logo": "logo/SVARA B2B LOGO-COLORED-04.png",
+			"deskripsi": "Service to provide advertising spots on analog and digital media. Facilitate access to target audiences through promotional activities by utilizing media networks that have collaborated with Svara in Indonesia."
+		}
+	],
+	"partner": [
+		{
+			"image": "partner/1.jpg"
+		},
+		{
+			"image": "partner/2.jpg"
+		},
+		{
+			"image": "partner/3.jpg"
+		},
+		{
+			"image": "partner/4.jpg"
+		},
+		{
+			"image": "partner/5.jpg"
+		},
+		{
+			"image": "partner/6.jpg"
+		},
+		{
+			"image": "partner/7.jpg"
+		},
+		{
+			"image": "partner/8.jpg"
+		},
+		{
+			"image": "partner/9.jpg"
+		},
+		{
+			"image": "partner/10.jpg"
+		},
+		{
+			"image": "partner/11.jpg"
+		}
+	]
+}

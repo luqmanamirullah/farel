@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-// import ImgSliders from '../..1.jpg';
+import content from '../../contents/home.json'; // import ImgSliders from '../..1.jpg';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -42,19 +42,12 @@ const Slider = () => {
 			<Row style={{ margin: 0 }}>
 				<Col>
 					<div className={classes.divTitle}>
-						<div className={classes.title}>PT. SVARA INOVASI INDONESIA</div>
-						<div className={classes.tagline}>
-							SVARA merupakan sebuah Startup yang bergerak dibidang media, broadcasting, & community
-							Platform. Platform SVARA terbagi menjadi 2 macam, yaitu SVARA On-Air (Broadcasting
-							Automation, SaaS) untuk Broadcaster memudahkan content management dan SVARA Online (Mobile
-							Apps, Web Apps, dan IoT seperti Smart Speaker, Connected Car, dan SmartTV) untuk user
-							memiliki experience baru menikmati berbagai konten seperti Streaming Radio, Playlist Music,
-							Podcast, dan Video.
-						</div>
+						<div className={classes.title}>{content.titleCompany}</div>
+						<div className={classes.tagline}>{content.deskripsi}</div>
 					</div>
 				</Col>
 				<Col style={{ padding: 0 }}>
-					<img src="Group 1.png" style={{ paddingTop: '100px' }} />
+					<img src={content.productHighlight} style={{ paddingTop: '100px' }} />
 				</Col>
 			</Row>
 		</section>

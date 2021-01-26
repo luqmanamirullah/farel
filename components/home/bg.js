@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel, CarouselItem, Container } from 'react-bootstrap';
-// import ImgSliders from '../..1.jpg';
+import content from '../../contents/home.json';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -37,13 +37,14 @@ const Slider = () => {
 		<section className={classes.body}>
 			{/* <img /> */}
 			<div className={classes.divTitle}>
-				<div className={classes.title}>SVARA</div>
-				<div className={classes.tagline}>Media & Broadcasting Platform</div>
+				<div className={classes.title}>{content.title}</div>
+				<div className={classes.tagline}>{content.headline}</div>
 				<div className={classes.desc}>
-					“Become World Leading Media &<br />
-					Broadcasting Platform and Unicorn Startup in
+					"{content.subheadline1}
 					<br />
-					2025”
+					{content.subheadline2}
+					<br />
+					{content.year}"
 				</div>
 			</div>
 		</section>

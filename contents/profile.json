@@ -1,0 +1,49 @@
+{
+	"title": "Svara",
+	"headline": "Start-Up yang bergerak di bidang media, broadcasting, & community Platform. Media mencakup informasi, edukasi, dan entertainment. Broadcasting mencakup Radio & TV. Community mencakup radio kampus, government, desa, retail store, dll.",
+	"subheadline": "SVARA merupakan sebuah Startup yang didirikan sejak September 2017, namun penelitian kami terkait industri landscape dan pengembangan teknologi telah dimulai sejak 2002 oleh founder yaitu Bapak Hemat Dwi Nuryanto. SVARA memiliki visi yaitu Become World Leading Media & Broadcasting Platform, & Unicorn Startup in 2025.",
+	"logo": "assets_SVARA_LOGO_ID_WHITE.png",
+	"visi": "Become World Leading Media & Broadcasting Platform, and Unicorn Startup in 2025",
+	"team": [
+		{
+			"name": "Hemat Dwi Nuryanto",
+			"job": "Founder & Chairman",
+			"src": "team/Foto profile  (2 of 94).JPG"
+		},
+		{
+			"name": "Farid Fadhil Habibi",
+			"job": "CEO & Co-Founder",
+			"src": "team/Foto profile  (9 of 94).JPG"
+		},
+		{
+			"name": "Ana Supriatna",
+			"job": "COO",
+			"src": "team/Foto profile  (40 of 94).JPG"
+		},
+		{
+			"name": "M Zhuhriansyah",
+			"job": "CTO",
+			"src": "team/Foto profile  (7 of 94).JPG"
+		},
+		{
+			"name": "Agung Yuwono",
+			"job": "CFO & GA",
+			"src": "team/Foto profile  (1 of 94).JPG"
+		},
+		{
+			"name": "Syahrizal Mustafa",
+			"job": "CMO",
+			"src": "team/Foto profile  (34 of 94).JPG"
+		},
+		{
+			"name": "Sofwandi Noor",
+			"job": "Advisor",
+			"src": "team/Foto profile  (49 of 94).JPG"
+		},
+		{
+			"name": "Nina Nugraheni",
+			"job": "CEO Assistance",
+			"src": "team/Foto profile  (14 of 94).JPG"
+		}
+	]
+}
