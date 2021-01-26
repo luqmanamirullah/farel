@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel, Card, CardDeck, Row, Col } from 'react-bootstrap';
 import { createUseStyles } from 'react-jss';
-
+import content from '../../contents/home.json';
 const useStyles = createUseStyles({
 	cardImage: {
 		display: 'block',
