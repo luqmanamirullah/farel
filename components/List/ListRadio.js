@@ -4,12 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import listRadio from '../../contents/radioPartner.json';
+import listRadio from '../../contents/aircast.json';
 const useStyles = createUseStyles({
 	root: {
 		flexGrow: 1,
 		width: '100%',
-		padding: 30
+		padding: 30,
+		marginBottom: 40
 	},
 	paper: {
 		padding: 30,

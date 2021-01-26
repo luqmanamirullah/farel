@@ -1,6 +1,6 @@
 import React from 'react';
 import BasicLayout from '~/components/layouts/BasicLayout';
-import SvaraOnline from '~/components/product/svaraOnline/SvaraOnline';
+import SvaraOnline from '~/components/svaraOnline/SvaraOnline';
 
 const SvarOnlineIndex = () => {
 	return (

@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import CardTitle from '../Card/ImageLeft';
 import List from '../List/List';
 import Radio from '../List/ListRadio';
-import detail from '../../contents/radioPartner.json';
+import detail from '../../contents/aircast.json';
 const useStyles = createUseStyles({});
 
 export default function CenteredGrid() {

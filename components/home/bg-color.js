@@ -38,7 +38,6 @@ const Slider = () => {
 	const classes = useStyles();
 	return (
 		<section className={classes.body}>
-			{/* <img /> */}
 			<Row style={{ margin: 0 }}>
 				<Col>
 					<div className={classes.divTitle}>

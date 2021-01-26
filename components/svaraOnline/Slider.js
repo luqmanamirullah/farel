@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Col } from 'react-bootstrap';
-
+import detail from '../../contents/apps.json';
 import { createUseStyles } from 'react-jss';
 import ClearFix from '~/components/container/ClearFix';
 import { useWindowSize } from '~/components/context/WindowSizeContext';
@@ -33,7 +33,7 @@ const useStyles = createUseStyles({
 	background: {
 		visibility: 'visible',
 		boxSizing: 'border-box',
-		background: 'url("assets_bg-apps.png") 0% 0% / cover',
+		background: `url(${detail.background}) 0% 0% / cover`,
 		height: 'inherit'
 	},
 	appMockupImage: {
@@ -149,8 +149,7 @@ const Slider = () => {
 							>
 								<div className={classes.emphasisTitle}>
 									<h1 {...(isHidden ? { style: { fontSize: 40 } } : {})}>
-										The new way to listen to your favorite radio, music and podcast. Try using{' '}
-										<strong>SVARA</strong> Apps.
+										{detail.headline} <strong>{detail.strongText}</strong> {detail.headline2}.
 									</h1>
 								</div>
 							</div>

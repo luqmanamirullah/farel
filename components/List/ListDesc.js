@@ -120,7 +120,6 @@ export default function CenteredGrid(props) {
 		);
 	};
 
-	console.log('props', props);
 	return (
 		<div className={classes.wrapper}>
 			<ClearFix>

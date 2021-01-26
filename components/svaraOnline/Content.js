@@ -5,6 +5,7 @@ import { createUseStyles } from 'react-jss';
 import ClearFix from '~/components/container/ClearFix';
 import ContentWrap from '~/components/wrapper/ContentWrap';
 import HeadingBlock from '~/components/wrapper/HeadingBlock';
+import detail from '../../contents/apps.json';
 
 const useStyles = createUseStyles((theme) => ({
 	content: {},
@@ -64,16 +65,10 @@ const WhatIsSvaraOnline = () => {
 				<Row>
 					<Col xl={5}>
 						<HeadingBlock withBorder>
-							<h1 style={{ textAlign: 'left', color: '#a45437' }}>SVARA ONLINE</h1>
+							<h1 style={{ textAlign: 'left', color: '#a45437' }}>{detail.title}</h1>
 							<span></span>
 						</HeadingBlock>
-						<p className={classes.lead}>
-							Sebuah platform berupa Mobile Apps (Android, IoS), Website, dan IoT (Smart Speaker,
-							Connected Car, Smart TV, etc) untuk user dalam menikmati berbagai jenis layanan konten radio
-							live streaming, podcast, &amp; music and Video. beberapa fitur utama yaitu audio and video
-							live streaming, live chat, social, user generate content, take offline, dan berbagai layanan
-							membership.
-						</p>
+						<p className={classes.lead}>{detail.deskripsi}</p>
 					</Col>
 					<Col xl={7}>
 						<div
@@ -88,7 +83,7 @@ const WhatIsSvaraOnline = () => {
 							data-height-xs="183"
 						>
 							<img
-								src="assets_mac.png"
+								src={detail.images.mac}
 								style={{
 									position: 'absolute',
 									top: 0,
@@ -102,7 +97,7 @@ const WhatIsSvaraOnline = () => {
 								className="fadeInUp animated"
 							/>
 							<img
-								src="assets_tab.png"
+								src={detail.images.tab}
 								style={{
 									position: 'absolute',
 									top: 0,
@@ -116,7 +111,7 @@ const WhatIsSvaraOnline = () => {
 								className="fadeInUp animated"
 							/>
 							<img
-								src="assets_mobile.png"
+								src={detail.images.mobile}
 								style={{
 									position: 'absolute',
 									top: 0,
@@ -140,10 +135,10 @@ const WhatIsSvaraOnline = () => {
 					data-animate="fadeInRight"
 					className="fadeInRight animated"
 				>
-					<a href="https://play.google.com/store/apps/details?id=com.zamrud.radio.mobile.app.svara">
+					<a href={detail.linkDownload.android}>
 						<img src="apps/download1.png" style={{ marginRight: 10 }} />
 					</a>
-					<a href="https://apps.apple.com/us/app/svara/id1136129425">
+					<a href={detail.linkDownload.ios}>
 						<img src="apps/download2.png" />
 					</a>
 				</div>
@@ -173,7 +168,7 @@ const InsideSvara = () => {
 					}}
 				>
 					<div style={{ textAlign: 'center' }}>
-						<h2 style={{ color: '#a45437' }}>Fitur-fitur unggulan SVARA</h2>
+						<h2 style={{ color: '#a45437' }}>{detail.fiturTitle}</h2>
 					</div>
 					<div
 						style={{
@@ -188,7 +183,7 @@ const InsideSvara = () => {
 						data-height-xs="154"
 					>
 						<img
-							src="assets_fbrowser.png"
+							src={detail.fitur.web}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeInUp"
 							data-delay="100"
@@ -197,7 +192,7 @@ const InsideSvara = () => {
 							ref={imageRef}
 						/>
 						<img
-							src="assets_fmobile.png"
+							src={detail.fitur.mobile}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeInUp"
 							data-delay="400"
@@ -205,7 +200,7 @@ const InsideSvara = () => {
 							className="fadeInUp animated"
 						/>
 						<img
-							src="Group 13.png"
+							src={detail.fitur.diagram}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeIn"
 							data-delay="1200"
@@ -220,23 +215,6 @@ const InsideSvara = () => {
 };
 
 const AnotherDevice = () => {
-	const anotherDevices = [
-		{
-			image: 'apps/connectedCar.JPG',
-			name: 'Connected Car',
-			description: `Dashboard mobil di masa depan diprediksi akan berbasis internet, bukan lagi AM/FM. Saat ini Svara telah selesai mengembangkan platform untuk dapat menghadirkan layanan SVARA di Connected Car.`
-		},
-		{
-			image: 'apps/smartSpeaker.JPG',
-			name: ' Smart Speaker',
-			description: `Svara memiliki kerjasama Eksklusif dengan Widya Smart Speaker, Speaker pintar berbasis Artificial Intellegence yang merupakan Speaker pertama di Indonesia yang dapat diperintah dengan Bahasa Indonesia.`
-		},
-		{
-			image: 'apps/smartTV.JPG',
-			name: 'Smart TV',
-			description: `Svara juga bekerjasama dengan Metranet anak perusahaan Telkom, untuk menghadirkan layanan SVARA di Smart TV IndiBox`
-		}
-	];
 	const classes = useStyles();
 
 	return (
@@ -246,7 +224,7 @@ const AnotherDevice = () => {
 			</div>
 			<ClearFix>
 				<Row>
-					{anotherDevices.map((device) => (
+					{detail.anotherDevice.map((device) => (
 						<Col lg={4} sm={6} xs={12} key={device.name}>
 							<SvaraDevice image={device.image} name={device.name} description={device.description} />
 						</Col>
