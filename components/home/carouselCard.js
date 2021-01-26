@@ -41,7 +41,7 @@ const Slider = () => {
 	};
 
 	return (
-		<Carousel controls="false" indicators="false" nextIcon={nextIcon} prevIcon={prevIcon}>
+		<Carousel controls="false" indicators="false">
 			{content.innovation.chunk(3).map((chunk, idx) => (
 				<Carousel.Item key={idx} className={idx === 0 ? 'active' : ''}>
 					<Row style={{ margin: 0, backgroundColor: '#fff' }} className="justify-content-md-center">
