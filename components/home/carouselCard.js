@@ -14,11 +14,12 @@ const useStyles = createUseStyles({
 		height: 330,
 		borderRadius: '5%'
 	},
-	cardDeck: {
-		paddingLeft: 127,
-		paddingRight: 138,
-		margin: 0
-	},
+	// cardDeck: {
+	// 	paddingLeft: 127,
+	// 	paddingRight: 138,
+	// 	margin: 0,
+	// 	backgroundColor: '#fff'
+	// },
 	cardText: {
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
@@ -31,97 +32,34 @@ const useStyles = createUseStyles({
 
 const Slider = () => {
 	const classes = useStyles();
+	Array.prototype.chunk = function (size) {
+		const result = [];
+		while (this.length) {
+			result.push(this.splice(0, size));
+		}
+		return result;
+	};
+
 	return (
-		<Carousel controls="false" indicators="false">
-			<Carousel.Item>
-				{/* <CardDeck className={classes.cardDeck}> */}
-				<Row className={classes.cardDeck}>
-					<Col>
-						<Card className={classes.card}>
-							<Card.Img className={classes.cardImage} variant="top" src="logo/logo.png" />
-							<Card.Body className={classes.cardBody}>
-								<Card.Text className={classes.cardText} style={{ color: '#A55437' }}>
-									Broadcasting platform for listeners to enjoy a new way of listening to radio, music
-									and podcasts. There are several main features offered, including; Modernization
-									on-air platform, monetize on-line platform.
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className={classes.card}>
-							<Card.Img
-								className={classes.cardImage}
-								variant="top"
-								src="logo/SVARA B2B LOGO-COLORED-03.png"
-							/>
-							<Card.Body className={classes.cardBody}>
-								<Card.Text className={classes.cardText} style={{ color: '#437096' }}>
-									Broadcaster automation platform for broadcast professionals, both AM / FM radio and
-									TV, integrating all end-to-end broadcast activities comprehensively.
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className={classes.card}>
-							<Card.Img
-								className={classes.cardImage}
-								variant="top"
-								src="logo/SVARA B2B LOGO-COLORED-02.png"
-							/>
-							<Card.Body className={classes.cardBody}>
-								<Card.Text className={classes.cardText} style={{ color: '#7FA882' }}>
-									Audio background or visual services can be in the form of music, information, and
-									promotional ads. Can be implemented in various business locations such as bars,
-									gyms, cafes, hotels etc.
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-				</Row>
-				{/* </CardDeck> */}
-			</Carousel.Item>
-			<Carousel.Item>
-				{/* <CardDeck className={classes.cardDeck}> */}
-				<Row className={classes.cardDeck}>
-					<Col>
-						<Card className={classes.card}>
-							<Card.Img
-								className={classes.cardImage}
-								variant="top"
-								src="logo/SVARA B2B LOGO-COLORED-01.png"
-							/>
-							<Card.Body className={classes.cardBody}>
-								<Card.Text className={classes.cardText} style={{ color: '#ECAC55' }}>
-									A platform as well as a community-based communication media, which supports remote /
-									online activities. Intended to support creativity and a means of self-expression.
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className={classes.card}>
-							<Card.Img
-								className={classes.cardImage}
-								variant="top"
-								src="logo/SVARA B2B LOGO-COLORED-04.png"
-							/>
-							<Card.Body className={classes.cardBody}>
-								<Card.Text className={classes.cardText} style={{ color: '#92B4C3' }}>
-									Service to provide advertising spots on analog and digital media. Facilitate access
-									to target audiences through promotional activities by utilizing media networks that
-									have collaborated with Svara in Indonesia.
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className={classes.card} style={{ border: 0 }}></Card>
-					</Col>
-				</Row>
-				{/* </CardDeck> */}
-			</Carousel.Item>
+		<Carousel controls="false" indicators="false" nextIcon={nextIcon} prevIcon={prevIcon}>
+			{content.innovation.chunk(3).map((chunk, idx) => (
+				<Carousel.Item key={idx} className={idx === 0 ? 'active' : ''}>
+					<Row style={{ margin: 0, backgroundColor: '#fff' }} className="justify-content-md-center">
+						{chunk.map((item, idx2) => (
+							<Col md={3} sm={6} xs={12}>
+								<Card className={classes.card}>
+									<Card.Img className={classes.cardImage} variant="top" src={item.logo} />
+									<Card.Body className={classes.cardBody}>
+										<Card.Text className={classes.cardText} style={{ color: item.colorFont }}>
+											{item.deskripsi}
+										</Card.Text>
+									</Card.Body>
+								</Card>
+							</Col>
+						))}
+					</Row>
+				</Carousel.Item>
+			))}
 		</Carousel>
 	);
 };
