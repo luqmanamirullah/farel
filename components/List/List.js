@@ -58,9 +58,9 @@ export default function FiturList() {
 					return (
 						<Col xs={12} md={4}>
 							<Row style={{ marginLeft: 15, marginRight: 15 }}>
-								<Row>
+								<Row className="align-items-center">
 									<Col style={{ padding: 0, marginLeft: 30, width: 50 }}>
-										<i className={fitur.icon} />
+										<i className={fitur.icon} style={{ fontSize: '2em', color: '#437096' }} />
 									</Col>
 									<Col style={{ paddingLeft: 0 }}>
 										<h2 className={classes.fontTitleFitur}>{fitur.title}</h2>

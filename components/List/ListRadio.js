@@ -53,7 +53,7 @@ export default function FiturList() {
 	return (
 		<div className={classes.root}>
 			<h2 className={classes.fontTitle}>Radio Partners</h2>
-			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }}>
+			<Row style={{ margin: 0, paddingLeft: 20, paddingRight: 20 }} className="justify-content-md-center">
 				{listRadio.listRadio.map((imageRadio) => {
 					return (
 						<Col xs={3} md={1}>
