@@ -6,6 +6,8 @@ import '~/styles/globals.scss';
 import '~/styles/font-icons.css';
 import Head from 'next/head';
 import PageTransition from '~/components/wrapper/PageTransition';
+import { DefaultSeo } from 'next-seo';
+import SEO from './next-seo.config';
 
 function MyApp({ Component, pageProps, router }) {
 	useEffect(() => {
@@ -28,6 +30,7 @@ function MyApp({ Component, pageProps, router }) {
 			<Theme>
 				<WindowSizeProvider>
 					<PageTransition>
+						<DefaultSeo {...SEO} />
 						<Component {...pageProps} key={router.route} />
 					</PageTransition>
 				</WindowSizeProvider>

@@ -103,8 +103,9 @@ const Footer = (props) => {
 						<strong>Address</strong>
 					</div>
 					<p style={{ color: '#fff', width: 462, marginTop: 20, fontSize: 14 }}>
-						SALMAN-ITB Business Center Lantai 2, Jalan Gelap Nyawang No. 4, Lb. Siliwangi, Coblong, Kota
-						Bandung, Jawa Barat 40132
+						Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi Bandung
+						<br />
+						(022) 82021303
 					</p>
 					<div style={{ color: '#fff', marginTop: 20, fontSize: 24 }}>
 						<strong>Follow Us</strong>

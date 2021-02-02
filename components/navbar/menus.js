@@ -48,6 +48,6 @@ export default [
 	},
 	{
 		name: 'Contact Us',
-		slug: '/contact'
+		slug: '/maintenance'
 	}
 ];

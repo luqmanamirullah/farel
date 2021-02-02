@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 const useStyles = createUseStyles({
 	root: {
 		flexGrow: 1,
-		marginTop: 50,
+		marginTop: 80,
 		marginLeft: 60,
 		marginRight: 0,
 		textAlign: 'center'

@@ -5,7 +5,7 @@ import Maintenance from '~/components/maintenance/maintenance';
 
 const MaintenancePage = () => {
 	return (
-		<BasicLayout>
+		<BasicLayout noFooter="true">
 			<Maintenance />
 		</BasicLayout>
 	);

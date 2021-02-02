@@ -1,7 +1,7 @@
 import Navbar from '~/components/navbar';
 import Footer from '~/components/footer';
 import { AnimatePresence, motion } from 'framer-motion';
-const BasicLayout = ({ logo, colorMenu, transparant, children, whiteLogo }) => {
+const BasicLayout = ({ logo, colorMenu, transparant, children, whiteLogo, noFooter }) => {
 	return (
 		<>
 			<motion.div
@@ -12,7 +12,7 @@ const BasicLayout = ({ logo, colorMenu, transparant, children, whiteLogo }) => {
 			>
 				<Navbar colorMenu={colorMenu} logo={logo} transparant={transparant} whiteLogo={whiteLogo} />
 				{children}
-				<Footer colorMenu={colorMenu} />
+				{noFooter ? ' ' : <Footer colorMenu={colorMenu} />}
 			</motion.div>
 		</>
 	);
