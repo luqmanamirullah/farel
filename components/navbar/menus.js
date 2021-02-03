@@ -43,7 +43,7 @@ export default [
 		slug: '/profile'
 	},
 	{
-		name: 'Join Us',
+		name: 'Career',
 		slug: '/career'
 	},
 	{

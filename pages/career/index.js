@@ -5,7 +5,7 @@ import { DefaultSeo } from 'next-seo';
 
 const CareerPage = () => {
 	return (
-		<BasicLayout>
+		<BasicLayout noFooter="true">
 			<DefaultSeo
 				openGraph={{
 					type: 'website',
