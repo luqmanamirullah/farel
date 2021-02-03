@@ -1,6 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import CardTitle from '../Card/ImageLeft';
+import CardTitle from '../card/ImageLeft';
 import List from '../List/List';
 import Radio from '../List/ListRadio';
 import detail from '../../contents/aircast.json';
