@@ -4,12 +4,24 @@ import styles from '../styles/Home.module.css';
 import Slider from '~/components/Slider/slide';
 import Home from '~/components/home/home';
 import { DefaultSeo } from 'next-seo';
-import SEO from './next-seo.config';
 
 export default function HomePage() {
 	return (
 		<BasicLayout>
-			<DefaultSeo {...SEO} />
+			<DefaultSeo
+				openGraph={{
+					type: 'website',
+					locale: 'en_IE',
+					url: 'https://svara.id/',
+					site_name: 'Svara',
+					description: 'radio music podcast'
+				}}
+				twitter={{
+					handle: '@svara_offcial',
+					site: '@svara_official',
+					cardType: 'app'
+				}}
+			/>
 			<Home />
 		</BasicLayout>
 	);

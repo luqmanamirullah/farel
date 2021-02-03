@@ -7,7 +7,6 @@ import '~/styles/font-icons.css';
 import Head from 'next/head';
 import PageTransition from '~/components/wrapper/PageTransition';
 import { DefaultSeo } from 'next-seo';
-import SEO from './next-seo.config';
 
 function MyApp({ Component, pageProps, router }) {
 	useEffect(() => {
@@ -30,7 +29,20 @@ function MyApp({ Component, pageProps, router }) {
 			<Theme>
 				<WindowSizeProvider>
 					<PageTransition>
-						<DefaultSeo {...SEO} />
+						<DefaultSeo
+							openGraph={{
+								type: 'website',
+								locale: 'en_IE',
+								url: 'https://svara.id/',
+								site_name: 'Svara',
+								description: 'radio music podcast'
+							}}
+							twitter={{
+								handle: '@svara_offcial',
+								site: '@svara_official',
+								cardType: 'app'
+							}}
+						/>
 						<Component {...pageProps} key={router.route} />
 					</PageTransition>
 				</WindowSizeProvider>
