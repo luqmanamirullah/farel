@@ -16,9 +16,7 @@
 	},
 	"fiturTitle": "Fitur-fitur unggulan SVARA",
 	"fitur": {
-		"web": "assets_fbrowser.png",
-		"mobile": "assets_fmobile.png",
-		"diagram": "Group 13.png"
+		"web": "fitur.png"
 	},
 	"anotherDevice": [
 		{

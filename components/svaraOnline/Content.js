@@ -191,7 +191,7 @@ const InsideSvara = () => {
 							className="fadeInUp animated"
 							ref={imageRef}
 						/>
-						<img
+						{/* <img
 							src={detail.fitur.mobile}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeInUp"
@@ -206,7 +206,7 @@ const InsideSvara = () => {
 							data-delay="1200"
 							alt="iPad"
 							className="fadeIn animated"
-						/>
+						/> */}
 					</div>
 				</ClearFix>
 			</ClearFix>
