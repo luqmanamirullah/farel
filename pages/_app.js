@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps, router }) {
 					rel="stylesheet"
 					type="text/css"
 				/>
+				<meta name="google-site-verification" content="eXeXWmY6U8aBM3ChOK335iH5yzB-r3UgQCKCAoXnvBQ" />
 			</Head>
 			<Theme>
 				<WindowSizeProvider>
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps, router }) {
 								type: 'website',
 								locale: 'en_IE',
 								url: 'https://svara.id/',
-								site_name: 'Svara',
+								site_name: 'SVARA',
 								description: 'radio music podcast'
 							}}
 							twitter={{
