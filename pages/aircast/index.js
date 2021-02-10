@@ -12,6 +12,12 @@ const AudiolandPage = () => {
 			<Head>
 				<title>Svara Aircast | The Sound of You</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<link
+					rel="shortcut icon"
+					type="image/png"
+					sizes="32x32"
+					href="https://svara.id/logo/logo-gram%20only/aircast.png"
+				/>
 			</Head>
 			<BasicLayout colorMenu="#437096" logo="assets_aircast.png">
 				<DefaultSeo

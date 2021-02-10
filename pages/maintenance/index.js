@@ -10,6 +10,12 @@ const MaintenancePage = () => {
 			<Head>
 				<title>Svara | The Sound of You</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<link
+					rel="shortcut icon"
+					type="image/png"
+					sizes="32x32"
+					href="https://svara.id/logo/logo-gram%20only/logo.png"
+				/>
 			</Head>
 			<BasicLayout noFooter="true">
 				<Maintenance />

@@ -9,8 +9,14 @@ const AudiolandPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>About Svara | The Sound of You</title>
+				<title>Svara Soundsight | The Sound of You</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<link
+					rel="shortcut icon"
+					type="image/png"
+					sizes="32x32"
+					href="https://svara.id/logo/logo-gram%20only/soundsight.png"
+				/>
 			</Head>
 			<BasicLayout colorMenu="#7FA882" logo="assets_soundsight.png">
 				<DefaultSeo
