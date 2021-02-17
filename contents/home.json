@@ -10,26 +10,31 @@
 	"titleInnovation": "Innovation SVARA Platform",
 	"innovation": [
 		{
+			"title": "apps",
 			"logo": "logo/logo.png",
 			"deskripsi": "Broadcasting platform for listeners to enjoy a new way of listening to radio, music and podcasts. There are several main features offered, including; Modernization on-air platform, monetize on-line platform.",
 			"colorFont": "#A55437"
 		},
 		{
+			"title": "aircast",
 			"logo": "logo/SVARA B2B LOGO-COLORED-03.png",
 			"deskripsi": "Broadcaster automation platform for broadcast professionals, both AM / FM radio and TV, integrating all end-to-end broadcast activities comprehensively.",
 			"colorFont": "#437096"
 		},
 		{
+			"title": "soundsight",
 			"logo": "logo/SVARA B2B LOGO-COLORED-02.png",
 			"deskripsi": "Audio background or visual services can be in the form of music, information, and promotional ads. Can be implemented in various business locations such as bars, gyms, cafes, hotels etc.",
 			"colorFont": "#7FA882"
 		},
 		{
+			"title": "castline",
 			"logo": "logo/SVARA B2B LOGO-COLORED-01.png",
 			"deskripsi": "A platform as well as a community-based communication media, which supports remote / online activities. Intended to support creativity and a means of self-expression.",
 			"colorFont": "#ECAC55"
 		},
 		{
+			"title": "ads",
 			"logo": "logo/SVARA B2B LOGO-COLORED-04.png",
 			"deskripsi": "Service to provide advertising spots on analog and digital media. Facilitate access to target audiences through promotional activities by utilizing media networks that have collaborated with Svara in Indonesia.",
 			"colorFont": "#92B4C3"

@@ -37,7 +37,7 @@ export default function CenteredGrid() {
 				headingblock="true"
 			/>
 			<Description desc={detail.section3.desc} colorFont={detail.section3.colorFont} />
-			<ListFitur color="#ecac55" data={detail.section4} />
+			{/* <ListFitur color="#ecac55" data={detail.section4} /> */}
 			{/* <ClearFix>
 				<Row style={{ margin: 0 }}>
 					<Col lg={6} md={6} xs={12}>

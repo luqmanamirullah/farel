@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import { Carousel, Card, CardDeck, Row, Col } from 'react-bootstrap';
 import { createUseStyles } from 'react-jss';
 import content from '../../contents/home.json';
@@ -10,9 +11,10 @@ const useStyles = createUseStyles({
 		width: '60%'
 	},
 	card: {
-		width: 240,
+		width: 220,
 		height: 330,
-		borderRadius: '5%'
+		borderRadius: '5%',
+		cursor: 'pointer'
 	},
 	// cardDeck: {
 	// 	paddingLeft: 127,
@@ -32,35 +34,23 @@ const useStyles = createUseStyles({
 
 const Slider = () => {
 	const classes = useStyles();
-	Array.prototype.chunk = function (size) {
-		const result = [];
-		while (this.length) {
-			result.push(this.splice(0, size));
-		}
-		return result;
-	};
+	const router = useRouter();
 
 	return (
-		<Carousel controls="false" indicators="false">
-			{content.innovation.chunk(3).map((chunk, idx) => (
-				<Carousel.Item key={idx} className={idx === 0 ? 'active' : ''}>
-					<Row style={{ margin: 0, backgroundColor: '#fff' }} className="justify-content-md-center">
-						{chunk.map((item, idx2) => (
-							<Col md={3} sm={6} xs={12}>
-								<Card className={classes.card}>
-									<Card.Img className={classes.cardImage} variant="top" src={item.logo} />
-									<Card.Body className={classes.cardBody}>
-										<Card.Text className={classes.cardText} style={{ color: item.colorFont }}>
-											{item.deskripsi}
-										</Card.Text>
-									</Card.Body>
-								</Card>
-							</Col>
-						))}
-					</Row>
-				</Carousel.Item>
+		<Row style={{ margin: 0, backgroundColor: '#fff' }} className="justify-content-md-center">
+			{content.innovation.map((item, idx) => (
+				<Col md={2} sm={6} xs={12} style={{ margin: 15 }}>
+					<Card className={classes.card} onClick={() => router.push(`/${item.title}`)}>
+						<Card.Img className={classes.cardImage} variant="top" src={item.logo} />
+						<Card.Body className={classes.cardBody}>
+							<Card.Text className={classes.cardText} style={{ color: item.colorFont }}>
+								{item.deskripsi}
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Col>
 			))}
-		</Carousel>
+		</Row>
 	);
 };
 

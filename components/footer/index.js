@@ -10,7 +10,8 @@ const useStyles = createUseStyles((theme) => ({
 		backgroundColor: '#6d7893',
 		borderTop: 0,
 		position: 'relative',
-		fontFamily: 'Nunito'
+		fontFamily: 'Nunito',
+		textAlign: 'center'
 	},
 	container: {
 		margin: '0 90px'
@@ -23,15 +24,11 @@ const useStyles = createUseStyles((theme) => ({
 		lineHeight: '54px !important'
 	},
 	social_icon: {
-		display: 'block',
-		float: 'left',
 		textAlign: 'center !important',
 		color: '#fff',
 		cursor: 'pointer',
 		fontStyle: 'normal',
-		margin: '0 5px 5px 0',
-		width: '40px',
-		height: '40px',
+		margin: '0 30px 30px 0',
 		fontSize: '20px',
 		lineHeight: '38px !important',
 		// color: #555;
@@ -94,54 +91,41 @@ const Footer = (props) => {
 			style={{ backgroundColor: props.colorMenu ? props.colorMenu : '#6d7893', borderTop: 0 }}
 		>
 			<div className={classes.container}></div>
-			<Row style={{ margin: 0, paddingBottom: 20 }}>
-				<Col md={2}>
-					<img src="assets_SVARA_LOGO_ID_WHITE.png" style={{ height: 68 }} />
-				</Col>
-				<Col>
-					<div style={{ color: '#fff', marginTop: 10, fontSize: 24 }}>
-						<strong>Address</strong>
-					</div>
-					<p style={{ color: '#fff', width: 462, marginTop: 20, fontSize: 14 }}>
-						Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi Bandung
-						<br />
-						(022) 82021303
-					</p>
-					<div style={{ color: '#fff', marginTop: 20, fontSize: 24 }}>
-						<strong>Follow Us</strong>
-					</div>
-					<div style={{ color: '#fff', marginTop: 15, marginLeft: -15 }}>
-						<a
-							href="https://facebook.com/svaraofficial"
-							className={clsx(classes.social_icon, classes.si_large, classes.si_rounded)}
-							style={{ color: 'white', border: 0, alignItems: 'center' }}
-						>
-							<i class="icon-facebook"></i>
-						</a>
-						<a
-							href="https://twitter.com/svara_official"
-							className={clsx(classes.social_icon, classes.si_large, classes.si_rounded)}
-							style={{ color: 'white', border: 0, alignItems: 'center' }}
-						>
-							<i class="icon-twitter"></i>
-						</a>
-						<a
-							href="https://instagram.com/svara_official"
-							className={clsx(classes.social_icon, classes.si_large, classes.si_rounded)}
-							style={{ color: 'white', border: 0, alignItems: 'center' }}
-						>
-							<i class="icon-instagram"></i>
-						</a>
-					</div>
-				</Col>
-			</Row>
-			{/* <div style={{ borderTop: '0.5px solid #B0BCDB', paddingBottom: 30 }}>
+			<div style={{ color: '#fff' }}>
+				<a href="https://facebook.com/svaraofficial" style={{ color: 'white', border: 0, fontSize: 30 }}>
+					<i class="icon-facebook"></i>
+				</a>
+				<a
+					href="https://twitter.com/svara_official"
+					style={{ color: 'white', border: 0, fontSize: 30, marginLeft: 35 }}
+				>
+					<i class="icon-twitter"></i>
+				</a>
+				<a
+					href="https://instagram.com/svara_official"
+					style={{ color: 'white', border: 0, fontSize: 30, marginLeft: 35 }}
+				>
+					<i class="icon-instagram"></i>
+				</a>
+			</div>
+			<div style={{ color: '#fff', marginTop: 10, fontSize: 24 }}>
+				<strong>Address</strong>
+			</div>
+			<p style={{ color: '#fff', marginTop: 20, fontSize: 15 }}>
+				Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi Bandung
+				<br />
+				(022) 82021303
+				<br />
+				info@svara.fm
+			</p>
+
+			<div style={{ paddingBottom: 30 }}>
 				<div className={clsx(classes.container, classes.clearfix)}>
 					<div style={{ color: '#fff', fontFamily: 'Nunito', paddingTop: 20, textAlign: 'center' }}>
 						Copyrights &copy; 2020 All Rights Reserved by PT SVARA INOVASI INDONESIA.
 					</div>
 				</div>
-			</div> */}
+			</div>
 		</footer>
 	);
 };

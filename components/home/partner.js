@@ -7,8 +7,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
 	body: {
 		width: '100%',
-		height: 700,
-		marginBottom: 80
+		height: 450
 	},
 	divTitle: {
 		paddingTop: '120px',
@@ -20,7 +19,7 @@ const useStyles = createUseStyles({
 		fontSize: '34px',
 		fontFamily: 'Nunito',
 		textAlign: 'center',
-		paddingBottom: '90px',
+		paddingBottom: '60px',
 		fontWeight: 'bold'
 	},
 	imgLogo: {
@@ -34,10 +33,10 @@ const Slider = () => {
 	return (
 		<section className={classes.body}>
 			<div className={classes.title}>Partners</div>
-			<Row style={{ margin: 0, paddingLeft: 120, paddingRight: 120 }} className="justify-content-md-center">
+			<Row style={{ margin: 0, paddingLeft: 120, paddingRight: 120 }} className="justify-content-md-left">
 				{content.partner.map((data) => {
 					return (
-						<Col sm={6} md={3} xs={12}>
+						<Col sm={6} md={2} xs={12}>
 							<img className={classes.imgLogo} src={data.image} />
 						</Col>
 					);

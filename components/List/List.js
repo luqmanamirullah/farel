@@ -52,7 +52,7 @@ export default function FiturList() {
 
 	return (
 		<div className={classes.root}>
-			<h2 className={classes.fontTitle}>MODUL-MODUL SVARA ON-AIR</h2>
+			<h2 className={classes.fontTitle}>MODUL-MODUL SVARA AIRCAST</h2>
 			<Row style={{ margin: 0 }}>
 				{listFitur.listFitur.map((fitur) => {
 					return (

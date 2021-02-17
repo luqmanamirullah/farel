@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
 		fontSize: '34px',
 		fontFamily: 'Nunito',
 		textAlign: 'center',
-		paddingBottom: '90px',
+		paddingBottom: '70px',
 		fontWeight: 'bold'
 	}
 });
