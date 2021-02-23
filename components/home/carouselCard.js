@@ -12,7 +12,7 @@ const useStyles = createUseStyles({
 	},
 	card: {
 		width: 220,
-		height: 330,
+		height: 350,
 		borderRadius: '5%',
 		cursor: 'pointer'
 	},

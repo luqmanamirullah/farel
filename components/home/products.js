@@ -27,7 +27,7 @@ const Slider = () => {
 	const classes = useStyles();
 	return (
 		<section className={classes.body}>
-			<div className={classes.title}>Innovation SVARA Platform</div>
+			<div className={classes.title}>Product Innovations of SVARA Platform</div>
 			<Products />
 		</section>
 	);
