@@ -122,7 +122,7 @@ const Footer = (props) => {
 			<div style={{ paddingBottom: 30 }}>
 				<div className={clsx(classes.container, classes.clearfix)}>
 					<div style={{ color: '#fff', fontFamily: 'Nunito', paddingTop: 20, textAlign: 'center' }}>
-						Copyrights &copy; 2020 All Rights Reserved by PT SVARA INOVASI INDONESIA.
+						Copyrights &copy; 2017 - 2021 All Rights Reserved by PT SVARA INOVASI INDONESIA.
 					</div>
 				</div>
 			</div>
