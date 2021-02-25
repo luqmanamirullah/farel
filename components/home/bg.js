@@ -1,54 +1,69 @@
-import React from 'react';
-import { Carousel, CarouselItem, Container } from 'react-bootstrap';
-import content from '../../contents/home.json';
-import { createUseStyles } from 'react-jss';
+import React from "react";
+import { Carousel, CarouselItem, Container } from "react-bootstrap";
+import content from "../../contents/home.json";
+import { createUseStyles } from "react-jss";
+import { down } from "theme/breakpoints";
+import ClearFix from "../container/ClearFix";
 
 const useStyles = createUseStyles({
-	body: {
-		backgroundImage: "url('bg.png')",
-		height: 900
-	},
-	divTitle: {
-		paddingTop: '280px',
-		paddingLeft: '152px'
-	},
-	title: {
-		// display: 'absolute'
-		color: '#ffff',
-		fontSize: '48px',
-		fontFamily: 'Nunito'
-	},
-	tagline: {
-		color: '#fff',
-		fontSize: '36px',
-		fontFamily: 'Nunito'
-	},
-	desc: {
-		paddingTop: '30px',
-		color: '#fff',
-		fontSize: '24px',
-		fontFamily: 'Montserrat'
-	}
+  body: {
+    backgroundImage: "url('bg.png')",
+    backgroundRepeat: "center",
+    backgroundSize: "cover",
+    height: 900,
+  },
+  divTitle: {
+    paddingTop: "280px",
+    paddingLeft: "152px",
+  },
+  title: {
+    // display: 'absolute'
+    color: "#ffff",
+    fontSize: "48px",
+    fontFamily: "Nunito",
+  },
+  tagline: {
+    color: "#fff",
+    fontSize: "36px",
+    fontFamily: "Nunito",
+  },
+  desc: {
+    paddingTop: "30px",
+    color: "#fff",
+    fontSize: "24px",
+    fontFamily: "Montserrat",
+  },
+  [down("MD")]: {
+    divTitle: {
+      padding: 24,
+    },
+    body: {
+      height: "100%",
+      padding: "64px 0px",
+    },
+  },
 });
 
 const Slider = () => {
-	const classes = useStyles();
-	return (
-		<section className={classes.body}>
-			{/* <img /> */}
-			<div className={classes.divTitle}>
-				<div className={classes.title}>{content.title}</div>
-				<div className={classes.tagline}>{content.headline}</div>
-				<div className={classes.desc}>
-					"{content.subheadline1}
-					<br />
-					{content.subheadline2}
-					<br />
-					{content.year}"
-				</div>
-			</div>
-		</section>
-	);
+  const classes = useStyles();
+  return (
+    <section className={classes.body}>
+      <ClearFix noBg>
+        {/* <img /> */}
+        <div className={classes.divTitle}>
+          <div className={classes.title}>{content.title}</div>
+          <div className={classes.tagline}>{content.headline}</div>
+          <div className={classes.desc}>
+            "{content.subheadline1}
+            <br />
+            {content.subheadline2}
+            <br />
+            {content.year}"
+          </div>
+        </div>
+      </ClearFix>
+    </section>
+  );
 };
 
 export default Slider;
