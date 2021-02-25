@@ -9,7 +9,7 @@ const useStyles = createUseStyles({
     paddingLeft: 15,
     marginRight: "auto",
     marginLeft: "auto",
-    maxWidth: 1170,
+    maxWidth: 1366,
     position: "relative",
     overflow: "hidden",
     backgroundColor: "#fff",
@@ -41,10 +41,18 @@ const useStyles = createUseStyles({
     },
   },
 });
-const ClearFix = ({ children, style, className }) => {
+const ClearFix = ({ children, style, className, noBg }) => {
   const classes = useStyles();
   return (
-    <div className={clsx(classes.container, className)} style={style}>
+    <div
+      className={clsx(classes.container, className)}
+      style={{
+        background: noBg ? "transparent" : null,
+        paddingRight: noBg ? 0 : null,
+        paddingLeft: noBg ? 0 : null,
+        ...style,
+      }}
+    >
       {children}
     </div>
   );
