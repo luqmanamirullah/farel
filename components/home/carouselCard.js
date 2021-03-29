@@ -60,7 +60,7 @@ const Slider = () => {
 	return (
 		<Row style={{ margin: 0, backgroundColor: '#fff' }} className="justify-content-md-center">
 			{content.innovation.map((item, idx) => (
-				<Col xl={2} md={6} sm={6} xs={12} className={classes.cardInner}>
+				<Col xl={2} md={4} sm={6} xs={12} className={classes.cardInner}>
 					<Card className={classes.card} onClick={() => router.push(`/${item.title}`)}>
 						<Card.Img className={classes.cardImage} variant="top" src={item.logo} />
 						<Card.Body className={classes.cardBody}>
