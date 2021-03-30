@@ -148,7 +148,12 @@ const Career = () => {
 								>
 									Show More Info
 								</Button>
-								<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
+								<Modal
+									show={show}
+									onHide={() => handleClose(setShow(false))}
+									backdrop="static"
+									keyboard={false}
+								>
 									<Modal.Header closeButton>
 										<Modal.Title>Android Developer</Modal.Title>
 									</Modal.Header>
@@ -156,9 +161,11 @@ const Career = () => {
 										<Row>
 											<Col>
 												<h1>Requirment</h1>
-												{content.listCareer[0].requirment.map((list) => {
-													return <div>{list.title}</div>;
-												})}
+												<div>
+													{content.listCareer[0].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
 												<div style={{ marginTop: 5, color: '#ac5f41' }}>
 													<b>Send your CV and Portfolio to info@svara.fm</b>
 												</div>
@@ -198,9 +205,11 @@ const Career = () => {
 										<Row>
 											<Col>
 												<h1>Requirment</h1>
-												{content.listCareer[1].requirment.map((list) => {
-													return <div>{list.title}</div>;
-												})}
+												<div>
+													{content.listCareer[1].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
 												<div style={{ marginTop: 5, color: '#ac5f41' }}>
 													<b>Send your CV and Portfolio to info@svara.fm</b>
 												</div>
@@ -240,9 +249,11 @@ const Career = () => {
 										<Row>
 											<Col>
 												<h1>Requirment</h1>
-												{content.listCareer[2].requirment.map((list) => {
-													return <div>{list.title}</div>;
-												})}
+												<div>
+													{content.listCareer[2].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
 												<div style={{ marginTop: 5, color: '#ac5f41' }}>
 													<b>Send your CV and Portfolio to info@svara.fm</b>
 												</div>
@@ -282,9 +293,11 @@ const Career = () => {
 										<Row>
 											<Col>
 												<h1>Requirment</h1>
-												{content.listCareer[3].requirment.map((list) => {
-													return <div>{list.title}</div>;
-												})}
+												<div>
+													{content.listCareer[3].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
 												<div style={{ marginTop: 5, color: '#ac5f41' }}>
 													<b>Send your CV and Portfolio to info@svara.fm</b>
 												</div>
