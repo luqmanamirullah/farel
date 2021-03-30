@@ -313,7 +313,7 @@ const Career = () => {
 								</Modal>
 							</Col>
 							<Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
-								<img src={content.listCareer[3].image} style={{ width: '100%' }} />
+								<img src={content.listCareer[4].image} style={{ width: '100%' }} />
 								<Button
 									style={{
 										marginTop: 10,
@@ -321,12 +321,12 @@ const Career = () => {
 										backgroundColor: '#968c59',
 										borderColor: '#968c59'
 									}}
-									onClick={() => handleShow(setShow3(true))}
+									onClick={() => handleShow(setShow4(true))}
 								>
 									Show More Info
 								</Button>
 								<Modal
-									show={show3}
+									show={show4}
 									onHide={() => handleClose(setShow4(false))}
 									backdrop="static"
 									keyboard={false}
