@@ -114,7 +114,7 @@ const Visi = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.wrapper} style={{ backgroundColor: '#7c88a5' }}>
-			<img src={content.logo} alt="" style={{ height: 80 }}></img>
+			<img src={content.logo} alt="" style={{ height: 80, padding: 15 }}></img>
 			<h3
 				style={{
 					color: '#fff',
