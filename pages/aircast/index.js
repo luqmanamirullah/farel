@@ -26,6 +26,38 @@ const AudiolandPage = () => {
 						locale: 'en_IE',
 						url: 'https://svara.id/',
 						site_name: 'Svara Aircast',
+						images: [
+							{
+								url: 'https://svara.id/opening.png',
+								width: 599,
+								height: 392,
+								alt: 'Svara Product'
+							},
+							{
+								url: 'https://svara.id/logo/logo.png',
+								width: 142,
+								height: 142,
+								alt: 'Svara Innovation Svara Apps'
+							},
+							{
+								url: 'https://svara.id/logo/SVARA%20B2B%20LOGO-COLORED-03.png',
+								width: 142,
+								height: 142,
+								alt: 'Svara Innovation Svara Aircast'
+							},
+							{
+								url: 'https://svara.id/logo/SVARA%20B2B%20LOGO-COLORED-02.png',
+								width: 142,
+								height: 142,
+								alt: 'Svara Innovation Svara Soundsight'
+							},
+							{
+								url: 'https://svara.id/logo/SVARA%20B2B%20LOGO-COLORED-01.png',
+								width: 142,
+								height: 142,
+								alt: 'Svara Innovation Svara Castline'
+							}
+						],
 						description:
 							'AM/FM Radio & Tv Automation, full automation with: auto pilot, auto riley, auto shuffle on air & playlist, auto inserts ads and time signal. Multi message integration with sms, FB, Twitter, Whatsapp, Line,. Chart Listener for Polling, Program, Quiz and Profile. Traffic & Billing System'
 					}}

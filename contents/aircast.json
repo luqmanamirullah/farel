@@ -80,9 +80,6 @@
 			"image": "/Profile radio/Citra FM Kendal.png"
 		},
 		{
-			"image": "/Profile radio/Cosmo.jpg"
-		},
-		{
 			"image": "/Profile radio/cs03.jpeg"
 		},
 		{
@@ -110,9 +107,6 @@
 			"image": "/Profile radio/Fortuna FM.jpg"
 		},
 		{
-			"image": "/Profile radio/Garuda.jpg"
-		},
-		{
 			"image": "/Profile radio/Gesma FM Sukoharjo.png"
 		},
 		{
@@ -123,9 +117,6 @@
 		},
 		{
 			"image": "/Profile radio/Harmoni 97.0 fm Makasar.png"
-		},
-		{
-			"image": "/Profile radio/Harmoni FM - serang.jpeg"
 		},
 		{
 			"image": "/Profile radio/Heartline 92.2 fm Bali.png"
@@ -140,9 +131,6 @@
 			"image": "/Profile radio/Heartline Tangerang.png"
 		},
 		{
-			"image": "/Profile radio/Ichthus FM.png"
-		},
-		{
 			"image": "/Profile radio/Irama FM.png"
 		},
 		{
@@ -152,16 +140,7 @@
 			"image": "/Profile radio/Jusyan Sumedang.png"
 		},
 		{
-			"image": "/Profile radio/Klite FM.png"
-		},
-		{
-			"image": "/Profile radio/Lazuar FM Karawang.jpg"
-		},
-		{
 			"image": "/Profile radio/Madu FM Madura.jpg"
-		},
-		{
-			"image": "/Profile radio/Madura FM.jpeg"
 		},
 		{
 			"image": "/Profile radio/Mandala FM Banyuwangi.jpeg"
@@ -171,21 +150,6 @@
 		},
 		{
 			"image": "/Profile radio/Mas FM Kebumen.png"
-		},
-		{
-			"image": "/Profile radio/Motion Banjar baru.jpg"
-		},
-		{
-			"image": "/Profile radio/Motion FM Bangka.png"
-		},
-		{
-			"image": "/Profile radio/Motion FM Jakarta.png"
-		},
-		{
-			"image": "/Profile radio/Motion FM Malang.png"
-		},
-		{
-			"image": "/Profile radio/Motion FM Manado.png"
 		},
 		{
 			"image": "/Profile radio/MQ FM.png"
@@ -218,12 +182,6 @@
 			"image": "/Profile radio/RAU FM.png"
 		},
 		{
-			"image": "/Profile radio/RDI FM Banyuasin.jpg"
-		},
-		{
-			"image": "/Profile radio/RDI FM Sekayu.jpg"
-		},
-		{
 			"image": "/Profile radio/Respon Padang.png"
 		},
 		{
@@ -233,9 +191,6 @@
 			"image": "/Profile radio/Romansa FM.png"
 		},
 		{
-			"image": "/Profile radio/RPD KUTIM.png"
-		},
-		{
 			"image": "/Profile radio/salman.png"
 		},
 		{
@@ -243,9 +198,6 @@
 		},
 		{
 			"image": "/Profile radio/setiawana - bengkulu.png"
-		},
-		{
-			"image": "/Profile radio/SGP FM Lampung.png"
 		},
 		{
 			"image": "/Profile radio/Shelter FM Cirebon.png"
@@ -281,42 +233,6 @@
 			"image": "/Profile radio/Smart FM Yogyakarta.jpg"
 		},
 		{
-			"image": "/Profile radio/Sonora Bali 98,9 FM.png"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Bandung.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Bangka.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Jakarta.png"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Palembang.png"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Pontianak.png"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Purwokerto.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Semarang.png"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Surabaya.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora FM Yogyakarta.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora Lampung.jpg"
-		},
-		{
-			"image": "/Profile radio/Sonora medan.png"
-		},
-		{
 			"image": "/Profile radio/StudioEast.png"
 		},
 		{
@@ -327,6 +243,96 @@
 		},
 		{
 			"image": "/Profile radio/Utari FM Cilacap.png"
+		},
+		{
+			"image": "/Profile radio/Z 999 FM.png"
+		},
+		{
+			"image": "/Profile radio/Style Radio Tasikmalaya.png"
+		},
+		{
+			"image": "/Profile radio/Smooth fm.png"
+		},
+		{
+			"image": "/Profile radio/Setiawana FM Bengkulu.png"
+		},
+		{
+			"image": "/Profile radio/RDI Semarang.png"
+		},
+		{
+			"image": "/Profile radio/RCA Fm.png"
+		},
+		{
+			"image": "/Profile radio/Radio Moderato.png"
+		},
+		{
+			"image": "/Profile radio/Radio Mercury.png"
+		},
+		{
+			"image": "/Profile radio/Radio Mas Malang.png"
+		},
+		{
+			"image": "/Profile radio/Radio Kota.png"
+		},
+		{
+			"image": "/Profile radio/Radio Kota Bojonegoro.png"
+		},
+		{
+			"image": "/Profile radio/Radio Global.png"
+		},
+		{
+			"image": "/Profile radio/Radio Gita.png"
+		},
+		{
+			"image": "/Profile radio/Radio Gaya.png"
+		},
+		{
+			"image": "/Profile radio/Radio DJ.png"
+		},
+		{
+			"image": "/Profile radio/Radio BASS.png"
+		},
+		{
+			"image": "/Profile radio/Pas FM.png"
+		},
+		{
+			"image": "/Profile radio/Mara FM.png"
+		},
+		{
+			"image": "/Profile radio/Manusa FM Pontianak.png"
+		},
+		{
+			"image": "/Profile radio/Mandala FM Lampung.png"
+		},
+		{
+			"image": "/Profile radio/JEJE RADIO SURABAYA.png"
+		},
+		{
+			"image": "/Profile radio/Idola FM Tulangbawang.png"
+		},
+		{
+			"image": "/Profile radio/GAMA Fm.png"
+		},
+		{
+			"image": "/Profile radio/Galuh 89.5 FM.png"
+		},
+		{
+			"image": "/Profile radio/Elsyifa Radio.png"
+		},
+		{
+			"image": "/Profile radio/Citra FM.png"
+		},
+		{
+			"image": "/Profile radio/Cinde.png"
+		},
+		{
+			"image": "/Profile radio/Amsa FM Sukabumi.png"
+		},
+		{
+			"image": "/Profile radio/ADS Radio.png"
+		},
+		{
+			"image": "/Profile radio/Actari.png"
 		}
 	]
 }
