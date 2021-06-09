@@ -2,7 +2,7 @@
 	"listCareer": [
 		{
 			"title": "Android Developer",
-			"image": "/career/2 - android.png",
+			"image": "/career/3.png",
 			"requirment": [
 				{
 					"title": "Experience in Java / Kotlin Programming"
@@ -26,7 +26,7 @@
 		},
 		{
 			"title": "iOS Developer",
-			"image": "/career/3 - ios.png",
+			"image": "/career/5.png",
 			"requirment": [
 				{
 					"title": "1 - 2 years related experience"
@@ -44,7 +44,7 @@
 		},
 		{
 			"title": "Fullstack Developer",
-			"image": "/career/4 - fullstack.png",
+			"image": "/career/6.png",
 			"requirment": [
 				{
 					"title": "Have good understanding in algorithm and programming language"
