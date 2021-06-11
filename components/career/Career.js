@@ -159,7 +159,7 @@ const Career = () => {
 									<Modal.Body>
 										<Row>
 											<Col>
-												<h1>Requirment</h1>
+												<h1>Requirement</h1>
 												<div>
 													{content.listCareer[0].requirment.map((list) => {
 														return <li>{list.title}</li>;
@@ -203,7 +203,7 @@ const Career = () => {
 									<Modal.Body>
 										<Row>
 											<Col>
-												<h1>Requirment</h1>
+												<h1>Requirement</h1>
 												<div>
 													{content.listCareer[1].requirment.map((list) => {
 														return <li>{list.title}</li>;
@@ -247,7 +247,7 @@ const Career = () => {
 									<Modal.Body>
 										<Row>
 											<Col>
-												<h1>Requirment</h1>
+												<h1>Requirement</h1>
 												<div>
 													{content.listCareer[2].requirment.map((list) => {
 														return <li>{list.title}</li>;
