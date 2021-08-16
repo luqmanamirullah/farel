@@ -11,7 +11,7 @@ const useStyles = createUseStyles((theme) => ({
 	content: {},
 	lead: {
 		textAlign: 'left',
-		color: '#a45437',
+		color: '#225B76',
 		fontFamily: "'Lato', sans-serif",
 		boxSizing: 'border-box',
 		marginTop: 0,
@@ -65,7 +65,7 @@ const WhatIsSvaraOnline = () => {
 				<Row>
 					<Col xl={5}>
 						<HeadingBlock withBorder>
-							<h1 style={{ textAlign: 'left', color: '#a45437' }}>{detail.title}</h1>
+							<h1 style={{ textAlign: 'left', color: '#225B76' }}>{detail.title}</h1>
 							<span></span>
 						</HeadingBlock>
 						<p className={classes.lead}>{detail.deskripsi}</p>
@@ -168,7 +168,7 @@ const InsideSvara = () => {
 					}}
 				>
 					<div style={{ textAlign: 'center' }}>
-						<h2 style={{ color: '#a45437' }}>{detail.fiturTitle}</h2>
+						<h2 style={{ color: '#225B76' }}>{detail.fiturTitle}</h2>
 					</div>
 					<div
 						style={{
@@ -220,7 +220,7 @@ const AnotherDevice = () => {
 	return (
 		<ContentWrap>
 			<div style={{ textAlign: 'center' }}>
-				<h2 style={{ color: '#a45437' }}>Mau denger SVARA di perangkat lain?</h2>
+				<h2 style={{ color: '#225B76' }}>Mau denger SVARA di perangkat lain?</h2>
 			</div>
 			<ClearFix>
 				<Row>
@@ -246,8 +246,8 @@ const SvaraDevice = ({ image, name, description }) => {
 				data-delay="100"
 				className={clsx(classes.deviceImage, `pulse animated`)}
 			/>
-			<h4 style={{ marginBottom: 30, textAlign: 'center', color: '#a45437' }}>{name}</h4>
-			<p style={{ lineHeight: 1.8, textAlign: 'center', color: '#a45437' }}>{description}</p>
+			<h4 style={{ marginBottom: 30, textAlign: 'center', color: '#225B76' }}>{name}</h4>
+			<p style={{ lineHeight: 1.8, textAlign: 'center', color: '#225B76' }}>{description}</p>
 		</div>
 	);
 };
