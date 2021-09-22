@@ -6,9 +6,9 @@
 	"title": "SVARA ONLINE",
 	"deskripsi": "Sebuah platform berupa Mobile Apps (Android, IoS), Website, dan IoT (Smart Speaker, Connected Car, Smart TV, etc) untuk user dalam menikmati berbagai jenis layanan konten radio live streaming, podcast, & music and Video. beberapa fitur utama yaitu audio and video live streaming, live chat, social, user generate content, take offline, dan berbagai layanan membership.",
 	"images": {
-		"mac": "assets_mac.png",
-		"tab": "assets_tab.png",
-		"mobile": "assets_mobile.png"
+		"mac": "apps/Rectangle.png",
+		"tab": "apps/Rectangle-1.png",
+		"mobile": "apps/Rectangle-2.png"
 	},
 	"linkDownload": {
 		"android": "https://play.google.com/store/apps/details?id=com.zamrud.radio.mobile.app.svara",
@@ -16,7 +16,7 @@
 	},
 	"fiturTitle": "Fitur-fitur unggulan SVARA",
 	"fitur": {
-		"web": "fitur.png"
+		"web": "apps/Group 9.png"
 	},
 	"anotherDevice": [
 		{

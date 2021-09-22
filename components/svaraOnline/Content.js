@@ -64,11 +64,13 @@ const WhatIsSvaraOnline = () => {
 			<ClearFix>
 				<Row>
 					<Col xl={5}>
-						<HeadingBlock withBorder>
-							<h1 style={{ textAlign: 'left', color: '#225B76' }}>{detail.title}</h1>
-							<span></span>
-						</HeadingBlock>
-						<p className={classes.lead}>{detail.deskripsi}</p>
+						<div style={{ marginLeft: 30, marginTop: 20 }}>
+							<HeadingBlock withBorder>
+								<h1 style={{ textAlign: 'left', color: '#225B76' }}>{detail.title}</h1>
+								<span></span>
+							</HeadingBlock>
+							<p className={classes.lead}>{detail.deskripsi}</p>
+						</div>
 					</Col>
 					<Col xl={7}>
 						<div
@@ -100,10 +102,10 @@ const WhatIsSvaraOnline = () => {
 								src={detail.images.tab}
 								style={{
 									position: 'absolute',
-									top: 0,
-									left: 0,
-									width: '100%',
-									height: '100%'
+									top: 90,
+									left: 180,
+									// width: '70%',
+									height: '70%'
 								}}
 								data-animate="fadeInUp"
 								data-delay="400"
@@ -114,10 +116,10 @@ const WhatIsSvaraOnline = () => {
 								src={detail.images.mobile}
 								style={{
 									position: 'absolute',
-									top: 0,
-									left: 0,
-									width: '100%',
-									height: '100%'
+									top: 130,
+									left: 520,
+									// width: '100%',
+									height: '70%'
 								}}
 								data-animate="fadeInUp"
 								data-delay="800"
