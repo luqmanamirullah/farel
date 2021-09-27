@@ -62,38 +62,40 @@ const Form = ({
 		console.log('data', data);
 	};
 
-	// const mailjet = require('node-mailjet').connect(
-		// '2755a7971b86b6de45a13cece362bbfe',
-		// 'aa57a558358640e2976587a2d79236b1'
-	// );
-	// const request = mailjet.post('send', { version: 'v3.1' }).request({
-	// 	Messages: [
-	// 		{
-	// 			From: {
-	// 				Email: 'tarbudproject@gmail.com',
-	// 				Name: 'Lestari'
-	// 			},
-	// 			To: [
-	// 				{
-	// 					Email: 'tarbudproject@gmail.com',
-	// 					Name: 'Lestari'
-	// 				}
-	// 			],
-	// 			Subject: 'Greetings from Mailjet.',
-	// 			TextPart: 'My first Mailjet email',
-	// 			HTMLPart:
-	// 				"<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
-	// 			CustomID: 'AppGettingStartedTest'
-	// 		}
-	// 	]
-	// });
-	// request
-	// 	.then((result) => {
-	// 		console.log(result.body);
-	// 	})
-	// 	.catch((err) => {
-	// 		console.log(err.statusCode);
-	// 	});
+	useEffect(() => {
+		// const mailjet = require('node-mailjet').connect(
+		// 	'2755a7971b86b6de45a13cece362bbfe',
+		// 	'aa57a558358640e2976587a2d79236b1'
+		// );
+		// const request = mailjet.post('send', { version: 'v3.1' }).request({
+		// 	Messages: [
+		// 		{
+		// 			From: {
+		// 				Email: 'tarbudproject@gmail.com',
+		// 				Name: 'Lestari'
+		// 			},
+		// 			To: [
+		// 				{
+		// 					Email: 'tarbudproject@gmail.com',
+		// 					Name: 'Lestari'
+		// 				}
+		// 			],
+		// 			Subject: 'Greetings from Mailjet.',
+		// 			TextPart: 'My first Mailjet email',
+		// 			HTMLPart:
+		// 				"<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+		// 			CustomID: 'AppGettingStartedTest'
+		// 		}
+		// 	]
+		// });
+		request
+			.then((result) => {
+				console.log(result.body);
+			})
+			.catch((err) => {
+				console.log(err.statusCode);
+			});
+	}, []);
 
 	return (
 		<form onSubmit={handleSubmit} className={classes.form}>
