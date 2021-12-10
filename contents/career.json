@@ -32,7 +32,7 @@
 					"title": "1 - 2 years related experience"
 				},
 				{
-					"title": "Experience in iOS technology and programming language (Swift, Objective C, etc.)"
+					"title": "Experience in iOS technology and programming language (React Native, Objective C, etc.)"
 				},
 				{
 					"title": "Experience with web services, specifically REST APIs over JSON"
@@ -43,8 +43,8 @@
 			]
 		},
 		{
-			"title": "Fullstack Developer",
-			"image": "/career/fullstack-dev.png",
+			"title": "Frontend Developer",
+			"image": "/career/frontend-dev.png",
 			"requirment": [
 				{
 					"title": "Have good understanding in algorithm and programming language"
@@ -53,13 +53,34 @@
 					"title": "Experience on system development and coding best-practice"
 				},
 				{
-					"title": "Proficiency with fundamental front and languages such as HTML, CSS, and JavaScript"
+					"title": "Proficiency in with web application programming (HTML, CSS, Javascript) with framework like ReactJS, VueJS, Bootstrap"
 				},
 				{
-					"title": "Proficiency with server side languages such as PHP"
+					"title": "Excellent understanding of software engineering concepts, design patterns, and algorithms"
 				},
 				{
-					"title": "Familiarity with database technology such as MySQL / SQL Server / Oracle"
+					"title": "Passion in software engineering, application development, or systems development"
+				},
+				{
+					"title": "Curiosity to explore creative solutions and try new things"
+				}
+			]
+		},
+		{
+			"title": "Backend Developer",
+			"image": "/career/backend-dev.png",
+			"requirment": [
+				{
+					"title": "Have good understanding in algorithm and programming language"
+				},
+				{
+					"title": "Experience on system development and coding best-practice"
+				},
+				{
+					"title": "Proficiency with server side languages such as NodeJS, python, php, with development framework"
+				},
+				{
+					"title": "Knowledge of various database and storage technology like MongoDB, MySQL, Postgresql, Redis, etc."
 				},
 				{
 					"title": "Excellent understanding of software engineering concepts, design patterns, and algorithms"

@@ -123,23 +123,189 @@ const Career = () => {
 				<ContentWrap>
 					<ClearFix>
 						<HeadingBlock>
-							<h1 style={{ fontFamily: 'Nunito' }}>currently there is no new employee recruitment</h1>
-							<span style={{ fontFamily: 'Montserrat' }}>Please check back in sometime.</span>
+							<h1 style={{ fontFamily: 'Nunito' }}>Open Recrutiment</h1>
+							<span style={{ fontFamily: 'Montserrat' }}>Submit your CV and join with us!</span>
 						</HeadingBlock>
-						<div style={{ display: 'flex', marginRight: '-4%' }}>
-							<Row>
-								{useMemo(() =>
-									contents.map(
-										({ title, subtitle, icon }) => (
-											<Col sm={6} xs={12}>
-												<FeaturedBox title={title} subtitle={subtitle} icon={icon} />
+						<Row className={`justify-content-md-center ${classes.imageRow}`} style={{ marginBottom: 40 }}>
+							<Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
+								<img src={content.listCareer[0].image} style={{ width: '100%' }} />
+								<Button
+									style={{
+										marginTop: 10,
+										width: '100%',
+										backgroundColor: '#968c59',
+										borderColor: '#968c59'
+									}}
+									onClick={() => handleShow(setShow1(true))}
+								>
+									Show More Info
+								</Button>
+								<Modal
+									show={show1}
+									onHide={() => handleClose(setShow1(false))}
+									backdrop="static"
+									keyboard={false}
+								>
+									<Modal.Header closeButton>
+										<Modal.Title>{content.listCareer[0].title}</Modal.Title>
+									</Modal.Header>
+									<Modal.Body>
+										<Row>
+											<Col>
+												<h1>Requirement</h1>
+												<div>
+													{content.listCareer[0].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
+												<div style={{ marginTop: 5, color: '#ac5f41' }}>
+													<b>Send your CV and Portfolio to info@svara.fm</b>
+												</div>
 											</Col>
-										),
-										contents
-									)
-								)}
-							</Row>
-						</div>
+										</Row>
+									</Modal.Body>
+									<Modal.Footer>
+										<Button variant="secondary" onClick={() => handleClose(setShow1(false))}>
+											Close
+										</Button>
+									</Modal.Footer>
+								</Modal>
+							</Col>
+							<Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
+								<img src={content.listCareer[1].image} style={{ width: '100%' }} />
+								<Button
+									style={{
+										marginTop: 10,
+										width: '100%',
+										backgroundColor: '#968c59',
+										borderColor: '#968c59'
+									}}
+									onClick={() => handleShow(setShow1(true))}
+								>
+									Show More Info
+								</Button>
+								<Modal
+									show={show1}
+									onHide={() => handleClose(setShow1(false))}
+									backdrop="static"
+									keyboard={false}
+								>
+									<Modal.Header closeButton>
+										<Modal.Title>{content.listCareer[1].title}</Modal.Title>
+									</Modal.Header>
+									<Modal.Body>
+										<Row>
+											<Col>
+												<h1>Requirement</h1>
+												<div>
+													{content.listCareer[1].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
+												<div style={{ marginTop: 5, color: '#ac5f41' }}>
+													<b>Send your CV and Portfolio to info@svara.fm</b>
+												</div>
+											</Col>
+										</Row>
+									</Modal.Body>
+									<Modal.Footer>
+										<Button variant="secondary" onClick={() => handleClose(setShow1(false))}>
+											Close
+										</Button>
+									</Modal.Footer>
+								</Modal>
+							</Col>
+						</Row>
+						<Row className={`justify-content-md-center ${classes.imageRow}`} style={{ marginBottom: 40 }}>
+							<Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
+								<img src={content.listCareer[2].image} style={{ width: '100%' }} />
+								<Button
+									style={{
+										marginTop: 10,
+										width: '100%',
+										backgroundColor: '#968c59',
+										borderColor: '#968c59'
+									}}
+									onClick={() => handleShow(setShow2(true))}
+								>
+									Show More Info
+								</Button>
+								<Modal
+									show={show2}
+									onHide={() => handleClose(setShow2(false))}
+									backdrop="static"
+									keyboard={false}
+								>
+									<Modal.Header closeButton>
+										<Modal.Title>{content.listCareer[2].title}</Modal.Title>
+									</Modal.Header>
+									<Modal.Body>
+										<Row>
+											<Col>
+												<h1>Requirement</h1>
+												<div>
+													{content.listCareer[2].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
+												<div style={{ marginTop: 5, color: '#ac5f41' }}>
+													<b>Send your CV and Portfolio to info@svara.fm</b>
+												</div>
+											</Col>
+										</Row>
+									</Modal.Body>
+									<Modal.Footer>
+										<Button variant="secondary" onClick={() => handleClose(setShow2(false))}>
+											Close
+										</Button>
+									</Modal.Footer>
+								</Modal>
+							</Col>
+							<Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
+								<img src={content.listCareer[3].image} style={{ width: '100%' }} />
+								<Button
+									style={{
+										marginTop: 10,
+										width: '100%',
+										backgroundColor: '#968c59',
+										borderColor: '#968c59'
+									}}
+									onClick={() => handleShow(setShow1(true))}
+								>
+									Show More Info
+								</Button>
+								<Modal
+									show={show1}
+									onHide={() => handleClose(setShow1(false))}
+									backdrop="static"
+									keyboard={false}
+								>
+									<Modal.Header closeButton>
+										<Modal.Title>{content.listCareer[3].title}</Modal.Title>
+									</Modal.Header>
+									<Modal.Body>
+										<Row>
+											<Col>
+												<h1>Requirement</h1>
+												<div>
+													{content.listCareer[3].requirment.map((list) => {
+														return <li>{list.title}</li>;
+													})}
+												</div>
+												<div style={{ marginTop: 5, color: '#ac5f41' }}>
+													<b>Send your CV and Portfolio to info@svara.fm</b>
+												</div>
+											</Col>
+										</Row>
+									</Modal.Body>
+									<Modal.Footer>
+										<Button variant="secondary" onClick={() => handleClose(setShow1(false))}>
+											Close
+										</Button>
+									</Modal.Footer>
+								</Modal>
+							</Col>
+						</Row>
 					</ClearFix>
 				</ContentWrap>
 			</ClearFix>
