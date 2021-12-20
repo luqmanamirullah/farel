@@ -41,18 +41,21 @@
 			},
 			{
 				"icon": "icon-handshake i-alt",
-				"deskripsi": "Membantu pelanggan bekerjasama langsung dengan masing-masing radio untuk promo selain melalui airtime, ex: talkshow dan event offair lainnya."
+				"deskripsi": "Membantu pelanggan bekerja sama langsung dengan masing-masing radio untuk promo selain melalui airtime, ex: talkshow dan event offair lainnya."
 			}
 		]
 	},
 	"section4": {
-		"desc": "SVARA telah bekerjasama dengan lebih dari 110 radio di Seluruh Indonesia dan memiliki lebih dari 25.000 airtime/bulan (1 airtime berarti 1 menit beriklan di radio secara on-air)"
+		"desc": "SVARA telah bekerja sama dengan lebih dari 110 radio di Seluruh Indonesia dan memiliki lebih dari 25.000 airtime/bulan (1 airtime berarti 1 menit beriklan di radio secara on-air)"
 	},
 	"section5": [
 		{ "image": "/partner/airtime/indihome.jpg" },
 		{ "image": "/partner/airtime/bank-bjb.jpg" },
 		{ "image": "/partner/airtime/pos-indonesia.jpg" },
 		{ "image": "/partner/airtime/kfc.jpg" },
-		{ "image": "/partner/airtime/yoforia.jpg" }
+		{ "image": "/partner/airtime/yoforia.jpg" },
+		{ "image": "/partner/airtime/bakti.jpg" },
+		{ "image": "/partner/airtime/pemprov-jateng.jpg" },
+		{ "image": "/partner/airtime/bkkbn.jpg" }
 	]
 }
