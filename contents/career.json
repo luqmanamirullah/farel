@@ -22,6 +22,30 @@
       ]
     },
     {
+      "title": "Android Developer",
+      "image": "/career/android-dev.png",
+      "requirment": [
+        {
+          "title": "Experience in Java / Kotlin Programming"
+        },
+        {
+          "title": "Familiarity with OOP concepts"
+        },
+        {
+          "title": "Deep understanding of Android SDK"
+        },
+        {
+          "title": "Knowledge of web services, specifically REST APIs over JSON"
+        },
+        {
+          "title": "Ability to work collaboratively with highly creative designers who will push for innovation designs to be brought to life"
+        },
+        {
+          "title": "Passion in software engineering, aplication development, or system development"
+        }
+      ]
+    },
+    {
       "title": "iOS Developer",
       "image": "/career/ios-dev.png",
       "requirment": [

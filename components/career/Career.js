@@ -93,6 +93,7 @@ const Career = () => {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
   const handleClose = () => {};
   const handleShow = () => {};
 
@@ -334,6 +335,61 @@ const Career = () => {
                     <Button
                       variant="secondary"
                       onClick={() => handleClose(setShow3(false))}
+                    >
+                      Close
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              </Col>
+            </Row>
+            <Row
+              className={`justify-content-md-center ${classes.imageRow}`}
+              style={{ marginBottom: 40 }}
+            >
+              <Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
+                <img
+                  src={content.listCareer[4].image}
+                  style={{ width: "100%" }}
+                />
+                <Button
+                  style={{
+                    marginTop: 10,
+                    width: "100%",
+                    backgroundColor: "#968c59",
+                    borderColor: "#968c59",
+                  }}
+                  onClick={() => handleShow(setShow4(true))}
+                >
+                  Show More Info
+                </Button>
+                <Modal
+                  show={show4}
+                  onHide={() => handleClose(setShow4(false))}
+                  backdrop="static"
+                  keyboard={false}
+                >
+                  <Modal.Header closeButton>
+                    <Modal.Title>{content.listCareer[4].title}</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <Row>
+                      <Col>
+                        <h1>Requirement</h1>
+                        <div>
+                          {content.listCareer[4].requirment.map((list) => {
+                            return <li>{list.title}</li>;
+                          })}
+                        </div>
+                        <div style={{ marginTop: 5, color: "#ac5f41" }}>
+                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button
+                      variant="secondary"
+                      onClick={() => handleClose(setShow4(false))}
                     >
                       Close
                     </Button>
