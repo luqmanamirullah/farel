@@ -190,6 +190,7 @@ const InsideSvara = () => {
 							data-animate="fadeInUp"
 							data-delay="100"
 							alt="Chrome"
+							height="700px"
 							className="fadeInUp animated"
 							ref={imageRef}
 						/>
