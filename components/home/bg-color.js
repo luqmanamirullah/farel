@@ -1,4 +1,6 @@
 import React from "react";
+import Head from "next/head";
+import { DefaultSeo } from "next-seo";
 import { Grid, Row, Col, Container } from "react-bootstrap";
 import content from "../../contents/home.json"; // import ImgSliders from '../..1.jpg';
 import { createUseStyles } from "react-jss";
@@ -58,6 +60,23 @@ const Slider = () => {
   const classes = useStyles();
   return (
     <section className={classes.body}>
+      <Head>
+        <title>Svara | Gudangnya Konten Indonesia</title>
+      </Head>
+      <DefaultSeo
+        openGraph={{
+          type: "website",
+          locale: "en_IE",
+          url: "https://svara.id/",
+          site_name: "SVARA",
+          title: "Svara | Gudangnya Konten Indonesia",
+        }}
+        twitter={{
+          handle: "@svara_offcial",
+          site: "@svara_official",
+          cardType: "app",
+        }}
+      />
       <ClearFix noBg>
         <Container fluid>
           <Row style={{ marginLeft: -9, marginRight: -9 }}>
