@@ -125,7 +125,7 @@ const Footer = (props) => {
         <strong>Address</strong>
       </div>
       <p style={{ color: "#fff", marginTop: 20, fontSize: 15 }}>
-        Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi Bandung 40162
+        Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung 40162
         <br />
         (022) 82045711
         <br />
