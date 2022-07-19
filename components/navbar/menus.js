@@ -28,7 +28,7 @@ export default [
         as: "/castline",
       },
       {
-        name: "Radio ADS",
+        name: "SVARA ADS",
         slug: "/ads",
         as: "/ads",
       },
