@@ -96,7 +96,7 @@ const Footer = (props) => {
     <footer
       className={classes.footer}
       style={{
-        backgroundColor: props.colorMenu ? props.colorMenu : "#6d7893",
+        backgroundColor: "#225B76",
         borderTop: 0,
       }}
     >

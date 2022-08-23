@@ -18,7 +18,7 @@ const AudiolandPage = () => {
           href="https://svara.id/logo/logo-gram%20only/soundsight.png"
         />
       </Head>
-      <BasicLayout colorMenu="#7FA882" logo="assets_soundsight.png">
+      <BasicLayout colorMenu="#225B76" logo="assets_soundsight.png">
         <DefaultSeo
           openGraph={{
             type: "website",

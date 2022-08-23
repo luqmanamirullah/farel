@@ -19,7 +19,7 @@ const AirtimePage = () => {
           href="https://svara.id/logo/logo-gram%20only/ads.png"
         />
       </Head>
-      <BasicLayout colorMenu="#91b3c2" logo="assets_ads.png">
+      <BasicLayout colorMenu="#225B76" logo="assets_ads.png">
         <DefaultSeo
           openGraph={{
             type: "website",

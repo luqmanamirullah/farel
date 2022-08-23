@@ -18,7 +18,7 @@ const SvarOnlineIndex = () => {
         />
       </Head>
       <BasicLayout
-        colorMenu="#235C76"
+        colorMenu="#225B76"
         logo="assets_apps.png"
         transparant="true"
         whiteLogo="assets-apps-white.png"
