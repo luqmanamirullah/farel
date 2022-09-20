@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div>
       <Head>
-        <title>Svara | Gudangnya Konten Indonesia</title>
+        <title>Svara | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"

@@ -7,7 +7,7 @@ const AudiolandPage = () => {
   return (
     <div>
       <Head>
-        <title>Svara Castline | Gudangnya Konten Indonesia</title>
+        <title>Svara Castline | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"
