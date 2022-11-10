@@ -55,7 +55,7 @@ const useStyles = createUseStyles({
   },
   descFitur: {
     fontSize: 18,
-    color: "#225B76,
+    color: "#225B76",
   },
 });
 
