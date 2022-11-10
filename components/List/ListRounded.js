@@ -15,7 +15,6 @@ const useStyles = createUseStyles({
   paper: {
     padding: 30,
     textAlign: "center",
-    // color: theme.palette.text.secondary
   },
   fontTitle: {
     marginBottom: 50,
@@ -46,6 +45,18 @@ const useStyles = createUseStyles({
     fontFamily: "Montserrat",
     color: "#437096",
   },
+  iconFiturContainer: {
+    background: "#fff",
+    border: "1px solid #91b3c2",
+    borderRadius: "50%",
+    height: "62px",
+    width: "62px",
+    textAlign: "center",
+  },
+  descFitur: {
+    fontSize: 18,
+    color: "#225B76",
+  },
 });
 
 export default function FiturList(props) {
@@ -57,18 +68,9 @@ export default function FiturList(props) {
         {props.data.map((data) => {
           return (
             <Col lg={4} md={6} xs={12} style={{ marginTop: 40 }}>
-              <Row>
-                <Col style={{ paddingRight: 0 }}>
-                  <div
-                    style={{
-                      background: "#fff",
-                      border: "1px solid #225B76",
-                      borderRadius: "50%",
-                      height: "62px",
-                      width: "62px",
-                      textAlign: "center",
-                    }}
-                  >
+              <Row xs={12} style={{ rowGap: 15 }}>
+                <Col lg={2} md={2}>
+                  <div className={classes.iconFiturContainer}>
                     <i
                       class={data.icon}
                       style={{
@@ -79,10 +81,8 @@ export default function FiturList(props) {
                     />
                   </div>
                 </Col>
-                <Col style={{ paddingLeft: 0, marginLeft: -230 }}>
-                  <div style={{ fontSize: 18, color: "#225B76" }}>
-                    {data.deskripsi}
-                  </div>
+                <Col lg={10} md={10} xs={12}>
+                  <div className={classes.descFitur}>{data.deskripsi}</div>
                 </Col>
               </Row>
             </Col>
