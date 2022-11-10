@@ -145,8 +145,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow(true))}
                 >
@@ -195,8 +195,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow1(true))}
                 >
@@ -250,8 +250,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow2(true))}
                 >
@@ -300,8 +300,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow3(true))}
                 >

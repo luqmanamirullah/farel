@@ -8,7 +8,7 @@ const BlogPage = () => {
   return (
     <div>
       <Head>
-        <title>Svara Update | Gudangnya Konten Indonesia</title>
+        <title>Svara Update | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"
