@@ -40,17 +40,17 @@ export default function CenteredGrid() {
       />
       {/* <Row style={{ margin: 0 }}>
 				<Col>
-					<div style={{ color: '#7fa882' }}>
+					<div style={{ color: '#225B76' }}>
 						<span
 							data-from="100"
 							data-to="353"
 							data-refresh-interval="50"
 							data-speed="2000"
-							style={{ color: '#7fa882' }}
+							style={{ color: '#225B76' }}
 						></span>
 						K+
 					</div>
-					<h5 style={{ color: '#7fa882' }}>Lagu</h5>
+					<h5 style={{ color: '#225B76' }}>Lagu</h5>
 				</Col>
 			</Row> */}
       <Description

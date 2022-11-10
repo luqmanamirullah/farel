@@ -61,7 +61,7 @@ const Slider = () => {
   return (
     <section className={classes.body}>
       <Head>
-        <title>Svara | Gudangnya Konten Indonesia</title>
+        <title>Svara | Rumahnya Konten Indonesia</title>
       </Head>
       <DefaultSeo
         openGraph={{
@@ -69,7 +69,7 @@ const Slider = () => {
           locale: "en_IE",
           url: "https://svara.id/",
           site_name: "SVARA",
-          title: "Svara | Gudangnya Konten Indonesia",
+          title: "Svara | Rumahnya Konten Indonesia",
         }}
         twitter={{
           handle: "@svara_offcial",

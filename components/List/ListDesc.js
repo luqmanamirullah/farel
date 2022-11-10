@@ -144,12 +144,7 @@ export default function CenteredGrid(props) {
                     }}
                   >
                     {fitur.title}{" "}
-                    <strong
-                      style={{ color: props.color ? props.color : "#7fa882" }}
-                    >
-                      {fitur.sub}
-                    </strong>
-                    .
+                    <strong style={{ color: "#225B76" }}>{fitur.sub}</strong>.
                   </h4>
                   <span></span>
                 </HeadingBlock>
