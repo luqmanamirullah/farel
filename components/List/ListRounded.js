@@ -55,7 +55,7 @@ const useStyles = createUseStyles({
   },
   descFitur: {
     fontSize: 18,
-    color: "#91b3c2",
+    color: "#225B76,
   },
 });
 
@@ -76,7 +76,7 @@ export default function FiturList(props) {
                       style={{
                         paddingTop: 10,
                         fontSize: "2em",
-                        color: "#91b3c2",
+                        color: "#225B76",
                       }}
                     />
                   </div>

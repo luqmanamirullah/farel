@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <div>
       <Head>
-        <title>Svara Contact | Gudangnya Konten Indonesia</title>
+        <title>Svara Contact | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"

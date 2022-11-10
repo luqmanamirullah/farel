@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <div>
       <Head>
-        <title>About Svara | Gudangnya Konten Indonesia</title>
+        <title>About Svara | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"
