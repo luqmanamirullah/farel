@@ -202,7 +202,7 @@ const Footer = (props) => {
         </Col>
         <Col style={{ paddingTop: 20 }}>
           <a
-            href="https://legal.svara.id/en/privacy-policy/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            href="https://legal.svara.id/privacy-policy/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
             style={{
               color: "white",
               border: 0,
@@ -215,7 +215,7 @@ const Footer = (props) => {
           </a>
           <span style={{ color: "white" }}>&#124;</span>
           <a
-            href="https://legal.svara.id/en/terms-of-services/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            href="https://legal.svara.id/terms-of-services/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
             style={{
               color: "white",
               border: 0,
@@ -228,7 +228,7 @@ const Footer = (props) => {
           </a>
           <span style={{ color: "white" }}>&#124;</span>
           <a
-            href="https://legal.svara.id/en/community-guidelines/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            href="https://legal.svara.id/community-guidelines/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
             style={{
               color: "white",
               border: 0,
