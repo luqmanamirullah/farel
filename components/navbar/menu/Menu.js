@@ -97,20 +97,43 @@ export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
   const classes = menuStyles();
   return (
     <li className={classes.menu} key={menu.name}>
-      <Link href={menu.slug} as={menu.as} passHref>
-        <a className={clsx(classes.link, isSticky ? classes.stickyLink : null)}>
-          <div
-            className={classes.textMenu}
-            style={
-              transparant && !isSticky
-                ? { color: "#fff" }
-                : { color: "#225B76" }
-            }
+      {!menu.isOpen ? (
+        <Link href={menu.slug} as={menu.as} passHref>
+          <a
+            className={clsx(classes.link, isSticky ? classes.stickyLink : null)}
           >
-            {menu.name}
-          </div>
-        </a>
-      </Link>
+            <div
+              className={classes.textMenu}
+              style={
+                transparant && !isSticky
+                  ? { color: "#fff" }
+                  : { color: "#225B76" }
+              }
+            >
+              {menu.name}
+            </div>
+          </a>
+        </Link>
+      ) : (
+        <Link href="https://app.svara.id">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={clsx(classes.link, isSticky ? classes.stickyLink : null)}
+          >
+            <div
+              className={classes.textMenu}
+              style={
+                transparant && !isSticky
+                  ? { color: "#fff" }
+                  : { color: "#225B76" }
+              }
+            >
+              {menu.name}
+            </div>
+          </a>
+        </Link>
+      )}
       {menu.childrens && (
         <DropdownMenu childrens={menu.childrens} colorMenu={colorMenu} />
       )}
