@@ -62,6 +62,10 @@ const useStyles = createUseStyles({
 
 const Slider = () => {
   const classes = useStyles();
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <section className={classes.body}>
       <ClearFix noBg>
@@ -77,7 +81,9 @@ const Slider = () => {
                   backgroundColor: "#000",
                   borderColor: "#000",
                   justifyContent: "center",
+                  fontWeight: 600,
                 }}
+                onClick={() => openInNewTab("https://app.svara.id")}
               >
                 Explore Web App{" "}
                 <i
