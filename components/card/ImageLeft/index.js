@@ -34,7 +34,7 @@ const useStyles = createUseStyles({
   },
   imageWrapper: {
     boxSizing: "border-box",
-    marginTop: "80px !important",
+    marginTop: "30px !important",
   },
   image: {
     color: "#555",
@@ -50,7 +50,7 @@ const useStyles = createUseStyles({
     fontSize: 15,
     lineHeight: 1.8,
     textAlign: "left",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
   },
   svaraLogo: {
     textAlign: "center !important",
@@ -63,60 +63,38 @@ const useStyles = createUseStyles({
 
 export default function CenteredGrid(props) {
   const classes = useStyles();
-
   return (
     <div
       className={classes.wrapper}
       style={{
         backgroundImage: props.background ? props.background : "",
-        backgroundColor: props.backgroundColor ? props.backgroundColor : "",
       }}
     >
-      <ClearFix>
+      <ClearFix
+        style={{ backgroundColor: "rgb(255,255,255,0.7)", borderRadius: 10 }}
+      >
         <Row>
           <Col lg={6} sm={12} md={12} xs={12}>
             <div className={classes.imageWrapper}>
-              {props.headingblock ? (
-                <HeadingBlock style={{ marginBottom: 15 }} withBorder>
-                  <h2
-                    style={{
-                      textAlign: "left",
-                      fontFamily: "Nunito",
-                      color: props.colorFont ? props.colorFont : "#eee",
-                    }}
-                  >
-                    {props.headline}
-                  </h2>
-                  <span
-                    id="subtitle"
-                    style={{
-                      textAlign: "left",
-                    }}
-                  >
-                    {props.subheadline}
-                  </span>
-                </HeadingBlock>
-              ) : (
-                <div>
-                  <h2
-                    style={{
-                      textAlign: "left",
-                      fontFamily: "Nunito",
-                      color: props.colorFont ? props.colorFont : "#eee",
-                    }}
-                  >
-                    {props.headline}
-                  </h2>
-                  <span
-                    id="subtitle"
-                    style={{
-                      textAlign: "left",
-                    }}
-                  >
-                    {props.subheadline}
-                  </span>
-                </div>
-              )}
+              <div>
+                <h2
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Poppins",
+                    color: props.colorFont ? props.colorFont : "#000",
+                  }}
+                >
+                  {props.headline}
+                </h2>
+                <span
+                  id="subtitle"
+                  style={{
+                    textAlign: "left",
+                  }}
+                >
+                  {props.subheadline}
+                </span>
+              </div>
               <p
                 className={classes.paragraph}
                 style={{ color: props.colorFont ? props.colorFont : "#eee" }}

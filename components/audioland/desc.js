@@ -17,7 +17,7 @@ const useStyles = createUseStyles({
   fontCaption: {
     fontSize: "clamp(1rem, 4vw, 1.25rem)",
     fontWeight: 300,
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
     lineHeight: 1.8,
     marginBottom: "30px",
     display: "block",
@@ -31,7 +31,7 @@ const useStyles = createUseStyles({
     fontWeight: 700,
     fontSize: "clamp(1.2rem, 10vw, 1.875rem)",
     letterSpacing: "-2px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     textAlign: "center",
   },
   "@media (max-width : 999.98px)": {
@@ -44,7 +44,7 @@ const useStyles = createUseStyles({
     fontCaption: {
       // fontSize: '22px',
       // fontWeight: 300,
-      // fontFamily: 'Montserrat',
+      // fontFamily: 'Poppins',
       // lineHeight: 1.8,
       // marginBottom: '30px',
       // display: 'block',

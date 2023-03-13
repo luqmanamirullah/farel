@@ -36,6 +36,7 @@ export default function CenteredGrid() {
         description={detail.section2.description}
         colorFont={detail.section2.colorFont}
         background={detail.section2.background}
+        backgroundColor="rgb(0,0,0,0,.9)"
         headingblock="true"
       />
       {/* <Row style={{ margin: 0 }}>

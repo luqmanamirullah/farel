@@ -10,7 +10,7 @@ const useStyles = createUseStyles((theme) => ({
     backgroundColor: "#6d7893",
     borderTop: 0,
     position: "relative",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
   },
   container: {
     margin: "0 90px",
@@ -135,7 +135,7 @@ const Footer = (props) => {
           <div
             style={{
               color: "#fff",
-              fontFamily: "Nunito",
+              fontFamily: "Poppins",
               paddingTop: 20,
               textAlign: "center",
             }}
@@ -182,7 +182,7 @@ const Footer = (props) => {
           <div
             style={{
               color: "#fff",
-              fontFamily: "Nunito",
+              fontFamily: "Poppins",
             }}
           >
             Copyrights &copy; 2017 - 2021 All Rights Reserved by PT SVARA

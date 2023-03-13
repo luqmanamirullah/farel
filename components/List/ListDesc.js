@@ -96,7 +96,7 @@ const useStyles = createUseStyles({
     fontSize: 15,
     lineHeight: 1.8,
     textAlign: "left",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
     color: "black",
     width: "100%",
     maxWidth: 340,
@@ -137,7 +137,7 @@ export default function CenteredGrid(props) {
                   <h4
                     style={{
                       textAlign: "left",
-                      fontFamily: "Nunito",
+                      fontFamily: "Poppins",
                       color: "black",
                       margin: 0,
                       fontSize: "20px",
