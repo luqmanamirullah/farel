@@ -15,7 +15,7 @@ const useStyles = createUseStyles({
   fontCaption: {
     fontSize: "clamp(1rem, 6vw, 2.813rem)",
     fontWeight: 400,
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
     lineHeight: 1.8,
     marginBottom: "30px",
     display: "block",
@@ -27,7 +27,7 @@ const useStyles = createUseStyles({
     fontWeight: 700,
     fontSize: "clamp(2.5rem, 8vw, 4rem)",
     letterSpacing: "-2px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     textAlign: "center",
   },
   imageSize: {

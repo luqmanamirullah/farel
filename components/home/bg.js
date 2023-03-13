@@ -1,5 +1,13 @@
 import React from "react";
-import { Carousel, CarouselItem, Container } from "react-bootstrap";
+import {
+  Carousel,
+  CarouselItem,
+  Container,
+  Button,
+  Row,
+  Col,
+} from "react-bootstrap";
+import ReactAudioPlayer from "react-audio-player";
 import content from "../../contents/home.json";
 import { createUseStyles } from "react-jss";
 import { down } from "theme/breakpoints";
@@ -10,28 +18,36 @@ const useStyles = createUseStyles({
     backgroundImage: "url('bg.png')",
     backgroundRepeat: "center",
     backgroundSize: "cover",
-    height: 900,
+    height: 700,
   },
   divTitle: {
-    paddingTop: "280px",
-    paddingLeft: "152px",
+    marginTop: "90px",
+    paddingTop: 60,
+    paddingBottom: 46,
+    paddingLeft: 60,
+    backgroundColor: "rgb(255,255,255,.6)",
+    borderRadius: 30,
   },
   title: {
     // display: 'absolute'
-    color: "#ffff",
+    color: "#000000",
     fontSize: "48px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
+    fontWeight: 600,
   },
   tagline: {
-    color: "#fff",
+    color: "#000",
     fontSize: "36px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
+    fontWeight: 600,
   },
   desc: {
     paddingTop: "30px",
-    color: "#fff",
+    color: "#000",
     fontSize: "24px",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
+    fontWeight: 600,
+    paddingBottom: 16,
   },
   [down("MD")]: {
     divTitle: {
@@ -46,20 +62,52 @@ const useStyles = createUseStyles({
 
 const Slider = () => {
   const classes = useStyles();
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <section className={classes.body}>
       <ClearFix noBg>
         {/* <img /> */}
         <div className={classes.divTitle}>
-          <div className={classes.title}>{content.title}</div>
-          <div className={classes.tagline}>{content.headline}</div>
-          <div className={classes.desc}>
-            "{content.subheadline1}
-            <br />
-            {content.subheadline2}
-            <br />
-            {content.year}"
-          </div>
+          <Row className="justify-content-md-center">
+            <Col xs={12} md={8}>
+              <div className={classes.title}>{content.title}</div>
+              <div className={classes.tagline}>{content.headline}</div>
+              <div className={classes.desc}>"{content.subheadline1}"</div>
+              <Button
+                style={{
+                  backgroundColor: "#000",
+                  borderColor: "#000",
+                  justifyContent: "center",
+                  fontWeight: 600,
+                }}
+                onClick={() => openInNewTab("https://app.svara.id")}
+              >
+                Explore Web App{" "}
+                <i
+                  class="icon-long-arrow-alt-right"
+                  style={{ paddingLeft: 10 }}
+                />
+              </Button>
+              {/* <div style={{ marginTop: 73 }}>
+                <figure>
+                  <figcaption>Listen to the T-Rex:</figcaption>
+                  <audio
+                    controls
+                    src="https://svara-stream.radioddns.net:8443/rmi_studio"
+                  >
+                    <a href="/media/cc0-audio/t-rex-roar.mp3">Download audio</a>
+                  </audio>
+                </figure>
+              </div> */}
+            </Col>
+            <Col xs={12} md={4}>
+              {" "}
+              <img src="/asset-home.png" style={{ height: 375, width: 357 }} />
+            </Col>
+          </Row>
         </div>
       </ClearFix>
     </section>

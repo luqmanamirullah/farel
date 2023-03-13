@@ -46,9 +46,9 @@ export default [
     name: "Career",
     slug: "/career",
   },
-  {
-    name: "LOGIN",
-    slug: "app.svara.id",
-    isOpen: true,
-  },
+  // {
+  //   name: "LOGIN",
+  //   slug: "app.svara.id",
+  //   isOpen: true,
+  // },
 ];

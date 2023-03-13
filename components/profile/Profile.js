@@ -54,7 +54,7 @@ const useStyles = createUseStyles({
     fontSize: 15,
     lineHeight: 1.8,
     textAlign: "left",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
     color: "#6d7893",
   },
   svaraLogo: {
@@ -95,7 +95,7 @@ const SvaraProfile = () => {
                   style={{
                     textAlign: "left",
                     color: "#6d7893",
-                    fontFamily: "Nunito",
+                    fontFamily: "Poppins",
                   }}
                 >
                   {content.title}
@@ -104,7 +104,7 @@ const SvaraProfile = () => {
                   id="subtitle"
                   style={{
                     textAlign: "left",
-                    fontFamily: "Montserrat",
+                    fontFamily: "Poppins",
                     color: "#6d7893",
                   }}
                 >
@@ -130,7 +130,7 @@ const Visi = () => {
           color: "#fff",
           textAlign: "center",
           marginTop: 20,
-          fontFamily: "Nunito",
+          fontFamily: "Poppins",
         }}
       >
         <i>"{content.visi}"</i>

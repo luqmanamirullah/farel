@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
     letterSpacing: "1px",
     color: "#333",
     textAlign: "center",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     color: "#437096",
   },
   Card: {
@@ -35,14 +35,14 @@ const useStyles = createUseStyles({
     fontWeight: 700,
     width: 300,
     letterSpacing: "1px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     color: "#437096",
   },
   fontDesc: {
     lineHeight: 1.8,
     color: "#999",
     fontSize: "0.875rem",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
     color: "#437096",
   },
   iconFiturContainer: {

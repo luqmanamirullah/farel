@@ -15,7 +15,7 @@ const useStyles = createUseStyles({
     color: "#91b3c2",
     fontSize: 30,
     fontWeight: 700,
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     textAlign: "center",
     margin: "50px 0px 30px 0px",
   },
@@ -35,7 +35,7 @@ export default function CenteredGrid() {
   const matches900 = useMediaQuery("(min-width:960px)");
 
   return (
-    <div style={{ fontFamily: "Nunito" }}>
+    <div style={{ fontFamily: "Poppins" }}>
       <CardTitle
         img={detail.section1.image}
         title={detail.section1.title}

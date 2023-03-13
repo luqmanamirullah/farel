@@ -127,8 +127,8 @@ const Career = () => {
         <ContentWrap>
           <ClearFix>
             <HeadingBlock>
-              <h1 style={{ fontFamily: "Nunito" }}>Open Recrutiment</h1>
-              <span style={{ fontFamily: "Montserrat" }}>
+              <h1 style={{ fontFamily: "Poppins" }}>Open Recrutiment</h1>
+              <span style={{ fontFamily: "Poppins" }}>
                 Submit your CV and join with us!
               </span>
             </HeadingBlock>
@@ -364,8 +364,8 @@ const FeaturedBox = ({ title, subtitle, icon }) => {
         <div className={classes.boxIcon}>
           <a href=" #">{icon}</a>
         </div>
-        <h3 style={{ fontFamily: "Nunito" }}>{title}</h3>
-        <p style={{ fontFamily: "Montserrat" }}>{subtitle}</p>
+        <h3 style={{ fontFamily: "Poppins" }}>{title}</h3>
+        <p style={{ fontFamily: "Poppins" }}>{subtitle}</p>
       </div>
     </div>
   );

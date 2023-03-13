@@ -9,7 +9,7 @@ import ClearFix from "../container/ClearFix";
 
 const useStyles = createUseStyles({
   body: {
-    backgroundColor: "#C5C9D4",
+    backgroundColor: "#fff",
     width: "100%",
     height: 550,
   },
@@ -19,22 +19,22 @@ const useStyles = createUseStyles({
   },
   title: {
     // display: 'absolute'
-    color: "#ffff",
+    color: "#000",
     fontSize: "34px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
   },
   tagline: {
-    color: "#fff",
+    color: "#000",
     fontSize: "18px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     paddingTop: "52px",
     width: 450,
     textAlign: "justify",
   },
   desc: {
-    color: "#fff",
+    color: "#000",
     fontSize: "24px",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
   },
   productHighlight: {
     paddingTop: 100,

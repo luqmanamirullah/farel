@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
     // display: 'absolute'
     color: "#6D7893",
     fontSize: "34px",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     textAlign: "center",
     paddingBottom: "70px",
     fontWeight: "bold",
