@@ -185,7 +185,7 @@ const Footer = (props) => {
               fontFamily: "Poppins",
             }}
           >
-            Copyrights &copy; 2017 - 2021 All Rights Reserved by PT SVARA
+            Copyrights &copy; 2017 - 2023 All Rights Reserved by PT SVARA
             INOVASI INDONESIA.
           </div>
         </Col>
