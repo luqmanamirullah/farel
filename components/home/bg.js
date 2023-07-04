@@ -7,7 +7,7 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import ReactAudioPlayer from "react-audio-player";
+// import ReactAudioPlayer from "react-audio-player";
 import content from "../../contents/home.json";
 import { createUseStyles } from "react-jss";
 import { down } from "theme/breakpoints";
