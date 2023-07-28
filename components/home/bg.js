@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Carousel,
   CarouselItem,
@@ -12,6 +12,7 @@ import content from "../../contents/home.json";
 import { createUseStyles } from "react-jss";
 import { down } from "theme/breakpoints";
 import ClearFix from "../container/ClearFix";
+import { useAudioPlayer } from "react-use-audio-player";
 
 const useStyles = createUseStyles({
   body: {
@@ -66,6 +67,17 @@ const Slider = () => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
+  const player = useAudioPlayer();
+  useEffect(() => {
+    player.load(
+      "https://stream-node0.rri.co.id/streaming/19/9119/rripurwokertopro2.mp3",
+      {
+        html5: true,
+        format: "mp3",
+      }
+    );
+  }, []);
+
   return (
     <section className={classes.body}>
       <ClearFix noBg>
