@@ -1,0 +1,94 @@
+{
+  "listCareer": [
+    {
+      "title": "Infrastructure",
+      "image": "/career/infra.png",
+      "requirment": [
+        {
+          "title": "Experience with using Linux CLI"
+        },
+        {
+          "title": "Experience with Docker"
+        },
+        {
+          "title": "Experience with Network (Firewall, NAT, etc)"
+        },
+        {
+          "title": "Experience with Kubernetes"
+        },
+        {
+          "title": "Curiosity to explore creative solutions and try new things"
+        }
+      ]
+    },
+    {
+      "title": "Android Developer",
+      "image": "/career/android-dev.png",
+      "requirment": [
+        {
+          "title": "Experience in Java / Kotlin Programming"
+        },
+        {
+          "title": "Familiarity with OOP concepts"
+        },
+        {
+          "title": "Deep understanding of Android SDK"
+        },
+        {
+          "title": "Knowledge of web services, specifically REST APIs over JSON"
+        },
+        {
+          "title": "Ability to work collaboratively with highly creative designers who will push for innovation designs to be brought to life"
+        },
+        {
+          "title": "Passion in software engineering, aplication development, or system development"
+        }
+      ]
+    },
+    {
+      "title": "iOS Developer",
+      "image": "/career/ios-dev.png",
+      "requirment": [
+        {
+          "title": "1 - 2 years related experience"
+        },
+        {
+          "title": "Experience in iOS technology and programming language (React Native, Objective C, etc.)"
+        },
+        {
+          "title": "Experience with web services, specifically REST APIs over JSON"
+        },
+        {
+          "title": "Working knowledge of the general mobile landscape, architectures, trends, and emerging technology"
+        }
+      ]
+    },
+    {
+      "title": "Backend Developer",
+      "image": "/career/backend-dev.png",
+      "requirment": [
+        {
+          "title": "Have good understanding in algorithm and programming language"
+        },
+        {
+          "title": "Experience on system development and coding best-practice"
+        },
+        {
+          "title": "Proficiency with server side languages such as NodeJS, python, php, with development framework"
+        },
+        {
+          "title": "Knowledge of various database and storage technology like MongoDB, MySQL, Postgresql, Redis, etc."
+        },
+        {
+          "title": "Excellent understanding of software engineering concepts, design patterns, and algorithms"
+        },
+        {
+          "title": "Passion in software engineering, application development, or systems development"
+        },
+        {
+          "title": "Curiosity to explore creative solutions and try new things"
+        }
+      ]
+    }
+  ]
+}
