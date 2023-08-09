@@ -113,9 +113,12 @@ const Career = () => {
       subtitle: (
         <span>
           You may simply send us an Email at{" "}
-          <a href="mailto:info@svara.fm">info@svara.fm</a> or on our social
-          media at <a href="instagram.com/svara_official">svara_official</a> if
-          you need urgent support.
+          <a href="mailto:info@svarainnovation.co.id">
+            info@svarainnovation.co.id
+          </a>{" "}
+          or on our social media at{" "}
+          <a href="instagram.com/svara_official">svara_official</a> if you need
+          urgent support.
         </span>
       ),
       icon: <BigIcon iconClass="icon-email3" />,
@@ -171,7 +174,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -221,7 +227,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -276,7 +285,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -326,7 +338,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>

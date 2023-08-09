@@ -197,7 +197,7 @@ const Footer = (props) => {
             <br />
             (022) 82045711
             <br />
-            info@svara.fm
+            info@svarainnovation.co.id
           </p>
         </Col>
         <Col style={{ paddingTop: 20 }}>
