@@ -8,7 +8,7 @@ const CareerPage = () => {
   return (
     <div>
       <Head>
-        <title>Svara Career | Gudangnya Konten Indonesia</title>
+        <title>Svara Career | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"

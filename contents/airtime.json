@@ -1,61 +1,62 @@
 {
-	"section1": {
-		"image": "assets_undraw_ideas_flow_cy7b.svg",
-		"title": "AIRTIME ADS",
-		"desc": "Cara mudah beriklan pada airtime radio melalui SVARA",
-		"colorFont": "#91b3c2"
-	},
-	"section2": {
-		"headline": "PROMOSIKAN BRAND ANDA LEBIH LUAS",
-		"description": "Sampaikan pesan brand anda lebih luas dengan beriklan di radio. Tingkatkan frekuensi pesan yang dikomunikasikan sehingga terciptanya brand awareness terhadap produk dan iklan yang sedang di promosikan.",
-		"colorFont": "#fff",
-		"backgroundColor": "#91b3c2",
-		"image": "assets_undraw_online_ad_mg4t.svg"
-	},
-	"section3": {
-		"title": "KEUNTUNGAN BERIKLAN MELALUI SVARA",
-		"benefit": [
-			{
-				"icon": "icon-percent i-alt",
-				"deskripsi": "Dapatkan discount menarik dengan jaminan harga lebih kompetitif dibandingkan agensi manapun."
-			},
-			{
-				"icon": "icon-file-settings i-alt",
-				"deskripsi": "Produksi materi iklan diberikan secara cuma-cuma (FREE)."
-			},
-			{
-				"icon": "icon-line2-pointer i-alt",
-				"deskripsi": "SVARA sebagai Single Point of Contact (SPOC)."
-			},
-			{
-				"icon": "icon-chart-line i-alt",
-				"deskripsi": "Membantu radio untuk tetap dapat bertahan dan bahkan tumbuh di era Disruption"
-			},
-			{
-				"icon": "icon-line-cloud-upload i-alt",
-				"deskripsi": "Iklan dipasang secara online/streaming."
-			},
-			{
-				"icon": "icon-digital-tachograph i-alt",
-				"deskripsi": "Mendukung SVARA untuk mewujudkan visi dalam rangka melakukan Radio Digital Transformation."
-			},
-			{
-				"icon": "icon-handshake i-alt",
-				"deskripsi": "Membantu pelanggan bekerja sama langsung dengan masing-masing radio untuk promo selain melalui airtime, ex: talkshow dan event offair lainnya."
-			}
-		]
-	},
-	"section4": {
-		"desc": "SVARA telah bekerja sama dengan lebih dari 110 radio di Seluruh Indonesia dan memiliki lebih dari 25.000 airtime/bulan (1 airtime berarti 1 menit beriklan di radio secara on-air)"
-	},
-	"section5": [
-		{ "image": "/partner/airtime/indihome.jpg" },
-		{ "image": "/partner/airtime/bank-bjb.jpg" },
-		{ "image": "/partner/airtime/pos-indonesia.jpg" },
-		{ "image": "/partner/airtime/kfc.jpg" },
-		{ "image": "/partner/airtime/yoforia.jpg" },
-		{ "image": "/partner/airtime/bakti.jpg" },
-		{ "image": "/partner/airtime/pemprov-jateng.jpg" },
-		{ "image": "/partner/airtime/bkkbn.jpg" }
-	]
+  "section1": {
+    "image": "assets_undraw_ideas_flow_cy7b.svg",
+    "title": "AIRTIME ADS",
+    "desc": "Cara mudah beriklan pada airtime radio melalui SVARA",
+    "colorFont": "#225B76"
+  },
+  "section2": {
+    "headline": "PROMOSIKAN BRAND ANDA LEBIH LUAS",
+    "description": "Sampaikan pesan brand anda lebih luas dengan beriklan di radio. Tingkatkan frekuensi pesan yang dikomunikasikan sehingga terciptanya brand awareness terhadap produk dan iklan yang sedang di promosikan.",
+    "colorFont": "#fff",
+    "backgroundColor": "#225B76",
+    "image": "assets_undraw_online_ad_mg4t.svg"
+  },
+  "section3": {
+    "title": "KEUNTUNGAN BERIKLAN MELALUI SVARA",
+    "benefit": [
+      {
+        "icon": "icon-percent i-alt",
+        "deskripsi": "Dapatkan discount menarik dengan jaminan harga lebih kompetitif dibandingkan agensi manapun."
+      },
+      {
+        "icon": "icon-file-settings i-alt",
+        "deskripsi": "Produksi materi iklan diberikan secara cuma-cuma (FREE)."
+      },
+      {
+        "icon": "icon-line2-pointer i-alt",
+        "deskripsi": "SVARA sebagai Single Point of Contact (SPOC)."
+      },
+      {
+        "icon": "icon-chart-line i-alt",
+        "deskripsi": "Membantu radio untuk tetap dapat bertahan dan bahkan tumbuh di era Disruption"
+      },
+      {
+        "icon": "icon-line-cloud-upload i-alt",
+        "deskripsi": "Iklan dipasang secara online/streaming."
+      },
+      {
+        "icon": "icon-digital-tachograph i-alt",
+        "deskripsi": "Mendukung SVARA untuk mewujudkan visi dalam rangka melakukan Radio Digital Transformation."
+      },
+      {
+        "icon": "icon-handshake i-alt",
+        "deskripsi": "Membantu pelanggan bekerja sama langsung dengan masing-masing radio untuk promo selain melalui airtime, ex: talkshow dan event offair lainnya."
+      }
+    ]
+  },
+  "section4": {
+    "desc": "SVARA telah bekerja sama dengan lebih dari 110 radio di Seluruh Indonesia dan memiliki lebih dari 25.000 airtime/bulan (1 airtime berarti 1 menit beriklan di radio secara on-air)"
+  },
+  "section5": [
+    { "image": "/partner/airtime/indihome.jpg" },
+    { "image": "/partner/airtime/bank-bjb.jpg" },
+    { "image": "/partner/airtime/pos-indonesia.jpg" },
+    { "image": "/partner/airtime/kfc.jpg" },
+    { "image": "/partner/airtime/yoforia.jpg" },
+    { "image": "/partner/airtime/bakti.jpg" },
+    { "image": "/partner/airtime/pemprov-jateng.jpg" },
+    { "image": "/partner/airtime/bkkbn.jpg" },
+    { "image": "/partner/airtime/touch-me.jpg" }
+  ]
 }

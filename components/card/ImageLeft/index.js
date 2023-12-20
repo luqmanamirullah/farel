@@ -34,11 +34,7 @@ const useStyles = createUseStyles({
   },
   imageWrapper: {
     boxSizing: "border-box",
-    marginTop: "80px !important",
-    marginBottom: "0 !important",
-    display: "block",
-    position: "relative",
-    paddingRight: "4%",
+    marginTop: "30px !important",
   },
   image: {
     color: "#555",
@@ -54,7 +50,7 @@ const useStyles = createUseStyles({
     fontSize: 15,
     lineHeight: 1.8,
     textAlign: "left",
-    fontFamily: "Montserrat",
+    fontFamily: "Poppins",
   },
   svaraLogo: {
     textAlign: "center !important",
@@ -67,67 +63,45 @@ const useStyles = createUseStyles({
 
 export default function CenteredGrid(props) {
   const classes = useStyles();
-
   return (
     <div
       className={classes.wrapper}
       style={{
         backgroundImage: props.background ? props.background : "",
-        backgroundColor: props.backgroundColor ? props.backgroundColor : "",
       }}
     >
-      <ClearFix style={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
-        <Row style={{ marginRight: "-4%" }}>
+      <ClearFix
+        style={{ backgroundColor: "rgb(255,255,255,0.7)", borderRadius: 10 }}
+      >
+        <Row>
           <Col lg={6} sm={12} md={12} xs={12}>
             <div className={classes.imageWrapper}>
-              {props.headingblock ? (
-                <HeadingBlock style={{ marginBottom: 15 }} withBorder>
-                  <h2
-                    style={{
-                      textAlign: "left",
-                      fontFamily: "Nunito",
-                      color: props.colorFont ? props.colorFont : "#eee",
-                    }}
-                  >
-                    {props.headline}
-                  </h2>
-                  <span
-                    id="subtitle"
-                    style={{
-                      textAlign: "left",
-                    }}
-                  >
-                    {props.subheadline}
-                  </span>
-                </HeadingBlock>
-              ) : (
-                <div>
-                  <h2
-                    style={{
-                      textAlign: "left",
-                      fontFamily: "Nunito",
-                      color: props.colorFont ? props.colorFont : "#eee",
-                    }}
-                  >
-                    {props.headline}
-                  </h2>
-                  <span
-                    id="subtitle"
-                    style={{
-                      textAlign: "left",
-                    }}
-                  >
-                    {props.subheadline}
-                  </span>
-                </div>
-              )}
+              <div>
+                <h2
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Poppins",
+                    color: props.colorFont ? props.colorFont : "#000",
+                  }}
+                >
+                  {props.headline}
+                </h2>
+                <span
+                  id="subtitle"
+                  style={{
+                    textAlign: "left",
+                  }}
+                >
+                  {props.subheadline}
+                </span>
+              </div>
               <p
                 className={classes.paragraph}
                 style={{ color: props.colorFont ? props.colorFont : "#eee" }}
               >
                 {props.description}
               </p>
-              {props.button ? (
+              {props.button && (
                 <a
                   href="https://docs.google.com/spreadsheets/d/1W3wCxPHMtfLDYe6A9loaf2KJ8ecaZ-3p/edit?usp=sharing&ouid=105830318049801332349&rtpof=true&sd=true"
                   target="_blank"
@@ -137,14 +111,12 @@ export default function CenteredGrid(props) {
                     Show More Info
                   </Button>
                 </a>
-              ) : (
-                ""
               )}
             </div>
           </Col>
-          <Col lg={6} sm={6} xs={12}>
+          <Col lg={6} xs={12}>
             <div className={classes.imageWrapper}>
-              {props.img ? <img src={props.img} alt="Image" /> : null}
+              {props.img && <img src={props.img} alt="Image" />}
             </div>
           </Col>
         </Row>

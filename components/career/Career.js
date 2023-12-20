@@ -113,9 +113,12 @@ const Career = () => {
       subtitle: (
         <span>
           You may simply send us an Email at{" "}
-          <a href="mailto:info@svara.fm">info@svara.fm</a> or on our social
-          media at <a href="instagram.com/svara_official">svara_official</a> if
-          you need urgent support.
+          <a href="mailto:info@svarainnovation.co.id">
+            info@svarainnovation.co.id
+          </a>{" "}
+          or on our social media at{" "}
+          <a href="instagram.com/svara_official">svara_official</a> if you need
+          urgent support.
         </span>
       ),
       icon: <BigIcon iconClass="icon-email3" />,
@@ -127,8 +130,8 @@ const Career = () => {
         <ContentWrap>
           <ClearFix>
             <HeadingBlock>
-              <h1 style={{ fontFamily: "Nunito" }}>Open Recrutiment</h1>
-              <span style={{ fontFamily: "Montserrat" }}>
+              <h1 style={{ fontFamily: "Poppins" }}>Open Recrutiment</h1>
+              <span style={{ fontFamily: "Poppins" }}>
                 Submit your CV and join with us!
               </span>
             </HeadingBlock>
@@ -145,8 +148,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow(true))}
                 >
@@ -171,7 +174,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -195,8 +201,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow1(true))}
                 >
@@ -221,7 +227,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -250,8 +259,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow2(true))}
                 >
@@ -276,7 +285,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -300,8 +312,8 @@ const Career = () => {
                   style={{
                     marginTop: 10,
                     width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
+                    backgroundColor: "#225B76",
+                    borderColor: "#225B76",
                   }}
                   onClick={() => handleShow(setShow3(true))}
                 >
@@ -326,7 +338,10 @@ const Career = () => {
                           })}
                         </div>
                         <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
+                          <b>
+                            Send your CV and Portfolio to
+                            info@svarainnovation.co.id
+                          </b>
                         </div>
                       </Col>
                     </Row>
@@ -335,61 +350,6 @@ const Career = () => {
                     <Button
                       variant="secondary"
                       onClick={() => handleClose(setShow3(false))}
-                    >
-                      Close
-                    </Button>
-                  </Modal.Footer>
-                </Modal>
-              </Col>
-            </Row>
-            <Row
-              className={`justify-content-md-center ${classes.imageRow}`}
-              style={{ marginBottom: 40 }}
-            >
-              <Col style={{ marginTop: 20 }} md={4} sm={6} xs={12}>
-                <img
-                  src={content.listCareer[4].image}
-                  style={{ width: "100%" }}
-                />
-                <Button
-                  style={{
-                    marginTop: 10,
-                    width: "100%",
-                    backgroundColor: "#968c59",
-                    borderColor: "#968c59",
-                  }}
-                  onClick={() => handleShow(setShow4(true))}
-                >
-                  Show More Info
-                </Button>
-                <Modal
-                  show={show4}
-                  onHide={() => handleClose(setShow4(false))}
-                  backdrop="static"
-                  keyboard={false}
-                >
-                  <Modal.Header closeButton>
-                    <Modal.Title>{content.listCareer[4].title}</Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <Row>
-                      <Col>
-                        <h1>Requirement</h1>
-                        <div>
-                          {content.listCareer[4].requirment.map((list) => {
-                            return <li>{list.title}</li>;
-                          })}
-                        </div>
-                        <div style={{ marginTop: 5, color: "#ac5f41" }}>
-                          <b>Send your CV and Portfolio to info@svara.fm</b>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button
-                      variant="secondary"
-                      onClick={() => handleClose(setShow4(false))}
                     >
                       Close
                     </Button>
@@ -419,8 +379,8 @@ const FeaturedBox = ({ title, subtitle, icon }) => {
         <div className={classes.boxIcon}>
           <a href=" #">{icon}</a>
         </div>
-        <h3 style={{ fontFamily: "Nunito" }}>{title}</h3>
-        <p style={{ fontFamily: "Montserrat" }}>{subtitle}</p>
+        <h3 style={{ fontFamily: "Poppins" }}>{title}</h3>
+        <p style={{ fontFamily: "Poppins" }}>{subtitle}</p>
       </div>
     </div>
   );

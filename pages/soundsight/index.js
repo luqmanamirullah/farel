@@ -9,7 +9,7 @@ const AudiolandPage = () => {
   return (
     <div>
       <Head>
-        <title>Svara Soundsight | Gudangnya Konten Indonesia</title>
+        <title>Svara Soundsight | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"
@@ -18,7 +18,7 @@ const AudiolandPage = () => {
           href="https://svara.id/logo/logo-gram%20only/soundsight.png"
         />
       </Head>
-      <BasicLayout colorMenu="#7FA882" logo="assets_soundsight.png">
+      <BasicLayout colorMenu="#225B76" logo="assets_soundsight.png">
         <DefaultSeo
           openGraph={{
             type: "website",

@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React, { useEffect, useState } from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { down } from "theme/breakpoints";
 
@@ -11,8 +10,7 @@ const useStyles = createUseStyles((theme) => ({
     backgroundColor: "#6d7893",
     borderTop: 0,
     position: "relative",
-    fontFamily: "Nunito",
-    textAlign: "center",
+    fontFamily: "Poppins",
   },
   container: {
     margin: "0 90px",
@@ -96,15 +94,15 @@ const Footer = (props) => {
     <footer
       className={classes.footer}
       style={{
-        backgroundColor: props.colorMenu ? props.colorMenu : "#6d7893",
+        backgroundColor: "#225B76",
         borderTop: 0,
       }}
     >
-      <div className={classes.container}></div>
+      {/* <div className={classes.container}></div>
       <div style={{ color: "#fff" }}>
         <a
           href="https://facebook.com/svaraofficial"
-          style={{ color: "white", border: 0, fontSize: 30 }}
+          style={{ color: "white", border: 0,20
         >
           <i class="icon-facebook"></i>
         </a>
@@ -125,7 +123,7 @@ const Footer = (props) => {
         <strong>Address</strong>
       </div>
       <p style={{ color: "#fff", marginTop: 20, fontSize: 15 }}>
-        Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi Bandung 40162
+        Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung 40162
         <br />
         (022) 82045711
         <br />
@@ -137,7 +135,7 @@ const Footer = (props) => {
           <div
             style={{
               color: "#fff",
-              fontFamily: "Nunito",
+              fontFamily: "Poppins",
               paddingTop: 20,
               textAlign: "center",
             }}
@@ -146,7 +144,103 @@ const Footer = (props) => {
             INOVASI INDONESIA.
           </div>
         </div>
-      </div>
+      </div> */}
+      <Row
+        style={{ margin: 0, paddingLeft: 43 }}
+        className={"justify-content-md-left"}
+        spacing={{ xs: 3, md: 2 }}
+      >
+        <Col>
+          <a
+            href="https://facebook.com/svaraofficial"
+            style={{ color: "white", border: 0, fontSize: 20 }}
+          >
+            <i class="icon-facebook"></i>
+          </a>
+          <a
+            href="https://twitter.com/svara_official"
+            style={{
+              color: "white",
+              border: 0,
+              fontSize: 20,
+              marginLeft: 15,
+            }}
+          >
+            <i class="icon-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com/svara_official"
+            style={{
+              color: "white",
+              border: 0,
+              fontSize: 20,
+              marginLeft: 15,
+            }}
+          >
+            <i class="icon-instagram"></i>
+          </a>
+          <div
+            style={{
+              color: "#fff",
+              fontFamily: "Poppins",
+            }}
+          >
+            Copyrights &copy; 2017 - 2023 All Rights Reserved by PT SVARA
+            INOVASI INDONESIA.
+          </div>
+        </Col>
+        <Col>
+          <p style={{ color: "#fff", fontSize: 15 }}>
+            <b>Alamat</b>
+            <br />
+            Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung 40162
+            <br />
+            (022) 82045711
+            <br />
+            info@svarainnovation.co.id
+          </p>
+        </Col>
+        <Col style={{ paddingTop: 20 }}>
+          <a
+            href="https://legal.svara.id/privacy-policy/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            style={{
+              color: "white",
+              border: 0,
+              fontSize: 15,
+              marginLeft: 15,
+              marginRight: 15,
+            }}
+          >
+            Privacy Policy
+          </a>
+          <span style={{ color: "white" }}>&#124;</span>
+          <a
+            href="https://legal.svara.id/terms-of-services/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            style={{
+              color: "white",
+              border: 0,
+              fontSize: 15,
+              marginLeft: 15,
+              marginRight: 15,
+            }}
+          >
+            Term of Service
+          </a>
+          <span style={{ color: "white" }}>&#124;</span>
+          <a
+            href="https://legal.svara.id/community-guidelines/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
+            style={{
+              color: "white",
+              border: 0,
+              fontSize: 15,
+              marginLeft: 15,
+              marginRight: 15,
+            }}
+          >
+            Community Guide
+          </a>
+        </Col>
+      </Row>
     </footer>
   );
 };

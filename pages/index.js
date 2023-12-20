@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div>
       <Head>
-        <title>Svara | Gudangnya Konten Indonesia</title>
+        <title>Svara | Rumahnya Konten Indonesia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="shortcut icon"
@@ -17,6 +17,11 @@ export default function HomePage() {
           sizes="32x32"
           href="https://svara.id/logo/logo-gram%20only/logo.png"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7947634504633481"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <BasicLayout>
         <DefaultSeo

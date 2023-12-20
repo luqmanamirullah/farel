@@ -1,23 +1,23 @@
 {
   "listCareer": [
     {
-      "title": "PHP Fullstack",
-      "image": "/career/php-fullstack.png",
+      "title": "Infrastructure",
+      "image": "/career/infra.png",
       "requirment": [
         {
-          "title": "Experience in PHP"
+          "title": "Experience with using Linux CLI"
         },
         {
-          "title": "Experience with Code Igniter"
+          "title": "Experience with Docker"
         },
         {
-          "title": "Have a good understanding in Laravel is a point plus"
+          "title": "Experience with Network (Firewall, NAT, etc)"
         },
         {
-          "title": "Knowledge MySQL Database"
+          "title": "Experience with Kubernetes"
         },
         {
-          "title": "Ability to work under pressure"
+          "title": "Curiosity to explore creative solutions and try new things"
         }
       ]
     },
@@ -60,30 +60,6 @@
         },
         {
           "title": "Working knowledge of the general mobile landscape, architectures, trends, and emerging technology"
-        }
-      ]
-    },
-    {
-      "title": "Frontend Developer",
-      "image": "/career/frontend-dev.png",
-      "requirment": [
-        {
-          "title": "Have good understanding in algorithm and programming language"
-        },
-        {
-          "title": "Experience on system development and coding best-practice"
-        },
-        {
-          "title": "Proficiency in with web application programming (HTML, CSS, Javascript) with framework like ReactJS, VueJS, Bootstrap"
-        },
-        {
-          "title": "Excellent understanding of software engineering concepts, design patterns, and algorithms"
-        },
-        {
-          "title": "Passion in software engineering, application development, or systems development"
-        },
-        {
-          "title": "Curiosity to explore creative solutions and try new things"
         }
       ]
     },
