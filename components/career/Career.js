@@ -130,11 +130,9 @@ const Career = () => {
         <ContentWrap>
           <ClearFix>
             <HeadingBlock>
-              <h1 style={{ fontFamily: "Poppins" }}>Lowongan</h1>
-              <hr/>
+              <h1 style={{ fontFamily: "Poppins" }}>Open Recrutiment</h1>
               <span style={{ fontFamily: "Poppins" }}>
-                Kami membuka kesempatan yang sama, baik untuk para talenta muda dan juga untuk para profesional. 
-                Pilih kategori yang sesuai dengan pengalaman kerjamu!
+                Submit your CV and join with us!
               </span>
             </HeadingBlock>
             <Row
