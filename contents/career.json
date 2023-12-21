@@ -2,7 +2,7 @@
   "listCareer": [
     {
       "title": "Infrastructure",
-      "image": "/career/infra.png",
+      "image": "/career/Infrastructure.png",
       "requirment": [
         {
           "title": "Experience with using Linux CLI"
@@ -22,41 +22,35 @@
       ]
     },
     {
-      "title": "Android Developer",
-      "image": "/career/android-dev.png",
+      "title": "FrontEnd Developer",
+      "image": "/career/FrontEnd-Developer.png",
       "requirment": [
         {
-          "title": "Experience in Java / Kotlin Programming"
+          "title": "Familiar with HTML, JavaScript/TypeScript, and CSS"
         },
         {
-          "title": "Familiarity with OOP concepts"
+          "title": "Familiar with React.js, Next.js, or similar frameworks"
         },
         {
-          "title": "Deep understanding of Android SDK"
+          "title": "Familiar integrating JSON data sources and APIs"
         },
         {
-          "title": "Knowledge of web services, specifically REST APIs over JSON"
+          "title": "Familiar with version controls system such as Git & Github"
         },
         {
-          "title": "Ability to work collaboratively with highly creative designers who will push for innovation designs to be brought to life"
-        },
-        {
-          "title": "Passion in software engineering, aplication development, or system development"
+          "title": "Curiosity to explore creative solutions and try new things"
         }
       ]
     },
     {
       "title": "iOS Developer",
-      "image": "/career/ios-dev.png",
+      "image": "/career/iOS Developer.png",
       "requirment": [
         {
-          "title": "1 - 2 years related experience"
+          "title": "Interested in iOS technology and programming language (React Native, Objective C, etc.)"
         },
         {
-          "title": "Experience in iOS technology and programming language (React Native, Objective C, etc.)"
-        },
-        {
-          "title": "Experience with web services, specifically REST APIs over JSON"
+          "title": "Familiar with web services, specifically REST APIs over JSON"
         },
         {
           "title": "Working knowledge of the general mobile landscape, architectures, trends, and emerging technology"
@@ -65,19 +59,19 @@
     },
     {
       "title": "Backend Developer",
-      "image": "/career/backend-dev.png",
+      "image": "/career/BackEnd-Developer.png",
       "requirment": [
         {
           "title": "Have good understanding in algorithm and programming language"
         },
         {
-          "title": "Experience on system development and coding best-practice"
+          "title": "Interested in system development and coding best-practice"
         },
         {
-          "title": "Proficiency with server side languages such as NodeJS, python, php, with development framework"
+          "title": "Proficiency in server side programming such as NodeJS, python, php, with development framework"
         },
         {
-          "title": "Knowledge of various database and storage technology like MongoDB, MySQL, Postgresql, Redis, etc."
+          "title": "Knowledge of various database and storage technology like MongoDB, MySQL, Postgresql, Redis, NodeJS, Typescript, etc."
         },
         {
           "title": "Excellent understanding of software engineering concepts, design patterns, and algorithms"
