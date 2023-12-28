@@ -16,14 +16,14 @@ const useStyles = createUseStyles((theme) => ({
 	logo: {
 		boxSizing: 'border-box',
 		position: 'relative',
-		float: 'left',
+		float: 'right',
 		fontSize: 36,
 		lineHeight: '100%',
-		paddingRight: 30,
-		marginRight: 30,
+		paddingRight: 10,
+		marginRight: 10,
 		opacity: 1,
-		marginTop: 25,
-		height: '50%',
+		marginTop: 20,
+		height: '60%',
 		transition: 'height .4s ease, margin .4s ease, opacity .2s .2s ease'
 	},
 	imageLogo: {
@@ -32,7 +32,7 @@ const useStyles = createUseStyles((theme) => ({
 	'@media (max-width: 991.98px)': {
 		logo: {
 			display: 'block',
-			height: 100,
+			height: "60%",
 			// width: '50px',
 			float: 'none',
 			margin: '0 auto 0',
@@ -50,7 +50,7 @@ const useStyles = createUseStyles((theme) => ({
 	},
 	[down('MD')]: {
 		imageLogo: {
-			height: '50% !important'
+			height: '60% !important'
 		},
 		link: {
 			display: 'flex',
@@ -75,8 +75,8 @@ const Logo = ({ isSticky, logo, transparant, whiteLogo }) => {
 						alt="Svara Logo"
 						className={classes.imageLogo}
 						style={{
-							padding: !isSticky ? 8 : '0px 10px 30px 10px',
-							height: isSticky ? 50 : '100%'
+							padding: !isSticky ? 8 : '0px 10px 60px 10px',
+							height: isSticky ? '100px' : '100%'
 						}}
 					></img>
 				</a>

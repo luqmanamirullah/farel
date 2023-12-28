@@ -4,7 +4,7 @@ export default [
     slug: "/",
   },
   {
-    name: "Product",
+    name: "Product \u25BE",
     slug: "#",
     childrens: [
       {
@@ -39,12 +39,12 @@ export default [
     slug: "/blog",
   },
   {
-    name: "About",
-    slug: "/profile",
-  },
-  {
     name: "Career",
     slug: "/career",
+  },
+  {
+    name: "About Us",
+    slug: "/profile",
   },
   // {
   //   name: "LOGIN",

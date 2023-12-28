@@ -26,16 +26,16 @@ const useStyles = createUseStyles({
 		textDecoration: 'none !important',
 		display: 'block',
 		lineHeight: '22px',
-		fontWeight: 'bold',
-		fontSize: 13,
+		fontSize: 15,
 		letterSpacing: 1,
 		textTransform: 'uppercase',
-		fontFamily: 'Raleway',
 		transition: 'margin .4s ease, padding .4s ease',
 		padding: '14px 5px !important',
 		border: 'none !important',
 		margin: '0 !important',
-		color: '#6d7893 !important'
+		color: "#000 !important",
+		fontFamily: "sans-serif",
+		
 	},
 	linkDiv: {
 		listStyle: 'none',
@@ -67,7 +67,7 @@ const useStyles = createUseStyles({
 		top: 0,
 		paddingLeft: 15,
 		borderTopColor: '#EEE !important',
-		display: 'none'
+		display: 'none',
 	},
 	childList: {
 		padding: 0,

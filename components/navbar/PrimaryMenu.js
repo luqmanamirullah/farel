@@ -7,9 +7,10 @@ import { useMemo } from 'react';
 const useStyles = createUseStyles((theme) => ({
 	base: {
 		display: 'block',
-		float: 'right'
+		float: 'left',
 	},
 	menuList: {
+		color: '#fff',
 		padding: 0,
 		listStyle: 'none',
 		margin: 0,
