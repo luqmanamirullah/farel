@@ -36,14 +36,14 @@ const useStyles = createUseStyles({
       fontWeight: 300,
       color: "#777",
     },
-    "&#withBorder span:after": {
+    /*"&#withBorder span:after": {
       content: "''",
       display: "block",
       marginTop: 30,
       width: 40,
       borderTop: "2px solid #444",
       boxSizing: "border-box",
-    },
+    },*/
   },
 });
 const HeadingBlock = ({ children, className, style, withBorder }) => {

@@ -18,7 +18,7 @@ const menuStyles = createUseStyles({
   link: {
     textDecoration: "none",
     display: "block",
-    padding: "35px 25px",
+    padding: "25px 25px",
     transition: "margin .4s ease, padding .4s ease",
     color: "#000",
   },
@@ -38,9 +38,10 @@ const menuStyles = createUseStyles({
     "&:hover": {
       fontFamily: "'arial black'",
       fontWeight: "bold",
-      textDecoration: "none", /* Remove default underline on hover */
+      textDecoration: "none" /* Remove default underline on hover */,
+      transition: "margin .4s ease, padding .4s ease",
       paddingBottom: "15px",
-      borderBottom: "3px solid #000", /* Add a 2px solid underline on hover */
+      borderBottom: "3px solid #000" /* Add a 2px solid underline on hover */,
     },
   },
   dropdownBox: {
@@ -103,16 +104,17 @@ export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
       {!menu.isOpen ? (
         <Link href={menu.slug} as={menu.as} passHref>
           <a
-            className={clsx(classes.link, isSticky ? classes.stickyLink : null)}
-          >
+            className={clsx(
+              classes.link,
+              isSticky ? classes.stickyLink : null
+            )}>
             <div
               className={classes.textMenu}
               style={
                 transparant && !isSticky
                   ? { color: "#fff" }
                   : { color: "#225B76" }
-              }
-            >
+              }>
               {menu.name}
             </div>
           </a>
@@ -122,16 +124,17 @@ export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className={clsx(classes.link, isSticky ? classes.stickyLink : null)}
-          >
+            className={clsx(
+              classes.link,
+              isSticky ? classes.stickyLink : null
+            )}>
             <div
               className={classes.textMenu}
               style={
                 transparant && !isSticky
                   ? { color: "#fff" }
                   : { color: "#225B76" }
-              }
-            >
+              }>
               {menu.name}
             </div>
           </a>
@@ -157,8 +160,7 @@ export const DropdownMenu = React.memo(
                 <li key={child.name} className={classes.childLink}>
                   <div
                     className={classes.childDiv}
-                    style={{ color: "#225B76" }}
-                  >
+                    style={{ color: "#225B76" }}>
                     {child.name}
                   </div>
                 </li>
