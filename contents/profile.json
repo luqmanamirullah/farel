@@ -1,8 +1,10 @@
 {
   "title": "Svara",
+  "image": "/About Us/Svara.png",
+  "span": "/About Us/Gelombang.png",
   "headline": "PT SVARA INOVASI INDONESIA merupakan Start-Up yang bergerak di bidang penyediaan Broadcasting Platform. SVARA Berdiri pada tanggal 9 September 2017.",
   "subheadline": "SVARA merupakan sebuah Startup yang didirikan sejak September 2017, namun penelitian kami terkait industri landscape dan pengembangan teknologi telah dimulai sejak 2002 oleh founder kami yaitu Bapak Hemat Dwi Nuryanto. SVARA memiliki visi yaitu Become World Leading Media & Broadcasting Platform, & Unicorn Startup in 2025.",
-  "logo": "assets_SVARA_LOGO_ID_WHITE.png",
+  "logo": "/About Us/logo.png",
   "visi": "Become World Leading Media & Broadcasting Platform, and Unicorn Startup in 2025",
   "team": [
     {

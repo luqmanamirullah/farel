@@ -28,17 +28,16 @@ const useStyles = createUseStyles({
     marginBottom: "0",
     position: "relative",
     textAlign: "center",
-    margin: "60px 0",
-    padding: "60px 0",
+    margin: "30px 0",
+    padding: "30px 0",
     overflow: "hidden",
   },
   imageWrapper: {
     boxSizing: "border-box",
-    marginTop: "80px !important",
+    marginTop: "10px !important",
     marginBottom: "0 !important",
     display: "block",
     position: "relative",
-    paddingRight: "4%",
   },
   image: {
     color: "#555",
@@ -46,16 +45,17 @@ const useStyles = createUseStyles({
     boxSizing: "border-box",
     verticalAlign: "middle",
     borderStyle: "none",
-    maxWidth: "100%",
   },
   paragraph: {
     marginTop: 0,
     marginBottom: 30,
-    fontSize: 15,
-    lineHeight: 1.8,
+    paddingTop: 35,
+    fontSize: 20,
+    lineHeight: "27.28px",
     textAlign: "left",
-    fontFamily: "Poppins",
-    color: "#6d7893",
+    fontWeight: 300,
+    fontFamily: "nunito",
+    color: "#377998",
   },
   svaraLogo: {
     textAlign: "center !important",
@@ -71,7 +71,7 @@ const Profile = () => {
   return (
     <section id="section">
       <SvaraProfile />
-      <Visi />
+      {/*<Visi />}
       {/* <TeamProfile /> */}
     </section>
   );
@@ -82,37 +82,143 @@ const SvaraProfile = () => {
   return (
     <div className={classes.wrapper}>
       <ClearFix>
-        <Row style={{ marginRight: "-4%" }}>
+        <Row style={{ marginRight: "0%" }}>
           <Col lg={6} sm={6} xs={12}>
             <div className={classes.imageWrapper}>
-              <img src="all-team.jpg" alt="Image" />
+              <img src="all-team.jpg" alt="Image" style={{ padding: "0px 25px" }} />
             </div>
           </Col>
           <Col lg={6} sm={6} xs={12}>
             <div className={classes.imageWrapper}>
               <HeadingBlock style={{ marginBottom: 15 }} withBorder>
-                <h2
+              <img
+                  src={content.image}
                   style={{
-                    textAlign: "left",
-                    color: "#6d7893",
-                    fontFamily: "Poppins",
+                  position: "absolute",
+                  left: 1,
+                  width: "425px",
+                  height: "85px",
                   }}
-                >
-                  {content.title}
-                </h2>
-                <span
+              />
+              <span
                   id="subtitle"
                   style={{
                     textAlign: "left",
                     fontFamily: "Poppins",
-                    color: "#6d7893",
+                    color: "#377998",
+                    fontWeight: 700,
+                    fontSize: "20px",
+                    lineHeight: "30px",
+                    paddingTop: "105px"
                   }}
-                >
+              >
                   {content.headline}
-                </span>
+              </span>
+              <img
+                  src={content.span}
+                  style={{
+                    marginTop: 5,
+                    position: "absolute",
+                    left: 1
+                  }}
+              />
               </HeadingBlock>
               <p className={classes.paragraph}>{content.subheadline}</p>
             </div>
+          </Col>
+        </Row>
+        <Row style={{ marginTop: "25px" }}>
+          <Col lg={6} sm={6} xs={12} style={{padding: "0px 45px"}}>
+            <div className={classes.Wrapper}
+            style={{ 
+              marginTop: "auto",
+              marginBottom: "auto",
+              backgroundColor: "#fff", 
+              border: "2px solid #f0f0f0", 
+              borderRadius: "15px",
+            }}>
+              <div>
+                <p style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontWeight: "bolder",
+                fontSize: "25px",
+                lineHeight: "30px",
+              }}>Alamat</p>
+                <p style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontSize: "20px",
+                lineHeight: "30px",
+              }}>Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung
+               40162(022) 82045711</p>
+                <h3 style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontWeight: "bolder",
+                fontSize: "25px",
+                lineHeight: "30px",
+              }}>Gmail</h3>
+                <p style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontSize: "20px",
+                lineHeight: "30px",
+              }}>info@svarainnovation.co.id</p>
+                <h3 style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontWeight: "bolder",
+                fontSize: "25px",
+                lineHeight: "30px",
+              }}>Number</h3>
+                <p style={{
+                marginBottom: "5px !important",
+                fontFamily: "Poppins",
+                color: "#377998",
+                fontSize: "20px",
+                lineHeight: "30px",
+              }}>+62 811 2346 207</p>
+              </div>
+              <div style={{marginBottom: "15px"}}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.070988040667!2d107.59251760056485!3d-6.882099603553707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d9ea7dc573%3A0xc2d70083714d38b9!2sPT%20Svara%20Inovasi%20Indonesia!5e0!3m2!1sen!2sid!4v1704190135836!5m2!1sen!2sid" 
+                width="550" height="250" allowfullscreen="" style={{
+                  border: "2px solid #f0f0f0", 
+                  borderRadius: "15px",
+                  boxShadow: "inset 0px 2px 5px rgba(0, 0, 0, 0.5)", }} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </Col>
+          <Col lg={6} sm={6} xs={12}>
+          <div className={classes.wrapper} 
+          style={{ 
+              width: "600px",
+              height: "350px",
+              paddingTop: "0px !important",
+              paddingBottom: "0px !important",
+              marginTop: "75px",
+              backgroundColor: "#fff",  
+              borderRadius: "50px",
+              boxShadow: "3px 5px 10px rgba(0, 0, 0, 0.5)", 
+            }}>
+          <img src={content.logo} alt="" style={{ height: 125, padding: 15 }}></img>
+          <h3
+            style={{
+              color: "#377998",
+              textAlign: "center",
+              marginTop: 20,
+              fontFamily: "arial",
+              fontSize: "30px"
+            }}
+          >
+            <i>"{content.visi}"</i>
+          </h3>
+          </div>
           </Col>
         </Row>
       </ClearFix>
