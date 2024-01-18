@@ -11,7 +11,7 @@ const useStyles = createUseStyles({
     textAlign: "left",
     fontSize: "0.875rem",
     lineHeight: 1.5,
-    color: "#555",
+    color: "#000",
     fontFamily: "'Lato',sans-serif",
     boxSizing: "border-box",
     display: "block",
