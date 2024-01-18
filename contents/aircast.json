@@ -1,63 +1,75 @@
 {
   "image": "opening.png",
   "headline": "SVARA AIRCAST",
+  "logo": "SvaraAircast.png",
   "description": "Sebuah platform berupa Radio Automation atau Software as a Service (SaaS) untuk membantu industri radio dalam menjalankan proses bisnis radionya secara end-to-end agar lebih efektif dan efisien. Svara On-Air ini dapat digunakan mulai dari perencanaan, pelaksanaan, hingga pelaporan siaran. Platform ini tidak hanya dapat digunakan untuk Industri Radio am fm swasta namun juga untuk Radio komunitas berbasis internet dan juga seperti Fashion & Food Store dalam mengelola audio system di seluruh cabangnya.",
-  "colorFont": "#437096",
+  "colorFont": "#377998",
   "link": "https://docs.google.com/spreadsheets/d/1W3wCxPHMtfLDYe6A9loaf2KJ8ecaZ-3p/edit?usp=sharing&ouid=105830318049801332349&rtpof=true&sd=true",
   "listFitur": [
     {
-      "title": "PROGRAM",
-      "icon": "icon-desktop",
+      "id": 1,
+      "title": "Program",
+      "image": "/logo/icon/icon-desktop.png",
       "desc": "Modul Program adalah modul yang digunakan untuk menyusun program acara dalam periode tertentu. Termasuk di dalamnya setting deskripsi, periode siar, dll."
     },
     {
-      "title": "MUSIC",
-      "icon": "icon-music",
+      "id": 2,
+      "title": "Music",
+      "image": "/logo/icon/icon-music.png",
       "desc": "Modul Music adalah modul untuk membantu Music Director dalam pengelolaan data Music, data Penyanyi, Composer, dll."
     },
     {
-      "title": "INFORMATION",
-      "icon": "icon-info",
+      "id": 3,
+      "title": "Information",
+      "image": "/logo/icon/icon-info.png",
       "desc": "Modul Information adalah modul untuk melakukan pengarsipan, penyusunan, pencarian dan penampilan berita/informasi."
     },
     {
-      "title": "PRODUCTION",
-      "icon": "icon-bell",
+      "id": 4,
+      "title": "Production",
+      "image": "/logo/icon/icon-bell.png",
       "desc": "Modul Production adalah modul untuk melakukan pengelolaan hasil-hasil audio production, diantaranya pengarsipan sesuai dengan jenis produksi:iklan, jingle, dll."
     },
     {
-      "title": "TRAFFICS",
-      "icon": "icon-buysellads",
+      "id": 5,
+      "title": "Traffics",
+      "image": "/logo/icon/icon-buysellads.png",
       "desc": "Modul Traffic adalah modul untuk mengelola iklan, seperti: daftar klien, kontrak, jumlah pemutaran iklan, harga iklan, penjadwalan& pelaporan tayang iklan hingga invoicing &billing monitoring, dll."
     },
     {
-      "title": "MESSAGING",
-      "icon": "icon-mail-bulk",
+      "id": 6,
+      "title": "Messaging",
+      "image": "/logo/icon/icon-mail-bulk.png",
       "desc": "Modul Messaging adalah modul untuk mengelola pesan interaktif yang terintegrasi via SMS, Telepon, Mobile Apps, Website, Facebook, Twitter."
     },
     {
-      "title": "REPORT",
-      "icon": "icon-chart",
+      "id": 7,
+      "title": "Report",
+      "image": "/logo/icon/icon-chart.png",
       "desc": "Modul Report adalah modul untuk membuat laporan On-Air (pra dan pasca), log aktivitas user/crew, presensi penyiar, dan log iklan."
     },
     {
-      "title": "DASHBOARD MONITORING",
-      "icon": "icon-chart-line",
+      "id": 8,
+      "title": "Dashboard Monitoring",
+      "image": "/logo/icon/icon-chart-line.png",
       "desc": "Modul Monitoring adalah modul untuk pihak eksekutif radio memonitor advertisement, prestasi penjualan, rencana & realisasi tayang iklan, dll."
     },
     {
-      "title": "ONAIR",
-      "icon": "icon-microphone",
+      "id": 9,
+      "title": "On-Air",
+      "image": "/logo/icon/icon-microphone.png",
       "desc": "Modul On-Air digunakan oleh penyiar untuk menyiarkan acaranya. Modul ini memiliki fitur: voice track,live assist, warning iklan renteng, time signal, auto shuffle, dll."
     },
     {
-      "title": "LOGGER",
-      "icon": "icon-tape",
+      "id": 10,
+      "title": "Logger",
+      "image": "/logo/icon/icon-tape.png",
       "desc": "Modul RISE-Logger berfungsi merekam siaran sesuai dengan persyaratan yang diatur dalam Undang-Undang Penyiaran. Logger ini memiliki fasilitas pencarian arsip siaran yang disiarkan pada tanggal dan jam tertentu."
     },
     {
-      "title": "ADMINISTRATOR",
-      "icon": "icon-folder-settings",
+      "id": 11,
+      "title": "Administrator",
+      "image": "/logo/icon/icon-folder-settings.png",
       "desc": "Modul Administrator adalah modul untuk mengelola user yang dapat mengakses aplikasi beserta otoritasnya."
     }
   ],

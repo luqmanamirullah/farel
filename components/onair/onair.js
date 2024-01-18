@@ -13,7 +13,7 @@ export default function CenteredGrid() {
     <div>
       <CardTitle
         img={detail.image}
-        headline={detail.headline}
+        logo={detail.logo}
         description={detail.description}
         colorFont={detail.colorFont}
         button={detail.link}
