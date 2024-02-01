@@ -19,9 +19,7 @@ const SvarOnlineIndex = () => {
       </Head>
       <BasicLayout
         colorMenu="#225B76"
-        logo="assets_apps.png"
-        transparant="true"
-        whiteLogo="assets-apps-white.png"
+        logo="Svara_innovation.png"
       >
         <DefaultSeo
           openGraph={{

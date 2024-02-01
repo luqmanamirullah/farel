@@ -8,17 +8,18 @@ import HeadingBlock from "~/components/wrapper/HeadingBlock";
 import detail from "../../contents/apps.json";
 
 const useStyles = createUseStyles((theme) => ({
-  content: {},
+  content: {
+    marginTop: 65,
+  },
   lead: {
-    textAlign: "left",
-    color: "#225B76",
-    fontFamily: "'Lato', sans-serif",
+    textAlign: "justify",
+    color: "#377998",
+    fontFamily: "Poppins",
     boxSizing: "border-box",
     marginTop: 0,
     marginBottom: 30,
     fontWeight: 300,
-    lineHeight: 1.8,
-    fontSize: 17,
+    fontSize: 20,
   },
   contentImage: {
     overflow: "hidden !important",
@@ -61,13 +62,20 @@ const WhatIsSvaraOnline = () => {
   const classes = useStyles();
   const imageRef = useRef();
   return (
-    <div style={{ marginBottom: 40 }}>
+    <div style={{}}>
       <ClearFix>
         <Row>
-          <Col xl={5}>
-            <div style={{ marginLeft: 30, marginTop: 20 }}>
-              <HeadingBlock withBorder>
-                <h1 style={{ textAlign: "left", color: "#225B76" }}>
+          <Col xl={8}>
+            <div style={{ marginLeft: 40, marginRight: 30, marginTop: 20 }}>
+              <HeadingBlock withBorder style={{ marginBottom: "0 !important" }}>
+                <h1
+                  style={{
+                    textAlign: "left",
+                    color: "#377998",
+                    fontFamily: "Poppins",
+                    fontWeight: 700,
+                    fontSize: "40px",
+                  }}>
                   {detail.title}
                 </h1>
                 <span></span>
@@ -75,18 +83,17 @@ const WhatIsSvaraOnline = () => {
               <p className={classes.lead}>{detail.deskripsi}</p>
             </div>
           </Col>
-          <Col xl={7}>
+          <Col xl={4}>
             <div
               style={{
-                height: 426,
+                height: 280,
                 position: "relative",
-                width: 700,
+                width: 425,
                 marginLeft: "auto",
                 marginRight: "auto",
-              }}
-            >
+              }}>
               <img
-                src={detail.images.mac}
+                src={detail.images.group}
                 style={{
                   maxHeight: "100%",
                 }}
@@ -97,51 +104,24 @@ const WhatIsSvaraOnline = () => {
               />
               <div
                 style={{
-                  position: "absolute",
-                  right: 0,
-                  bottom: 0,
-                  width: "100%",
+                  display: "flex",
+                  width: "175px",
+                  columnGap: "15px",
+                  marginTop: "-40px",
+                  marginLeft: "40px",
                 }}
-              >
-                <img
-                  src={detail.images.tab}
-                  width={520}
-                  height={320}
-                  style={{ position: "absolute", right: 60, bottom: 50 }}
-                  data-animate="fadeInUp"
-                  data-delay="400"
-                  alt="iPad"
-                  className="fadeInUp animated"
-                />
-                <img
-                  src={detail.images.mobile}
-                  width={200}
-                  height={350}
-                  style={{ position: "absolute", right: 70, bottom: 0 }}
-                  data-animate="fadeInUp"
-                  data-delay="800"
-                  alt="iPad"
-                  className="fadeInUp animated"
-                />
+                data-animate="fadeInRight"
+                className="fadeInRight animated">
+                <a href={detail.linkDownload.android}>
+                  <img src="apps/download1.png" style={{ marginRight: 10 }} />
+                </a>
+                <a href={detail.linkDownload.ios}>
+                  <img src="apps/download2.png" />
+                </a>
               </div>
             </div>
           </Col>
         </Row>
-        <div
-          style={{
-            float: "right",
-            marginTop: 30,
-          }}
-          data-animate="fadeInRight"
-          className="fadeInRight animated"
-        >
-          <a href={detail.linkDownload.android}>
-            <img src="apps/download1.png" style={{ marginRight: 10 }} />
-          </a>
-          <a href={detail.linkDownload.ios}>
-            <img src="apps/download2.png" />
-          </a>
-        </div>
       </ClearFix>
     </div>
   );
@@ -149,26 +129,52 @@ const WhatIsSvaraOnline = () => {
 
 const InsideSvara = () => {
   const classes = useStyles();
+  const [height, setHeight] = useState();
 
-	useEffect(() => {
-		setHeight(imageRef.current.clientHeight);
-	}, [imageRef.current]);
+  const [isVisible, setIsVisible] = useState(false);
+  const [divWeb, setDivWeb] = useState();
+  const [divMobile, setDivMobile] = useState();
 
-	return (
-		<div style={{ marginTop: 70 }}>
-			<ClearFix>
-				<ClearFix
-					style={{
-						position: 'relative !important',
-						float: 'none !important',
-						marginLeft: 'auto !important',
-						marginRight: 'auto !important'
-					}}
-				>
-					<div style={{ textAlign: 'center' }}>
-						<h2 style={{ color: '#225B76' }}>{detail.fiturTitle}</h2>
-					</div>
-					<div
+  const handleDivWeb = (detailId) => {
+    setDivWeb(false);
+    setDivWeb(!divWeb);
+    setDivMobile(true);
+  };
+
+  const handleDivMobile = (detailId) => {
+    setDivWeb(true);
+    setDivMobile(false);
+    setDivMobile(!divMobile);
+  };
+
+  // useEffect(() => {
+  // 	setHeight(imageRef.current.clientHeight);
+  // }, [imageRef.current]);
+
+  return (
+    <div style={{}}>
+      <ClearFix>
+        <ClearFix
+          style={{
+            position: "relative !important",
+            float: "none !important",
+            marginLeft: "auto !important",
+            marginRight: "auto !important",
+          }}>
+          <div style={{}}>
+            <h2
+              style={{
+                color: "#377998",
+                fontFamily: "Poppins",
+                fontSize: 40,
+                fontWeight: 700,
+                marginBottom: "0 !important",
+                marginLeft: 30,
+              }}>
+              {detail.fiturTitle}
+            </h2>
+          </div>
+          {/* <div
 						style={{
 							position: 'relative',
 							height: height,
@@ -190,7 +196,7 @@ const InsideSvara = () => {
 							className="fadeInUp animated"
 							ref={imageRef}
 						/>
-						{/* <img
+						<img
 							src={detail.fitur.mobile}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeInUp"
@@ -205,12 +211,228 @@ const InsideSvara = () => {
 							data-delay="1200"
 							alt="iPad"
 							className="fadeIn animated"
-						/> */}
-					</div>
-				</ClearFix>
-			</ClearFix>
-		</div>
-	);
+						/>
+					</div> */}
+        </ClearFix>
+      </ClearFix>
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          height: 480,
+          padding: "0 !important",
+        }}>
+        <div
+          onClick={() => handleDivWeb(detail.id)}
+          style={{
+            background: "#377998",
+            width: divWeb ? (divMobile ? "100%" : "0%") : "50%",
+            height: divWeb ? "600px" : "auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            overflow: "hidden",
+            cursor: "pointer",
+          }}>
+          <h1
+            style={{
+              textAlign: "center",
+              color: "white",
+              fontFamily: "Poppins",
+              fontSize: "100px",
+              fontStyle: "italic",
+              fontWeight: 700,
+              lineHeight: "150px",
+              letterSpacing: "0.05em",
+              marginBottom: 0,
+            }}>
+            Web App
+          </h1>
+          { divWeb && (
+            <div
+              style={{
+                position: "absolute",
+                color: "white",
+                fontFamily: "Poppins",
+                fontSize: "11px",
+                fontWeight: 300,
+                marginBottom: "0px",
+              }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "20%",
+                  textAlign: "right",
+                  top: 375,
+                  left: -75,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+              <div
+                style={{
+                  position: "relative",
+                  width: "23%",
+                  textAlign: "justify",
+                  top: 105,
+                  left: 935,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+              <div
+                style={{
+                  position: "relative",
+                  width: "20%",
+                  textAlign: "justify",
+                  top: 195,
+                  left: 975,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+            </div>
+          )}
+          <img
+            src={divWeb  ? detail.images.web1 : detail.images.web}
+            style={{
+              marginTop: divWeb ? "" : "-50px",
+              width: divWeb ? "60%" : "85%",
+            }}></img>
+        </div>
+
+        <div
+          onClick={() => handleDivMobile(detail.id)}
+          style={{
+            background: "#57CAFF",
+            width: divMobile ? (divWeb ? "0%" : "100%") : "50%",
+            height: divMobile ? "675px" : "auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            overflow: "hidden",
+            cursor: "pointer",
+          }}>
+          <h1
+            style={{
+              textAlign: "center",
+              color: "white",
+              fontFamily: "Poppins",
+              fontSize: "100px",
+              fontStyle: "italic",
+              fontWeight: 700,
+              lineHeight: "150px",
+              letterSpacing: "0.05em",
+              marginBottom: 0,
+            }}>
+            Mobile App
+          </h1>
+          {divMobile && (
+            <div
+              style={{
+                position: "absolute",
+                color: "white",
+                fontFamily: "Poppins",
+                fontSize: "11px",
+                fontWeight: 300,
+                marginBottom: "0px",
+              }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "30%",
+                  textAlign: "right",
+                  top: 250,
+                  left: 15,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+              <div
+                style={{
+                  position: "relative",
+                  width: "30%",
+                  textAlign: "left",
+                  top: 320,
+                  left: 725,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+              <div
+                style={{
+                  position: "relative",
+                  width: "30%",
+                  textAlign: "right",
+                  top: 370,
+                  left: 25,
+                }}>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginBottom: "0px",
+                  }}>
+                  {detail.titleWeb}
+                </p>
+                {detail.deskripsiWeb}
+              </div>
+            </div>
+          )}
+          <img
+            src={
+              divMobile 
+                ? detail.images.mobile1
+                : detail.images.mobile
+            }
+            style={{
+              width: divMobile ? "60%" : "70%",
+            }}></img>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const AnotherDevice = () => {
@@ -218,13 +440,22 @@ const AnotherDevice = () => {
 
   return (
     <ContentWrap>
-      <div style={{ textAlign: "center" }}>
-        <h2 style={{ color: "#225B76" }}>
+      <div style={{ marginLeft: 65, marginRight: 30, marginTop: 20  }}>
+        <h2 
+        style={{ 
+          textAlign: "left",
+          color: "#377998",
+          fontFamily: "Poppins",
+          fontWeight: 700,
+          fontSize: "40px", }}>
           Mau denger SVARA di perangkat lain?
         </h2>
       </div>
       <ClearFix>
-        <Row>
+        <Row
+        style={{
+          margin: "0 50px"
+        }}>
           {detail.anotherDevice.map((device) => (
             <Col lg={4} sm={6} xs={12} key={device.name}>
               <SvaraDevice
@@ -251,10 +482,10 @@ const SvaraDevice = ({ image, name, description }) => {
         data-delay="100"
         className={clsx(classes.deviceImage, `pulse animated`)}
       />
-      <h4 style={{ marginBottom: 30, textAlign: "center", color: "#225B76" }}>
+      <h4 style={{ fontFamily: "Poppins", fontSize: '20px', fontWeight: 'bolder', marginBottom: 30, textAlign: "center", color: "#377998" }}>
         {name}
       </h4>
-      <p style={{ lineHeight: 1.8, textAlign: "center", color: "#225B76" }}>
+      <p style={{ fontFamily: "Poppins", fontSize: '12px', fontWeight: 'bold', lineHeight: 1.8, textAlign: "center", color: "#377998" }}>
         {description}
       </p>
     </div>

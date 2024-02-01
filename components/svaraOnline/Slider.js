@@ -10,14 +10,8 @@ const useStyles = createUseStyles({
 	wrapper: {
 		display: 'block',
 		width: '100%',
-		overflow: 'hidden',
 		position: 'relative',
-		visibility: 'visible',
-		top: '-100px',
-		marginBottom: '-100px',
-		height: 671,
-		zIndex: -1,
-		transition: 'transform .3s linear'
+		height: 350,
 	},
 	innerWrapper: {
 		boxSizing: 'border-box',
@@ -33,20 +27,20 @@ const useStyles = createUseStyles({
 	background: {
 		visibility: 'visible',
 		boxSizing: 'border-box',
-		background: `url(${detail.background}) 0% 0% / cover`,
+		background: '#57CAFF',
 		height: 'inherit'
 	},
 	appMockupImage: {
-		fontFamily: "'Lato', sans-serif",
-		visibility: 'visible',
-		boxSizing: 'border-box',
-		verticalAlign: 'middle',
-		borderStyle: 'none',
-		maxWidth: '100%',
-		display: 'block !important',
-		position: 'absolute',
-		left: 0,
-		bottom: 0
+		// fontFamily: "'Lato', sans-serif",
+		// visibility: 'visible',
+		// boxSizing: 'border-box',
+		// verticalAlign: 'middle',
+		// borderStyle: 'none',
+		// maxWidth: '100%',
+		// display: 'block !important',
+		// position: 'absolute',
+		// left: 0,
+		// bottom: 0
 	},
 	textWrapper: {
 		visibility: 'visible',
@@ -61,102 +55,133 @@ const useStyles = createUseStyles({
 		width: '100%',
 		paddingTop: 0,
 		paddingBottom: 0,
-		marginTop: '-146px'
+		marginTop: '-146px',
+		display: "flex"
 	},
 	emphasisTitle: {
 		visibility: 'visible',
 		color: '#eee',
 		boxSizing: 'border-box',
-		margin: '0 0 50px',
+		marginTop: 20 ,
 		'& h1': {
 			textAlign: 'left',
 			visibility: 'visible',
 			boxSizing: 'border-box',
-			lineHeight: 1.5,
+			lineHeight: "52.5px",
 			margin: '0 0 30px 0',
-			fontFamily: "'Raleway', sans-serif",
+			fontFamily: "Poppins",
 			marginBottom: 0,
-			fontWeight: 400,
+			fontWeight: 600,
 			textTransform: 'none',
-			letterSpacing: '-2px',
+			letterSpacing: '0em',
 			color: '#fff',
-			fontSize: 52
+			fontSize: 35,			
 		}
 	},
 	right: {
 		boxSizing: 'border-box',
 		float: 'right !important',
 		marginBottom: '0 !important',
-		width: '48%',
-		display: 'block',
+		width: '45%',
+		display: 'flex',
 		position: 'relative',
 		marginRight: '4%',
 		color: '#eee',
 		animationName: 'fadeIn',
 		animationDuration: '1s',
-		animationFillMode: 'both'
+		animationFillMode: 'both',
+		overflow: "visible",
+      	position: "relative"
+	},
+	left: {
+		boxSizing: 'border-box',
+		float: 'left !important',
+		marginBottom: '0 !important',
+		width: '50%',
+		display: 'flex',
+		position: 'relative',
+		marginLeft: '3%',
+		marginRight: '50px',
+		color: '#eee',
+		animationName: 'fadeIn',
+		animationDuration: '1s',
+		animationFillMode: 'both',
+		zIndex: 2
 	},
 	'@media (max-width : 992px)': {
 		wrapper: {
-			height: 'auto',
-			top: 0,
-			marginBottom: 0,
-			zIndex: 0
+			// height: 'auto',
+			// top: 0,
+			// marginBottom: 0,
+			// zIndex: 0
 		},
 		textWrapper: {
-			position: 'unset',
-			marginTop: 40
+			// position: 'unset',
+			// marginTop: 40
 		},
 		emphasisTitle: {
-			paddingBottom: 100
+			// paddingBottom: 100
 		}
 	}
 });
 
 const Slider = () => {
 	const classes = useStyles();
-	const [isSticky, setIsSticky] = useState(false);
-	const handleScroll = () => {
-		if (window.scrollY < 1) setIsSticky(false);
-		else setIsSticky(true);
-	};
+	// const [isSticky, setIsSticky] = useState(false);
+	// const handleScroll = () => {
+	// 	if (window.scrollY < 1) setIsSticky(false);
+	// 	else setIsSticky(true);
+	// };
 
-	const isHidden = useMediaQuery('(max-width : 992px)');
+	// const isHidden = useMediaQuery('(max-width : 992px)');
 
-	useEffect(() => {
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
-	}, []);
+	// useEffect(() => {
+	// 	window.addEventListener('scroll', handleScroll);
+	// 	return () => window.removeEventListener('scroll', handleScroll);
+	// }, []);
 
 	return (
 		<section id="slider" className={classes.wrapper}>
-			<div
+			{/* <div
 				className={classes.innerWrapper}
 				style={{
-					transform: isSticky && !isHidden ? 'translateY(-76px)' : null
+					// transform: isSticky && !isHidden ? 'translateY(-76px)' : null
 				}}
-			>
+			> */}
 				<div className={classes.background}>
-					<ClearFix style={{ height: '100%', backgroundColor: 'transparent' }}>
-						{/* {isHidden ? null : (
+					{/* <ClearFix style={{ height: '100%', backgroundColor: 'transparent' }}>
+						{isHidden ? null : (
 							<img src="iphone.png" alt="mockup image" className={classes.appMockupImage}></img>
 						)} */}
 
-						<div className={classes.textWrapper} style={{ left: isHidden ? 'unset' : 0 }}>
+						<div className={classes.textWrapper} 
+						// style={{ left: isHidden ? 'unset' : 0 }}
+						>
+							<div
+								className={classes.left}
+							>
+								<img style={{
+									width: "100%",
+									height: "100%",
+									objectFit: "cover",
+								}} src={detail.background}/>
+							</div>
 							<div
 								className={classes.right}
-								{...(isHidden ? { style: { width: '100%', marginRight: 0 } } : {})}
 							>
 								<div className={classes.emphasisTitle}>
-									<h1 {...(isHidden ? { style: { fontSize: 40 } } : {})}>
-										{detail.headline} <strong>{detail.strongText}</strong> {detail.headline2}.
+									<h1>
+										{detail.headline} <br/>
+									</h1>
+									<h1 style={{ fontWeight: "700 !important" }}>{detail.strongText}
+									<img style={{ marginLeft: 25, marginTop: 15, width: 350, height: 75, }} src={detail.logo}/>
 									</h1>
 								</div>
 							</div>
-						</div>
-					</ClearFix>
+						{/* </div>
+					</ClearFix> */}
 				</div>
-			</div>
+			 </div>
 		</section>
 	);
 };
