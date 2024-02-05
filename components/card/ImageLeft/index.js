@@ -29,7 +29,7 @@ const useStyles = createUseStyles({
     position: "relative",
     textAlign: "center",
     margin: "60px 0",
-    padding: "0 0 60px 35px",
+    padding: "60px 0",
     overflow: "hidden",
   },
   imageWrapper: {
@@ -69,12 +69,13 @@ export default function CenteredGrid(props) {
       className={classes.wrapper}
       style={{
         backgroundImage: props.background ? props.background : "",
+        padding: props.p ? props.p : "60px 0",
       }}
     >
       <ClearFix
         style={{ backgroundColor: "rgb(255,255,255,0.7)"}}
       >
-        <Row style={{ paddingBottom: 25}}>
+        <Row style={{ paddingBottom: props.pb}}>
           <Col lg={6} sm={12} md={12} xs={12}>
             <div className={classes.imageWrapper}>
               <div>
@@ -126,16 +127,11 @@ export default function CenteredGrid(props) {
           </Col>
           <Col lg={6} xs={12} 
           style={{ 
-            background: "linear-gradient(to right, #AEEE81, #50AC0E)" , 
-            borderBottomLeftRadius: "50px", 
-            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.25)"}}>
-            <div className={classes.imageWrapper} 
-            style={{
-              marginTop: "45px !important", 
-              marginRight: "25px", 
-              marginBottom: "40px", 
-              marginLeft: "7px",
-              }}>
+            background: props.backGround , 
+            borderBottomLeftRadius: props.bblr , 
+            boxShadow: props.bs}}
+            >
+            <div className={classes.imageWrapper}>
               {props.img && <img src={props.img} alt="Image" />}
             </div>
           </Col>

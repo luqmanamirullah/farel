@@ -17,6 +17,11 @@ export default function CenteredGrid() {
         description={detail.description}
         colorFont={detail.colorFont}
         button={detail.link}
+        backGround={detail.backGround}
+        bblr={detail.bblr}
+        bs={detail.bs}
+        p={detail.p}
+        pb={detail.pb}
       />
       <List />
       <Radio />
