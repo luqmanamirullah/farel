@@ -40,7 +40,7 @@ const menuStyles = createUseStyles({
       fontWeight: "bold",
       textDecoration: "none" /* Remove default underline on hover */,
       transition: "margin .4s ease, padding .4s ease",
-      paddingBottom: "15px",
+      paddingBottom: "10px",
       borderBottom: "3px solid #000" /* Add a 2px solid underline on hover */,
     },
   },
@@ -51,8 +51,8 @@ const menuStyles = createUseStyles({
     listStyle: "none",
     transition: "top .4s ease",
     position: "absolute",
-    width: 152,
-    backgroundColor: "#57caff",
+    width: 175,
+    background: "linear-gradient(135deg, #57caff, #377998)",
     boxShadow: "0px 13px 42px 11px rgba(0, 0, 0, 0.05)",
     border: "1px solid #eee",
     height: "auto",
@@ -60,13 +60,16 @@ const menuStyles = createUseStyles({
     top: "100%",
     left: 0,
     margin: 0,
+    textAlign: "center",
+    borderBottomLeftRadius: "10px",
+    borderBottomRightRadius: "10px",
   },
   childLink: {
     backgroundColor: "transparent",
     textDecoration: "none !important",
     display: "block",
-    lineHeight: 22,
-    padding: "39px 15px",
+    lineHeight: 20,
+    padding: 0,
     textTransform: "uppercase",
     fontSize: 12,
     fontWeight: 700,
@@ -78,20 +81,20 @@ const menuStyles = createUseStyles({
     fontFamily: "'Lato',sans-serif",
     transition: "all .2s ease-in-out",
     "&:hover": {
-      backgroundColor: "#f9f9f9",
+      backgroundColor: "transparent",
       paddingLeft: 18,
     },
     "&:hover div": {
-      color: "#6d7893 !important",
+      color: "#f9f9f9 !important",
     },
   },
   childDiv: {
     listStyle: "none",
-    lineHeight: "22px",
+    lineHeight: "20px",
     textTransform: "uppercase",
-    fontSize: 12,
+    fontSize: 15,
     fontWeight: 700,
-    color: "#666",
+    color: "#f9f9f9",
     fontFamily: "'Lato',sans-serif",
     boxSizing: "border-box",
   },
@@ -160,7 +163,7 @@ export const DropdownMenu = React.memo(
                 <li key={child.name} className={classes.childLink}>
                   <div
                     className={classes.childDiv}
-                    style={{ color: "#225B76" }}>
+                    style={{ color: "#f9f9f9" }}>
                     {child.name}
                   </div>
                 </li>

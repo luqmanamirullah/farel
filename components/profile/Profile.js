@@ -49,7 +49,7 @@ const useStyles = createUseStyles({
   paragraph: {
     marginTop: 0,
     marginBottom: 30,
-    paddingTop: 35,
+    paddingTop: 0,
     fontSize: 20,
     lineHeight: "27.28px",
     textAlign: "left",
@@ -94,8 +94,7 @@ const SvaraProfile = () => {
               <img
                   src={content.image}
                   style={{
-                  position: "absolute",
-                  left: 1,
+                  display: "flex",
                   width: "425px",
                   height: "85px",
                   }}
@@ -109,19 +108,29 @@ const SvaraProfile = () => {
                     fontWeight: 700,
                     fontSize: "20px",
                     lineHeight: "30px",
-                    paddingTop: "105px"
+                    marginTop: 15
                   }}
               >
                   {content.headline}
               </span>
-              <img
-                  src={content.span}
-                  style={{
-                    marginTop: 5,
-                    position: "absolute",
-                    left: 1
-                  }}
+              <i>
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 350 25" 
+              fill="none" 
+              style={{
+              width: "350px",
+              height: "35px",
+              flexShrink: 0,
+              display: "flex",
+              marginTop: 5
+              }}
+              >
+              <path d="M4 14.8486C19.8178 3.89151 28.2222 5.79049 42.8802 14.8486C58.8069 25.9694 68.318 28.0891 
+              87.7151 14.8486C111.644 -2.24796 123.793 3.27674 140.606 14.8486C157.419 26.4205 175.616 30.215 197 
+              14.8486" stroke="#377998" stroke-width="7" stroke-linecap="round" 
               />
+              </svg>
+              </i>
               </HeadingBlock>
               <p className={classes.paragraph}>{content.subheadline}</p>
             </div>
@@ -137,7 +146,11 @@ const SvaraProfile = () => {
               border: "2px solid #f0f0f0", 
               borderRadius: "15px",
             }}>
-              <div>
+              <div
+              style={{
+                width: "100%",
+                height: "100%"
+              }}>
                 <p style={{
                 marginBottom: "5px !important",
                 fontFamily: "Poppins",
@@ -187,7 +200,7 @@ const SvaraProfile = () => {
               </div>
               <div style={{marginBottom: "15px"}}>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.070988040667!2d107.59251760056485!3d-6.882099603553707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d9ea7dc573%3A0xc2d70083714d38b9!2sPT%20Svara%20Inovasi%20Indonesia!5e0!3m2!1sen!2sid!4v1704190135836!5m2!1sen!2sid" 
-                width="550" height="250" allowfullscreen="" style={{
+                width="90%" height="50%" allowfullscreen="" style={{
                   border: "2px solid #f0f0f0", 
                   borderRadius: "15px",
                   boxShadow: "inset 0px 2px 5px rgba(0, 0, 0, 0.5)", }} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -197,23 +210,23 @@ const SvaraProfile = () => {
           <Col lg={6} sm={6} xs={12}>
           <div className={classes.wrapper} 
           style={{ 
-              width: "600px",
-              height: "350px",
+              width: "100%",
+              height: "73%",
               paddingTop: "0px !important",
               paddingBottom: "0px !important",
-              marginTop: "75px",
+              marginTop: "60px",
               backgroundColor: "#fff",  
               borderRadius: "50px",
               boxShadow: "3px 5px 10px rgba(0, 0, 0, 0.5)", 
             }}>
           <img src={content.logo} alt="" style={{ height: 125, padding: 15 }}></img>
-          <h3
+          <h3 
             style={{
               color: "#377998",
               textAlign: "center",
               marginTop: 20,
               fontFamily: "arial",
-              fontSize: "30px"
+              fontSize: "28px",
             }}
           >
             <i>"{content.visi}"</i>

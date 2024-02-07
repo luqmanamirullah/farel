@@ -6,25 +6,23 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import listFitur from "../../contents/aircast.json";
 import ClearFix from "../container/ClearFix";
+import { useState } from "react";
+
 const useStyles = createUseStyles({
   root: {
     width: "100%",
-    padding: 30,
-  },
-  paper: {
-    padding: 30,
-    textAlign: "center",
-    // color: theme.palette.text.secondary
+    padding: 15, // Mengurangi padding agar lebih responsif pada layar kecil
+    marginLeft: 0, // Menghilangkan marginLeft agar tampilan lebih responsif
   },
   fontTitle: {
-    marginBottom: 50,
+    marginBottom: 30, // Mengurangi margin agar lebih responsif pada layar kecil
+    fontSize: 36, // Mengurangi ukuran font agar lebih responsif pada layar kecil
     fontWeight: 600,
     textTransform: "uppercase",
     letterSpacing: "1px",
-    color: "#333",
+    color: "#377998",
     textAlign: "center",
     fontFamily: "Poppins",
-    color: "#437096",
   },
   Card: {
     border: 0,
@@ -32,51 +30,109 @@ const useStyles = createUseStyles({
   fontTitleFitur: {
     margin: 0,
     padding: 0,
-    fontSize: "15px",
-    fontWeight: 700,
-    width: 300,
+    fontSize: "18px", // Mengurangi ukuran font agar lebih responsif pada layar kecil
+    fontWeight: 600,
     letterSpacing: "1px",
     fontFamily: "Poppins",
-    color: "#437096",
+    color: "#377998",
+    lineHeight: "30px",
   },
   fontDesc: {
-    lineHeight: 1.8,
-    color: "#999",
-    fontSize: "0.875rem",
+    lineHeight: 1.6,
+    fontSize: "14px", // Mengurangi ukuran font agar lebih responsif pada layar kecil
     fontFamily: "Poppins",
     color: "#437096",
     width: "100%",
-    maxWidth: "380px",
+    textAlign: "justify",
   },
   iconTitleWrapper: {
     display: "flex",
     flexDirection: "row",
-    columnGap: 15,
+    columnGap: 10, // Mengurangi columnGap agar lebih responsif pada layar kecil
   },
+  '@media (max-width: 945px)': {
+    fontTitleFitur: {
+      fontSize: "12px"
+    },
+    fontDesc: {
+      fontSize: "10px"
+    }
+  }
 });
 
 export default function FiturList() {
   const classes = useStyles();
 
+  const [isVisible, setIsVisible] = useState(false)
+  const [selectedDiv, setSelectedDiv] = useState(null)
+
+  const handleToggleClick = (divId) => {
+    if (selectedDiv === divId) {
+      setSelectedDiv(null);
+    } else {
+      setSelectedDiv(divId);
+    }
+  };
+
   return (
     <ClearFix>
       <div className={classes.root}>
         <h2 className={classes.fontTitle}>MODUL-MODUL SVARA AIRCAST</h2>
-        <Row>
-          {listFitur.listFitur.map((fitur) => {
-            return (
-              <Col xs={12} sm={6} md={4} style={{ padding: 0 }}>
-                <div className={classes.iconTitleWrapper}>
-                  <i
-                    className={fitur.icon}
-                    style={{ fontSize: "2em", color: "#437096", padding: 0 }}
-                  />
-                  <h2 className={classes.fontTitleFitur}>{fitur.title}</h2>
-                </div>
-                <p className={classes.fontDesc}>{fitur.desc}</p>
-              </Col>
-            );
-          })}
+        <Row
+          style={{
+            marginLeft: 0,
+            marginRight: 0,
+            rowGap: 25, // Menambahkan rowGap agar tata letak lebih baik pada layar kecil
+          }}
+        >
+          {listFitur.listFitur.map((fitur) => (
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              key={fitur.id}
+              onClick={() => handleToggleClick(fitur.id)}
+              style={{
+                padding: 0,
+                borderRadius: 10,
+                border: "2px solid #377998",
+                marginBottom: 15, // Menambahkan margin agar tata letak lebih baik pada layar kecil
+                height: fitur.id === selectedDiv ? 'auto' : '100%',
+                cursor: "pointer",
+              }}
+            >
+              <div
+                className={classes.iconTitleWrapper}
+                onClick={() => setIsVisible(!isVisible)}
+                style={{
+                  padding: "12px 15px", // Mengurangi padding agar lebih responsif pada layar kecil
+                }}
+              >
+                <img
+                  src={fitur.image}
+                  style={{ width: 30, height: 30, padding: 0 }}
+                />
+                <h2 className={classes.fontTitleFitur}>{fitur.title}</h2>
+              </div>
+              {fitur.id === selectedDiv && (
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "14px", // Mengurangi ukuran font agar lebih responsif pada layar kecil
+                    fontWeight: 400,
+                    lineHeight: "20px", // Mengurangi lineHeight agar lebih responsif pada layar kecil
+                    letterSpacing: "0em",
+                    textAlign: "justify",
+                    padding: "12px 15px", // Mengurangi padding agar lebih responsif pada layar kecil
+                    marginBottom: "0px",
+                  }}
+                  className={classes.fontDesc}
+                >
+                  {fitur.desc}
+                </p>
+              )}
+            </Col>
+          ))}
         </Row>
       </div>
     </ClearFix>

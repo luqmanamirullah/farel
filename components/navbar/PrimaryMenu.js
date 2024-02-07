@@ -8,6 +8,7 @@ const useStyles = createUseStyles((theme) => ({
 	base: {
 		display: 'block',
 		float: 'left',
+		marginTop: 5
 	},
 	menuList: {
 		color: '#fff',

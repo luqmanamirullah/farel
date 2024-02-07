@@ -19,7 +19,7 @@ const AudiolandPage = () => {
           href="https://svara.id/logo/logo-gram%20only/aircast.png"
         />
       </Head>
-      <BasicLayout colorMenu="#437096" logo="assets_aircast.png">
+      <BasicLayout colorMenu="#437096" logo="Svara_innovation.png">
         <DefaultSeo
           openGraph={{
             type: "website",
