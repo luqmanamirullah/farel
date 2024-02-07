@@ -75,7 +75,8 @@ const WhatIsSvaraOnline = () => {
                     fontFamily: "Poppins",
                     fontWeight: 700,
                     fontSize: "40px",
-                  }}>
+                  }}
+                >
                   {detail.title}
                 </h1>
                 <span></span>
@@ -91,7 +92,8 @@ const WhatIsSvaraOnline = () => {
                 width: 425,
                 marginLeft: "auto",
                 marginRight: "auto",
-              }}>
+              }}
+            >
               <img
                 src={detail.images.group}
                 style={{
@@ -111,7 +113,8 @@ const WhatIsSvaraOnline = () => {
                   marginLeft: "40px",
                 }}
                 data-animate="fadeInRight"
-                className="fadeInRight animated">
+                className="fadeInRight animated"
+              >
                 <a href={detail.linkDownload.android}>
                   <img src="apps/download1.png" style={{ marginRight: 10 }} />
                 </a>
@@ -135,24 +138,8 @@ const InsideSvara = () => {
   const [divWeb, setDivWeb] = useState();
   const [divMobile, setDivMobile] = useState();
 
-  const handleDivWeb = (detailId) => {
-    setDivWeb(false);
-    setDivWeb(!divWeb);
-    setDivMobile(true);
-  };
-
-  const handleDivMobile = (detailId) => {
-    setDivWeb(true);
-    setDivMobile(false);
-    setDivMobile(!divMobile);
-  };
-
-  // useEffect(() => {
-  // 	setHeight(imageRef.current.clientHeight);
-  // }, [imageRef.current]);
-
   return (
-    <div style={{}}>
+    <div style={{ marginBottom: divWeb ? 40 : divMobile ? 120 : 0 }}>
       <ClearFix>
         <ClearFix
           style={{
@@ -160,7 +147,8 @@ const InsideSvara = () => {
             float: "none !important",
             marginLeft: "auto !important",
             marginRight: "auto !important",
-          }}>
+          }}
+        >
           <div style={{}}>
             <h2
               style={{
@@ -170,49 +158,11 @@ const InsideSvara = () => {
                 fontWeight: 700,
                 marginBottom: "0 !important",
                 marginLeft: 30,
-              }}>
+              }}
+            >
               {detail.fiturTitle}
             </h2>
           </div>
-          {/* <div
-						style={{
-							position: 'relative',
-							height: height,
-							paddingBottom: 40
-						}}
-						data-height-xl="624"
-						data-height-lg="518"
-						data-height-md="397"
-						data-height-sm="242"
-						data-height-xs="154"
-					>
-						<img
-							src={detail.fitur.web}
-							style={{ position: 'absolute', top: 0, left: 0 }}
-							data-animate="fadeInUp"
-							data-delay="100"
-							alt="Chrome"
-							height="700px"
-							className="fadeInUp animated"
-							ref={imageRef}
-						/>
-						<img
-							src={detail.fitur.mobile}
-							style={{ position: 'absolute', top: 0, left: 0 }}
-							data-animate="fadeInUp"
-							data-delay="400"
-							alt="iPad"
-							className="fadeInUp animated"
-						/>
-						<img
-							src={detail.fitur.diagram}
-							style={{ position: 'absolute', top: 0, left: 0 }}
-							data-animate="fadeIn"
-							data-delay="1200"
-							alt="iPad"
-							className="fadeIn animated"
-						/>
-					</div> */}
         </ClearFix>
       </ClearFix>
       <div
@@ -221,215 +171,245 @@ const InsideSvara = () => {
           width: "100%",
           height: 480,
           padding: "0 !important",
-        }}>
-        <div
-          onClick={() => handleDivWeb(detail.id)}
-          style={{
-            background: "#377998",
-            width: divWeb ? (divMobile ? "100%" : "0%") : "50%",
-            height: divWeb ? "600px" : "auto",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            overflow: "hidden",
-            cursor: "pointer",
-          }}>
-          <h1
+        }}
+      >
+        {!divMobile && (
+          <div
+            onClick={() => {
+              setDivWeb(true);
+              setDivMobile(false);
+            }}
             style={{
-              textAlign: "center",
-              color: "white",
-              fontFamily: "Poppins",
-              fontSize: "100px",
-              fontStyle: "italic",
-              fontWeight: 700,
-              lineHeight: "150px",
-              letterSpacing: "0.05em",
-              marginBottom: 0,
-            }}>
-            Web App
-          </h1>
-          { divWeb && (
-            <div
+              background: "#377998",
+              width: divWeb ? (divMobile ? "0%" : "100%") : "50%",
+              height: divWeb ? "600px" : "auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              overflow: "hidden",
+              cursor: "pointer",
+            }}
+          >
+            <h1
               style={{
-                position: "absolute",
+                textAlign: "center",
                 color: "white",
                 fontFamily: "Poppins",
-                fontSize: "11px",
-                fontWeight: 300,
-                marginBottom: "0px",
-              }}>
-              <div
-                style={{
-                  position: "relative",
-                  width: "20%",
-                  textAlign: "right",
-                  top: 375,
-                  left: -75,
-                }}>
-                <p
-                  style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
-              </div>
-              <div
-                style={{
-                  position: "relative",
-                  width: "23%",
-                  textAlign: "justify",
-                  top: 105,
-                  left: 935,
-                }}>
-                <p
-                  style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
-              </div>
-              <div
-                style={{
-                  position: "relative",
-                  width: "20%",
-                  textAlign: "justify",
-                  top: 195,
-                  left: 975,
-                }}>
-                <p
-                  style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
-              </div>
-            </div>
-          )}
-          <img
-            src={divWeb  ? detail.images.web1 : detail.images.web}
-            style={{
-              marginTop: divWeb ? "" : "-50px",
-              width: divWeb ? "60%" : "85%",
-            }}></img>
-        </div>
+                fontSize: "100px",
+                fontStyle: "italic",
+                fontWeight: 700,
+                lineHeight: "150px",
+                letterSpacing: "0.05em",
+                marginBottom: 0,
+              }}
+            >
+              Web App
+            </h1>
 
-        <div
-          onClick={() => handleDivMobile(detail.id)}
-          style={{
-            background: "#57CAFF",
-            width: divMobile ? (divWeb ? "0%" : "100%") : "50%",
-            height: divMobile ? "675px" : "auto",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            overflow: "hidden",
-            cursor: "pointer",
-          }}>
-          <h1
-            style={{
-              textAlign: "center",
-              color: "white",
-              fontFamily: "Poppins",
-              fontSize: "100px",
-              fontStyle: "italic",
-              fontWeight: 700,
-              lineHeight: "150px",
-              letterSpacing: "0.05em",
-              marginBottom: 0,
-            }}>
-            Mobile App
-          </h1>
-          {divMobile && (
-            <div
+            {divWeb && (
+              <div
+                style={{
+                  position: "absolute",
+                  color: "white",
+                  fontFamily: "Poppins",
+                  fontSize: "11px",
+                  fontWeight: 300,
+                  marginBottom: "0px",
+                }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    width: "20%",
+                    textAlign: "justify",
+                    top: 375,
+                    left: -120,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                      textAlign: "right",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
+                <div
+                  style={{
+                    position: "relative",
+                    width: "23%",
+                    textAlign: "justify",
+                    top: 105,
+                    left: 985,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
+                <div
+                  style={{
+                    position: "relative",
+                    width: "20%",
+                    textAlign: "justify",
+                    top: 195,
+                    left: 1020,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
+              </div>
+            )}
+            <img
+              src={divWeb ? detail.images.web1 : detail.images.web}
               style={{
-                position: "absolute",
+                marginTop: divWeb ? "" : "-50px",
+                width: divWeb ? "60%" : "85%",
+              }}
+            ></img>
+          </div>
+        )}
+
+        {!divWeb && (
+          <div
+            onClick={() => {
+              setDivMobile(true);
+              setDivWeb(false);
+            }}
+            style={{
+              background: "#57CAFF",
+              width: divMobile ? (divWeb ? "0%" : "100%") : "50%",
+              height: divMobile ? "675px" : "auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              overflow: "hidden",
+              cursor: "pointer",
+            }}
+          >
+            <h1
+              style={{
+                textAlign: "center",
                 color: "white",
                 fontFamily: "Poppins",
-                fontSize: "11px",
-                fontWeight: 300,
-                marginBottom: "0px",
-              }}>
+                fontSize: "100px",
+                fontStyle: "italic",
+                fontWeight: 700,
+                lineHeight: "150px",
+                letterSpacing: "0.05em",
+                marginBottom: 0,
+              }}
+            >
+              Mobile App
+            </h1>
+
+            {divMobile && (
               <div
                 style={{
-                  position: "relative",
-                  width: "30%",
-                  textAlign: "right",
-                  top: 250,
-                  left: 15,
-                }}>
-                <p
+                  position: "absolute",
+                  color: "white",
+                  fontFamily: "Poppins",
+                  fontSize: "11px",
+                  fontWeight: 300,
+                  marginBottom: "0px",
+                }}
+              >
+                <div
                   style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
-              </div>
-              <div
-                style={{
-                  position: "relative",
-                  width: "30%",
-                  textAlign: "left",
-                  top: 320,
-                  left: 725,
-                }}>
-                <p
+                    position: "relative",
+                    width: "30%",
+                    textAlign: "right",
+                    top: 250,
+                    left: -15,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
+                <div
                   style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
-              </div>
-              <div
-                style={{
-                  position: "relative",
-                  width: "30%",
-                  textAlign: "right",
-                  top: 370,
-                  left: 25,
-                }}>
-                <p
+                    position: "relative",
+                    width: "30%",
+                    textAlign: "left",
+                    top: 320,
+                    left: 740,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
+                <div
                   style={{
-                    fontFamily: "Poppins",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginBottom: "0px",
-                  }}>
-                  {detail.titleWeb}
-                </p>
-                {detail.deskripsiWeb}
+                    position: "relative",
+                    width: "30%",
+                    textAlign: "right",
+                    top: 370,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    {detail.titleWeb}
+                  </p>
+                  {detail.deskripsiWeb}
+                </div>
               </div>
-            </div>
-          )}
-          <img
-            src={
-              divMobile 
-                ? detail.images.mobile1
-                : detail.images.mobile
-            }
-            style={{
-              width: divMobile ? "60%" : "70%",
-            }}></img>
-        </div>
+            )}
+
+            <img
+              src={divMobile ? detail.images.mobile1 : detail.images.mobile}
+              style={{
+                width: divMobile ? "60%" : "70%",
+              }}
+            ></img>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -440,22 +420,25 @@ const AnotherDevice = () => {
 
   return (
     <ContentWrap>
-      <div style={{ marginLeft: 65, marginRight: 30, marginTop: 20  }}>
-        <h2 
-        style={{ 
-          textAlign: "left",
-          color: "#377998",
-          fontFamily: "Poppins",
-          fontWeight: 700,
-          fontSize: "40px", }}>
+      <div style={{ marginLeft: 65, marginRight: 30, marginTop: 20 }}>
+        <h2
+          style={{
+            textAlign: "left",
+            color: "#377998",
+            fontFamily: "Poppins",
+            fontWeight: 700,
+            fontSize: "40px",
+          }}
+        >
           Mau denger SVARA di perangkat lain?
         </h2>
       </div>
       <ClearFix>
         <Row
-        style={{
-          margin: "0 50px"
-        }}>
+          style={{
+            margin: "0 50px",
+          }}
+        >
           {detail.anotherDevice.map((device) => (
             <Col lg={4} sm={6} xs={12} key={device.name}>
               <SvaraDevice
@@ -482,10 +465,28 @@ const SvaraDevice = ({ image, name, description }) => {
         data-delay="100"
         className={clsx(classes.deviceImage, `pulse animated`)}
       />
-      <h4 style={{ fontFamily: "Poppins", fontSize: '20px', fontWeight: 'bolder', marginBottom: 30, textAlign: "center", color: "#377998" }}>
+      <h4
+        style={{
+          fontFamily: "Poppins",
+          fontSize: "20px",
+          fontWeight: "bolder",
+          marginBottom: 30,
+          textAlign: "center",
+          color: "#377998",
+        }}
+      >
         {name}
       </h4>
-      <p style={{ fontFamily: "Poppins", fontSize: '12px', fontWeight: 'bold', lineHeight: 1.8, textAlign: "center", color: "#377998" }}>
+      <p
+        style={{
+          fontFamily: "Poppins",
+          fontSize: "12px",
+          fontWeight: "bold",
+          lineHeight: 1.8,
+          textAlign: "center",
+          color: "#377998",
+        }}
+      >
         {description}
       </p>
     </div>
