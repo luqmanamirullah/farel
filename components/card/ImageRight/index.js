@@ -43,7 +43,8 @@ const useStyles = createUseStyles({
     fontFamily: "Poppins",
   },
   imageSize: {
-    width: 500,
+    maxWidth: "100%",
+    marginBottom: 50,
   },
   imageLogo: {
     width: 290,
@@ -65,6 +66,7 @@ const useStyles = createUseStyles({
   },
 });
 
+const logoImage = ""
 export default function CardTitle(props) {
   const classes = useStyles(props);
 
@@ -75,7 +77,7 @@ export default function CardTitle(props) {
       <Container>
         <Row
           style={{
-            gap: 50,
+            gap: 80,
             alignItems: "center",
           }}
         >
