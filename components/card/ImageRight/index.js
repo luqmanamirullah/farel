@@ -3,24 +3,37 @@ import { createUseStyles } from "react-jss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import { makeStyles } from '@material-ui/core/styles';
-// import Grid from '@material-ui/core/Grid';
-// import Divider from '@material-ui/core/Divider';
 
 const useStyles = createUseStyles({
   root: {
-    marginTop: 50,
+    marginTop: (props) => props.marginTop || 50, // If marginTop is not provided, default to 50px
     marginBottom: 30,
+    position: "relative",
+  },
+  background: {
+    position: "absolute",
+    top: "-100px",
+    left: 0,
+    width: "630px",
+    height: "160px",
+    zIndex: -1,
+  },
+  backgroundBottom: {
+    position: "absolute",
+    bottom: "-30px",
+    right: 0,
+    width: "640px",
+    height: "157px",
+    zIndex: -1,
   },
   fontCaption: {
-    fontSize: "clamp(1rem, 6vw, 2.813rem)",
+    fontSize: "40px",
     fontWeight: 400,
     fontFamily: "Poppins",
-    lineHeight: 1.8,
-    marginBottom: "30px",
+    lineHeight: 1.2,
+    marginBottom: "110px",
     display: "block",
     boxSizing: "border-box",
-    textAlign: "center",
   },
   fontTitle: {
     marginBottom: 10,
@@ -28,53 +41,63 @@ const useStyles = createUseStyles({
     fontSize: "clamp(2.5rem, 8vw, 4rem)",
     letterSpacing: "-2px",
     fontFamily: "Poppins",
-    textAlign: "center",
   },
   imageSize: {
     width: 500,
   },
+  imageLogo: {
+    width: 290,
+  },
+  "@media (max-width: 768px)": {
+    fontCaption: {
+      textAlign: "center",
+      paddingBottom: "10px",
+    },
+    imageSize: {
+      paddingTop: "70px",
+    },
+    imageLogo: {
+      display: "flex",
+      alignItems: "center",
+      margin: "0 auto",
+      width: 250,
+    },
+  },
 });
 
-export default function CenteredGrid(props) {
-  const classes = useStyles();
+export default function CardTitle(props) {
+  const classes = useStyles(props);
 
   return (
-    <Container
-      className={classes.root}
-      style={{ height: props.height && props.height }}
-    >
-      <Row
-        container
-        style={{
-          marginTop: props.marginTop && props.marginTop,
-          gap: 50,
-          alignItems: "center",
-        }}
-      >
-        <Col item>
-          <img
-            src={props.img}
-            className={classes.imageSize}
-            data-animate="fadeInUp"
-            data-delay="100"
-            alt="Chrome"
-          />
-        </Col>
-        <Col item lg={6}>
-          <h2
-            className={classes.fontTitle}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-          >
-            {props.title}
-          </h2>
-          <span
-            className={classes.fontCaption}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-          >
-            {props.desc}
-          </span>
-        </Col>
-      </Row>
-    </Container>
+    <div className={classes.root}>
+      {props.background && <div className={classes.background} style={{ background: props.background }}></div>}
+      {props.backgroundBottom && <div className={classes.backgroundBottom} style={{ background: props.backgroundBottom }}></div>}
+      <Container>
+        <Row
+          style={{
+            gap: 50,
+            alignItems: "center",
+          }}
+        >
+          {/* Image Container */}
+          <Col>
+            <div>
+              <img src={props.img} className={classes.imageSize} data-animate="fadeInUp" data-delay="100" alt="Image" />
+            </div>
+          </Col>
+
+          {/* Text Container */}
+          <Col lg={6}>
+            <div>
+              <img src={"assets_soundsight.png"} className={classes.imageLogo} data-animate="fadeInUp" data-delay="100" alt="Logo" />
+
+              <span className={classes.fontCaption} style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
+                {props.desc}
+              </span>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }

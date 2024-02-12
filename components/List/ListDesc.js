@@ -48,7 +48,7 @@ const useStyles = createUseStyles({
       marginTop: 10,
       width: "100%",
       maxWidth: 340,
-      borderTop: "2px solid #444",
+      // borderTop: "2px solid #444",
       boxSizing: "border-box",
     },
   },
@@ -108,6 +108,11 @@ const useStyles = createUseStyles({
     borderStyle: "none",
     maxWidth: "100%",
   },
+  subTitle: {
+    display: "inline-block",
+    borderBottom: "2px solid #37A063",
+    paddingBottom: "0",
+  },
 });
 
 export default function CenteredGrid(props) {
@@ -138,13 +143,13 @@ export default function CenteredGrid(props) {
                     style={{
                       textAlign: "left",
                       fontFamily: "Poppins",
-                      color: "black",
+                      color: "#377998",
                       margin: 0,
                       fontSize: "20px",
                     }}
                   >
                     {fitur.title}{" "}
-                    <strong style={{ color: "#225B76" }}>{fitur.sub}</strong>.
+                    <strong className={classes.subTitle} style={{ color: "#37A063" }}>{fitur.sub}</strong>.
                   </h4>
                   <span></span>
                 </HeadingBlock>

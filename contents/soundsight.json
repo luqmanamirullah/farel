@@ -1,15 +1,20 @@
 {
   "section1": {
-    "image": "assets_undraw_best_place_r685.svg",
+    "image": "thrift-shop 1.png",
     "title": "SOUNDSIGHT",
     "desc": "Bangun suasana musik di tempat Anda",
-    "colorFont": "#225B76"
+    "colorFont": "#377998",
+    "background": "linear-gradient(181.73deg, #AC72F2 -4.82%, rgba(247, 156, 255, 0) 83.57%)"
   },
   "section2": {
+    "image": "intersect2.png",
     "headline": "SVARA FOR RETAIL",
     "description": "Cara cepat, mudah dan terjangkau dari SVARA yang dibuat untuk membuat brand dan bisnis anda menjadi lebih dekat dengan pelanggan melalui musik dan konten. Dapat diaplikasikan pada tempat seperti Bar, Gym, Kafe, Hotel, Kantor, Restoran, Toko retail, Rumah sakit, Ruang tunggu, dll.",
-    "colorFont": "#000",
-    "background": "url('assets_Mask Group-dark.png')"
+    "colorFont": "#377998",
+    "background": "url('intersect.png')",
+    "additionalImages": [
+      { "image": "line.png" }
+    ]
   },
   "section3": {
     "title": "TINGKATKAN PENJUALAN BRAND DAN BISNIS ANDA",
