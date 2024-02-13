@@ -13,7 +13,6 @@ const useStyles = createUseStyles({
 		paddingRight: 0,
 		paddingBottom: 50,
 		backgroundColor: '#f9f9f9',
-		backgroundImage: "url('assets_Mask Group-dark.png')"
 	},
 	fontCaption: {
 		fontSize: '30px',

@@ -11,11 +11,13 @@ import detail from "../../contents/soundsight.json";
 
 const useStyles = createUseStyles({
   title: {
-    color: "#7fa882",
+    color: "#377998",
     textAlign: "center",
     marginBottom: 0,
     marginTop: 30,
-    fontSize: "clamp(1.2rem, 10vw, 2rem)",
+    fontSize: 40,
+    fontWeight: 700,
+    fontFamily: "Poppins",
   },
 });
 
@@ -30,14 +32,18 @@ export default function CenteredGrid() {
         desc={detail.section1.desc}
         colorFont={detail.section1.colorFont}
         marginTop="95px"
+        background={detail.section1.background}
+        backgroundBottom="linear-gradient(181.73deg, rgba(247, 156, 255, 0) -4.82%, #AC72F2 83.57%)"
       />
       <CardTitleLeft
+        img={detail.section2.image}
         headline={detail.section2.headline}
         description={detail.section2.description}
         colorFont={detail.section2.colorFont}
         background={detail.section2.background}
         backgroundColor="rgb(0,0,0,0,.9)"
         headingblock="true"
+        additionalImages={detail.section2.additionalImages}
       />
       {/* <Row style={{ margin: 0 }}>
 				<Col>
@@ -54,12 +60,8 @@ export default function CenteredGrid() {
 					<h5 style={{ color: '#225B76' }}>Lagu</h5>
 				</Col>
 			</Row> */}
-      <Description
-        title={detail.section3.title}
-        desc={detail.section3.desc}
-        colorFont={detail.section3.colorFont}
-      />
-      <ListFitur data={detail.section4} color="#7fa882" />
+      <Description title={detail.section3.title} desc={detail.section3.desc} colorFont={detail.section3.colorFont} />
+      <ListFitur data={detail.section4} color="#377998" />
       <h2 className={classes.title}>CLIENT OF SVARA SOUNDSIGHT</h2>
       <ClearFix>
         <Row
@@ -70,11 +72,7 @@ export default function CenteredGrid() {
         >
           {detail.section5.map((partner, i) => {
             return (
-              <Col
-                xs={12}
-                md={6}
-                style={{ margin: "auto", maxWidth: "fit-content" }}
-              >
+              <Col xs={12} md={6} style={{ margin: "auto", maxWidth: "fit-content" }}>
                 <img className={classes.img} src={partner.image} />
               </Col>
             );
