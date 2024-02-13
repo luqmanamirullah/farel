@@ -70,10 +70,14 @@ export default function CenteredGrid(props) {
       style={{
         backgroundImage: props.background ? props.background : "",
         padding: props.p ? props.p : "60px 0",
+        backgroundSize: props.bs ? props.bs : "",
       }}
     >
       <ClearFix
-        style={{ backgroundColor: "rgb(255,255,255,0.7)"}}
+        style={{ 
+          backgroundColor: props.bc ? props.bc : "rgb(255,255,255,0.7)",
+          
+        }}
       >
         <Row style={{ paddingBottom: props.pb}}>
           <Col lg={6} sm={12} md={12} xs={12}>
@@ -84,21 +88,33 @@ export default function CenteredGrid(props) {
                 style={{
                   display: "flex",
                   marginBottom: "15px",
-
                 }}
                 />
               </div>
+                <h1
+                style={{
+                  color: props.colorFont ? props.colorFont : "#eee",
+                  fontFamily: props.ff,
+                  fontSize: props.fs,
+                  textAlign: props.ta,
+                  marginBottom: props.mb,
+                  marginTop: props.mth1
+                }}
+                >
+                  {props.headline}
+              </h1>
+              <div style={{ borderTop: props.bt, width: props.wd, borderRadius: props.br }}></div>
               <p
                 className={classes.paragraph}
                 style={{
                 color: props.colorFont ? props.colorFont : "#eee",
-                fontFamily: "Poppins",
-                fontSize: "20px",
+                fontFamily: props.ff,
+                fontSize: props.fsp,
                 fontWeight: 400,
                 lineHeight: "30px",
                 letterSpacing: "0em",
                 textAlign: "justify",
-
+                marginTop: props.mt
               }}
               >
                 {props.description}

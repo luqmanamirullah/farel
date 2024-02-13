@@ -13,14 +13,12 @@ const useStyles = createUseStyles({
     marginBottom: 30,
   },
   fontCaption: {
-    fontSize: "clamp(1rem, 6vw, 2.813rem)",
+    fontSize: "50px",
     fontWeight: 400,
     fontFamily: "Poppins",
-    lineHeight: 1.8,
-    marginBottom: "30px",
     display: "block",
     boxSizing: "border-box",
-    textAlign: "center",
+    textAlign: "left",
   },
   fontTitle: {
     marginBottom: 10,
@@ -31,7 +29,72 @@ const useStyles = createUseStyles({
     textAlign: "center",
   },
   imageSize: {
-    width: 500,
+    width: "100%",
+    height: "100%",
+  },
+  logoSize: {
+    width: "35%",
+  },
+  "@media (min-width : 325px)": {
+    fontCaption: {
+      fontSize: 15,
+    },
+    imageSize: {
+      width: "75%",
+      height: "50%",
+    },
+    logoSize: {
+      width: "35%",
+      marginTop: 15,
+    },
+  },
+  "@media (min-width : 564px)": {
+    fontCaption: {
+      fontSize: 25,
+    },
+    imageSize: {
+      width: "90%",
+      height: "90%",
+    },
+    logoSize: {
+      width: "45%",
+      marginTop: 15,
+    },
+  },
+  "@media (min-width : 768px)": {
+    fontCaption: {
+      fontSize: 30,
+    },
+    imageSize: {
+      width: "95%",
+      height: "95%",
+    },
+    logoSize: {
+      width: "25%",
+    },
+  },
+  "@media (min-width : 1024px)": {
+    fontCaption: {
+      fontSize: 30,
+    },
+    imageSize: {
+      width: "100%",
+      height: "100%",
+    },
+    logoSize: {
+      width: "25%",
+    },
+  },"@media (min-width : 1200px)": {
+    fontCaption: {
+      fontSize: 40,
+    },
+    imageSize: {
+      width: "100%",
+      height: "100%",
+    },
+    logoSize: {
+      width: "25%",
+    },
   },
 });
 
@@ -41,17 +104,21 @@ export default function CenteredGrid(props) {
   return (
     <Container
       className={classes.root}
-      style={{ height: props.height && props.height }}
-    >
+      style={{
+        maxWidth: props.mw,
+        height: props.height && props.height,
+        background: props.backGround ? props.backGround : "",
+        margin: props.m ? props.m : "",
+        padding: props.p ? props.p : "",
+      }}>
       <Row
         container
         style={{
           marginTop: props.marginTop && props.marginTop,
-          gap: 50,
+          gap: props.g ? props.g : "50",
           alignItems: "center",
-        }}
-      >
-        <Col item>
+        }}>
+        <Col item xs={12} sm={6} md={4} lg={4} xl={4}>
           <img
             src={props.img}
             className={classes.imageSize}
@@ -60,17 +127,20 @@ export default function CenteredGrid(props) {
             alt="Chrome"
           />
         </Col>
-        <Col item lg={6}>
+        <Col item xs={12} sm={6} md={8} lg={8} xl={8}>
+          <img
+            src={props.logo}
+            className={classes.logoSize}
+            alt={props.title}
+          />
           <h2
             className={classes.fontTitle}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-          >
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
             {props.title}
           </h2>
           <span
             className={classes.fontCaption}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-          >
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
             {props.desc}
           </span>
         </Col>
