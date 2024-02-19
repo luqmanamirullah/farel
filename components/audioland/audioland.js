@@ -27,40 +27,14 @@ export default function CenteredGrid() {
   return (
     <div>
       <CardTitle
-        image={detail.section1.image}
-        title={detail.section1.title}
-        logo={detail.section1.logo}
-        desc={detail.section1.desc}
-        colorFont={detail.section1.colorFont}
-        marginTop="95px"
-        backGround={detail.section1.background}
+        {...detail.section1}
         backgroundBottom="linear-gradient(181.73deg, rgba(247, 156, 255, 0) -4.82%, #AC72F2 83.57%)"
       />
       <CardTitleLeft
-        img={detail.section2.image}
-        headline={detail.section2.headline}
-        description={detail.section2.description}
-        colorFont={detail.section2.colorFont}
-        background={detail.section2.background}
-        backgroundColor="rgb(0,0,0,0,.9)"
+        {...detail.section2}
         headingblock="true"
         additionalImages={detail.section2.additionalImages}
       />
-      {/* <Row style={{ margin: 0 }}>
-				<Col>
-					<div style={{ color: '#225B76' }}>
-						<span
-							data-from="100"
-							data-to="353"
-							data-refresh-interval="50"
-							data-speed="2000"
-							style={{ color: '#225B76' }}
-						></span>
-						K+
-					</div>
-					<h5 style={{ color: '#225B76' }}>Lagu</h5>
-				</Col>
-			</Row> */}
       <Description
         title={detail.section3.title}
         desc={detail.section3.desc}

@@ -89,14 +89,19 @@ export default function Desc(props) {
       style={{
         background: props.backGround,
         maxWidth: "100%",
-        margin: 0,
       }}
     >
-      {/* <h2
-        className={classes.fontTitle}
-        style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
-        {props.title}
-      </h2> */}
+      {props.title && (
+        <h2
+          className={classes.fontTitle}
+          style={{
+            color: props.colorFont ? props.colorFont : "#eee",
+            padding: props.pp,
+          }}
+        >
+          {props.title}
+        </h2>
+      )}
       <p
         className={classes.fontCaption}
         style={{

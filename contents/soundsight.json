@@ -5,7 +5,7 @@
     "desc": "Bangun suasana musik di tempat Anda",
     "colorFont": "#377998",
     "logo": "assets_soundsight.png",
-    "background": "linear-gradient(181.73deg, #AC72F2 -4.82%, rgba(247, 156, 255, 0) 83.57%)"
+    "backGround": "linear-gradient(181.73deg, #AC72F2 -4.82%, rgba(247, 156, 255, 0) 83.57%)"
   },
   "section2": {
     "image": "intersect2.png",
