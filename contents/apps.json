@@ -1,14 +1,19 @@
 {
-	"headline": "The new way to listen to your favorite radio, music and podcast. Try using",
-	"strongText": "SVARA",
-	"headline2": "Apps",
-	"background": "assets_bg-apps.png",
+	"headline": "The new way to listen to your favorite radio, music and podcast. ",
+	"strongText": "Try using",
+	"logo": "apps/Svara_White.png",
+	"background": "apps/images_left.png",
 	"title": "SVARA ONLINE",
 	"deskripsi": "Sebuah platform berupa Mobile Apps (Android, IoS), Website, dan IoT (Smart Speaker, Connected Car, Smart TV, etc) untuk user dalam menikmati berbagai jenis layanan konten radio live streaming, podcast, & music and Video. beberapa fitur utama yaitu audio and video live streaming, live chat, social, user generate content, take offline, dan berbagai layanan membership.",
+	"titleWeb": "ASUlAMA",
+	"deskripsiWeb": "Dashboard mobil di masa depan diprediksi akan berbasis internet, bukan lagi AM/FM. Saat ini Svara telah selesai mengembangkan platform untuk dapat menghadirkan layanan SVARA di Connected Car.",
 	"images": {
 		"mac": "apps/Rectangle.png",
-		"tab": "apps/Rectangle-1.png",
-		"mobile": "apps/Rectangle-2.png"
+		"web": "apps/web_app.png",
+		"web1": "apps/web_app1.png",
+		"mobile": "apps/mobile_app.png",
+		"mobile1": "apps/mobile_app1.png",
+		"group": "apps/Group-187.png"
 	},
 	"linkDownload": {
 		"android": "https://play.google.com/store/apps/details?id=com.zamrud.radio.mobile.app.svara",
