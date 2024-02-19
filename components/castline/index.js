@@ -21,20 +21,9 @@ export default function CenteredGrid() {
 
   return (
     <div>
-      <CardTitle 
-        {...detail.section1}
-        img={detail.section1.image}
-      />
-      <CardTitleLeft 
-        {...detail.section2}
-        img={detail.section2.image}
-        headingblock="true"
-        />
-      <Description 
-        {...detail.section3}
-        mw={detail.section1.mw}
-        m={detail.section1.m}
-      />
+      <CardTitle {...detail.section1} />
+      <CardTitleLeft {...detail.section2} headingblock="true" />
+      <Description {...detail.section3} />
       {/* <ListFitur color="#ecac55" data={detail.section4} /> */}
       {/* <ClearFix>
 				<Row style={{ margin: 0 }}>

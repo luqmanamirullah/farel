@@ -57,11 +57,58 @@ const useStyles = createUseStyles({
     imageSize: {
       paddingTop: "70px",
     },
-    imageLogo: {
-      display: "flex",
-      alignItems: "center",
-      margin: "0 auto",
-      width: 250,
+    logoSize: {
+      width: "35%",
+      marginTop: 15,
+    },
+  },
+  "@media (min-width : 564px)": {
+    fontCaption: {
+      fontSize: 25,
+    },
+    imageSize: {
+      width: "90%",
+      height: "90%",
+    },
+    logoSize: {
+      width: "45%",
+      marginTop: 15,
+    },
+  },
+  "@media (min-width : 768px)": {
+    fontCaption: {
+      fontSize: 30,
+    },
+    imageSize: {
+      width: "95%",
+      height: "95%",
+    },
+    logoSize: {
+      width: "25%",
+    },
+  },
+  "@media (min-width : 1024px)": {
+    fontCaption: {
+      fontSize: 30,
+    },
+    imageSize: {
+      width: "100%",
+      height: "100%",
+    },
+    logoSize: {
+      width: "25%",
+    },
+  },
+  "@media (min-width : 1200px)": {
+    fontCaption: {
+      fontSize: 40,
+    },
+    imageSize: {
+      width: "100%",
+      height: "100%",
+    },
+    logoSize: {
+      width: "25%",
     },
   },
 });
@@ -71,35 +118,52 @@ export default function CardTitle(props) {
   const classes = useStyles(props);
 
   return (
-    <div className={classes.root}>
-      {props.background && <div className={classes.background} style={{ background: props.background }}></div>}
-      {props.backgroundBottom && <div className={classes.backgroundBottom} style={{ background: props.backgroundBottom }}></div>}
-      <Container>
-        <Row
-          style={{
-            gap: 80,
-            alignItems: "center",
-          }}
-        >
-          {/* Image Container */}
-          <Col>
-            <div>
-              <img src={props.img} className={classes.imageSize} data-animate="fadeInUp" data-delay="100" alt="Image" />
-            </div>
-          </Col>
-
-          {/* Text Container */}
-          <Col lg={6}>
-            <div>
-              <img src={"assets_soundsight.png"} className={classes.imageLogo} data-animate="fadeInUp" data-delay="100" alt="Logo" />
-
-              <span className={classes.fontCaption} style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
-                {props.desc}
-              </span>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container
+      className={classes.root}
+      style={{
+        maxWidth: "100%",
+        height: props.height && props.height,
+        background: props.backGround ? props.backGround : null,
+        margin: 0,
+        padding: 35,
+      }}
+    >
+      <Row
+        container
+        style={{
+          marginTop: props.marginTop && props.marginTop,
+          alignItems: "center",
+        }}
+      >
+        <Col item xs={12} sm={6} md={4} lg={4} xl={4}>
+          <img
+            src={props.image}
+            className={classes.imageSize}
+            data-animate="fadeInUp"
+            data-delay="100"
+            alt="Chrome"
+          />
+        </Col>
+        <Col item xs={12} sm={6} md={8} lg={8} xl={8}>
+          <img
+            src={props.logo}
+            className={classes.logoSize}
+            alt={props.title}
+          />
+          <h2
+            className={classes.fontTitle}
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
+          >
+            {props.title}
+          </h2>
+          <span
+            className={classes.fontCaption}
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
+          >
+            {props.desc}
+          </span>
+        </Col>
+      </Row>
+    </Container>
   );
 }
