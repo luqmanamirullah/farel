@@ -15,15 +15,15 @@ const useStyles = createUseStyles({
     textAlign: "center",
   },
   fontCaption: {
-    fontSize: "clamp(1rem, 4vw, 1.25rem)",
+    fontSize: 30,
     fontWeight: 300,
     fontFamily: "Poppins",
     lineHeight: 1.8,
     marginBottom: "30px",
     display: "block",
     marginTop: 10,
-    marginLeft: 200,
-    marginRight: 200,
+    marginLeft: 135,
+    marginRight: 135,
     textAlign: "center",
   },
   fontTitle: {
@@ -34,24 +34,48 @@ const useStyles = createUseStyles({
     fontFamily: "Poppins",
     textAlign: "center",
   },
-  "@media (max-width : 999.98px)": {
-    root: {
-      flexGrow: 1,
-      marginTop: 10,
-      marginBottom: 20,
-      textAlign: "center",
-    },
+  // "@media (max-width : 999.98px)": {
+  //   root: {
+  //     flexGrow: 1,
+  //     marginTop: 10,
+  //     marginBottom: 20,
+  //     textAlign: "center",
+  //   },
+  //   fontCaption: {
+  //     // fontSize: '22px',
+  //     // fontWeight: 300,
+  //     // fontFamily: 'Poppins',
+  //     // lineHeight: 1.8,
+  //     // marginBottom: '30px',
+  //     // display: 'block',
+  //     // marginTop: 10,
+  //     marginLeft: 20,
+  //     marginRight: 20,
+  //     textAlign: "center",
+  //   },
+  // },
+  "@media (min-width : 325px)": {
     fontCaption: {
-      // fontSize: '22px',
-      // fontWeight: 300,
-      // fontFamily: 'Poppins',
-      // lineHeight: 1.8,
-      // marginBottom: '30px',
-      // display: 'block',
-      // marginTop: 10,
-      marginLeft: 20,
-      marginRight: 20,
-      textAlign: "center",
+      fontSize: 15,
+      margin: "0 25px",
+    },
+  },
+  "@media (min-width : 564px)": {
+    fontCaption: {
+      fontSize: 15,
+      margin: "0 50px",
+    },
+  },
+  "@media (min-width : 768px)": {
+    fontCaption: {
+      fontSize: 20,
+      margin: "0 85px",
+    },
+  },
+  "@media (min-width : 1024px)": {
+    fontCaption: {
+      fontSize: 25,
+      margin: "0 135px",
     },
   },
 });
@@ -60,17 +84,24 @@ export default function Desc(props) {
   const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
-      <h2
+    <Container
+      className={classes.root}
+      style={{
+        background: props.backGround,
+        maxWidth: props.mw,
+        margin: props.m,
+      }}>
+      {/* <h2
         className={classes.fontTitle}
-        style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-      >
+        style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
         {props.title}
-      </h2>
+      </h2> */}
       <p
         className={classes.fontCaption}
-        style={{ color: props.colorFont ? props.colorFont : "#eee" }}
-      >
+        style={{
+          color: props.colorFont ? props.colorFont : "#eee",
+          padding: props.pp,
+        }}>
         {props.desc}
       </p>
     </Container>
