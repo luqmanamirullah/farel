@@ -47,7 +47,7 @@ const useStyles = createUseStyles({
     marginBottom: 50,
   },
   imageLogo: {
-    width: 290,
+    width: 300,
   },
   "@media (max-width: 768px)": {
     fontCaption: {
@@ -113,7 +113,7 @@ const useStyles = createUseStyles({
   },
 });
 
-const logoImage = ""
+const logoImage = "";
 export default function CardTitle(props) {
   const classes = useStyles(props);
 
@@ -145,11 +145,13 @@ export default function CardTitle(props) {
           />
         </Col>
         <Col item xs={12} sm={6} md={8} lg={8} xl={8}>
-          <img
-            src={props.logo}
-            className={classes.logoSize}
-            alt={props.title}
-          />
+          {!props.isAds && (
+            <img
+              src={props.logo}
+              className={classes.imageLogo}
+              alt={props.title}
+            />
+          )}
           <h2
             className={classes.fontTitle}
             style={{ color: props.colorFont ? props.colorFont : "#eee" }}

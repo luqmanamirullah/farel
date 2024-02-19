@@ -11,18 +11,7 @@ export default function CenteredGrid() {
 
   return (
     <div>
-      <CardTitle
-        img={detail.image}
-        logo={detail.logo}
-        description={detail.description}
-        colorFont={detail.colorFont}
-        button={detail.link}
-        backGround={detail.backGround}
-        bblr={detail.bblr}
-        bs={detail.bs}
-        p={detail.p}
-        pb={detail.pb}
-      />
+      <CardTitle {...detail} />
       <List />
       <Radio />
     </div>

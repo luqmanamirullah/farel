@@ -3,12 +3,13 @@
     "image": "assets_undraw_ideas_flow_cy7b.svg",
     "title": "AIRTIME ADS",
     "desc": "Cara mudah beriklan pada airtime radio melalui SVARA",
+    "logo": "assets_ads.png",
     "colorFont": "#225B76"
   },
   "section2": {
     "headline": "PROMOSIKAN BRAND ANDA LEBIH LUAS",
     "description": "Sampaikan pesan brand anda lebih luas dengan beriklan di radio. Tingkatkan frekuensi pesan yang dikomunikasikan sehingga terciptanya brand awareness terhadap produk dan iklan yang sedang di promosikan.",
-    "colorFont": "#fff",
+    "colorFont": "#225B76",
     "backgroundColor": "#225B76",
     "image": "assets_undraw_online_ad_mg4t.svg"
   },

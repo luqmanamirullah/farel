@@ -27,12 +27,13 @@ export default function CenteredGrid() {
   return (
     <div>
       <CardTitle
-        img={detail.section1.image}
+        image={detail.section1.image}
         title={detail.section1.title}
+        logo={detail.section1.logo}
         desc={detail.section1.desc}
         colorFont={detail.section1.colorFont}
         marginTop="95px"
-        background={detail.section1.background}
+        backGround={detail.section1.background}
         backgroundBottom="linear-gradient(181.73deg, rgba(247, 156, 255, 0) -4.82%, #AC72F2 83.57%)"
       />
       <CardTitleLeft
@@ -60,7 +61,11 @@ export default function CenteredGrid() {
 					<h5 style={{ color: '#225B76' }}>Lagu</h5>
 				</Col>
 			</Row> */}
-      <Description title={detail.section3.title} desc={detail.section3.desc} colorFont={detail.section3.colorFont} />
+      <Description
+        title={detail.section3.title}
+        desc={detail.section3.desc}
+        colorFont={detail.section3.colorFont}
+      />
       <ListFitur data={detail.section4} color="#377998" />
       <h2 className={classes.title}>CLIENT OF SVARA SOUNDSIGHT</h2>
       <ClearFix>
@@ -72,7 +77,11 @@ export default function CenteredGrid() {
         >
           {detail.section5.map((partner, i) => {
             return (
-              <Col xs={12} md={6} style={{ margin: "auto", maxWidth: "fit-content" }}>
+              <Col
+                xs={12}
+                md={6}
+                style={{ margin: "auto", maxWidth: "fit-content" }}
+              >
                 <img className={classes.img} src={partner.image} />
               </Col>
             );

@@ -36,20 +36,8 @@ export default function CenteredGrid() {
 
   return (
     <div style={{ fontFamily: "Poppins" }}>
-      <CardTitle
-        img={detail.section1.image}
-        title={detail.section1.title}
-        desc={detail.section1.desc}
-        colorFont={detail.section1.colorFont}
-        marginTop={matches900 && "90px"}
-      />
-      <CardTitleLeft
-        headline={detail.section2.headline}
-        description={detail.section2.description}
-        colorFont={detail.section2.colorFont}
-        backgroundColor={detail.section2.backgroundColor}
-        img={detail.section2.image}
-      />
+      <CardTitle {...detail.section1} isAds />
+      <CardTitleLeft {...detail.section2} />
       <div>
         <div className={classes.title}>{detail.section3.title}</div>
         <ListFitur data={detail.section3.benefit} />

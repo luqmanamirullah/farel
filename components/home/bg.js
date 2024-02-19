@@ -14,13 +14,12 @@ import { down } from "theme/breakpoints";
 import ClearFix from "../container/ClearFix";
 import { useAudioPlayer } from "react-use-audio-player";
 
-
 const useStyles = createUseStyles({
   body: {
-    backgroundImage: "url('Group.png')",
+    backgroundImage: "url('bg.png')",
     backgroundRepeat: "center",
     backgroundSize: "cover",
-    height: "542px",
+    height: 700,
   },
   divTitle: {
     marginTop: "90px",
@@ -63,7 +62,7 @@ const useStyles = createUseStyles({
   img: {
     marginBottom: 20,
     width: "100%",
-  }
+  },
 });
 
 const Slider = () => {
@@ -92,7 +91,7 @@ const Slider = () => {
       player.play();
       setIsPlaying(true);
     }
-  }
+  };
 
   const iconClassName = isPlaying ? "icon-pause" : "icon-play";
 
@@ -117,27 +116,27 @@ const Slider = () => {
                 }}
                 onClick={() => openInNewTab("https://app.svara.id")}
               >
-                  Explore Web App{" "}           
+                Explore Web App{" "}
               </Button>
               <i
-                  className={iconClassName}
-                  style={{
-                    backgroundColor: "transparent",
-                    borderColor: "#000",
-                    justifyContent: "center",
-                    fontWeight: 600,
-                    color: "#377998",
-                    borderRadius: 30,
-                    marginLeft: 15,
-                    padding: 5,
-                    border: "1px solid #000",
-                    position: "absolute",
-                    paddingRight: 10,
-                    paddingLeft: 10,
-                    cursor: "pointer",
-                  }}
+                className={iconClassName}
+                style={{
+                  backgroundColor: "transparent",
+                  borderColor: "#000",
+                  justifyContent: "center",
+                  fontWeight: 600,
+                  color: "#377998",
+                  borderRadius: 30,
+                  marginLeft: 15,
+                  padding: 5,
+                  border: "1px solid #000",
+                  position: "absolute",
+                  paddingRight: 10,
+                  paddingLeft: 10,
+                  cursor: "pointer",
+                }}
                 onClick={handlePlayPause}
-                />          
+              />
               {/* <div style={{ marginTop: 73 }}>
                 <figure>
                   <figcaption>Listen to the T-Rex:</figcaption>
@@ -152,7 +151,11 @@ const Slider = () => {
             </Col>
             <Col xs={12} md={4}>
               {" "}
-              <img className={classes.img} src="/mockup 1.png" style={{ height: 375, width: 357 }} />
+              <img
+                className={classes.img}
+                src="/asset-home.png"
+                style={{ height: 375, width: 357 }}
+              />
             </Col>
           </Row>
         </div>

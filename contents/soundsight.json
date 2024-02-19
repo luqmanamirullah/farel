@@ -4,6 +4,7 @@
     "title": "SOUNDSIGHT",
     "desc": "Bangun suasana musik di tempat Anda",
     "colorFont": "#377998",
+    "logo": "assets_soundsight.png",
     "background": "linear-gradient(181.73deg, #AC72F2 -4.82%, rgba(247, 156, 255, 0) 83.57%)"
   },
   "section2": {
@@ -12,9 +13,7 @@
     "description": "Cara cepat, mudah dan terjangkau dari SVARA yang dibuat untuk membuat brand dan bisnis anda menjadi lebih dekat dengan pelanggan melalui musik dan konten. Dapat diaplikasikan pada tempat seperti Bar, Gym, Kafe, Hotel, Kantor, Restoran, Toko retail, Rumah sakit, Ruang tunggu, dll.",
     "colorFont": "#377998",
     "background": "url('intersect.png')",
-    "additionalImages": [
-      { "image": "line.png" }
-    ]
+    "additionalImages": [{ "image": "line.png" }]
   },
   "section3": {
     "title": "TINGKATKAN PENJUALAN BRAND DAN BISNIS ANDA",
