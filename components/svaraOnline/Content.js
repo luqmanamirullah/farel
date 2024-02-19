@@ -48,10 +48,11 @@ const useStyles = createUseStyles((theme) => ({
 
 const Content = () => {
   const classes = useStyles();
+  const imageRef = useRef();
   return (
     <section id="content" className={classes.content}>
       <WhatIsSvaraOnline />
-      <InsideSvara />
+      <InsideSvara imageRef={imageRef} />
       <AnotherDevice />
     </section>
   );
@@ -59,7 +60,7 @@ const Content = () => {
 
 const WhatIsSvaraOnline = () => {
   const classes = useStyles();
-  const imageRef = useRef();
+
   return (
     <div style={{ marginBottom: 40 }}>
       <ClearFix>
@@ -147,50 +148,50 @@ const WhatIsSvaraOnline = () => {
   );
 };
 
-const InsideSvara = () => {
+const InsideSvara = ({ imageRef }) => {
   const classes = useStyles();
+  const [height, setHeight] = useState(0);
+  useEffect(() => {
+    setHeight(imageRef?.current?.clientHeight);
+  }, [imageRef?.current]);
 
-	useEffect(() => {
-		setHeight(imageRef.current.clientHeight);
-	}, [imageRef.current]);
-
-	return (
-		<div style={{ marginTop: 70 }}>
-			<ClearFix>
-				<ClearFix
-					style={{
-						position: 'relative !important',
-						float: 'none !important',
-						marginLeft: 'auto !important',
-						marginRight: 'auto !important'
-					}}
-				>
-					<div style={{ textAlign: 'center' }}>
-						<h2 style={{ color: '#225B76' }}>{detail.fiturTitle}</h2>
-					</div>
-					<div
-						style={{
-							position: 'relative',
-							height: height,
-							paddingBottom: 40
-						}}
-						data-height-xl="624"
-						data-height-lg="518"
-						data-height-md="397"
-						data-height-sm="242"
-						data-height-xs="154"
-					>
-						<img
-							src={detail.fitur.web}
-							style={{ position: 'absolute', top: 0, left: 0 }}
-							data-animate="fadeInUp"
-							data-delay="100"
-							alt="Chrome"
-							height="700px"
-							className="fadeInUp animated"
-							ref={imageRef}
-						/>
-						{/* <img
+  return (
+    <div style={{ marginTop: 70 }}>
+      <ClearFix>
+        <ClearFix
+          style={{
+            position: "relative !important",
+            float: "none !important",
+            marginLeft: "auto !important",
+            marginRight: "auto !important",
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <h2 style={{ color: "#225B76" }}>{detail.fiturTitle}</h2>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              height: height,
+              paddingBottom: 40,
+            }}
+            data-height-xl="624"
+            data-height-lg="518"
+            data-height-md="397"
+            data-height-sm="242"
+            data-height-xs="154"
+          >
+            <img
+              src={detail.fitur.web}
+              style={{ position: "absolute", top: 0, left: 0 }}
+              data-animate="fadeInUp"
+              data-delay="100"
+              alt="Chrome"
+              height="700px"
+              className="fadeInUp animated"
+              ref={imageRef}
+            />
+            {/* <img
 							src={detail.fitur.mobile}
 							style={{ position: 'absolute', top: 0, left: 0 }}
 							data-animate="fadeInUp"
@@ -206,11 +207,11 @@ const InsideSvara = () => {
 							alt="iPad"
 							className="fadeIn animated"
 						/> */}
-					</div>
-				</ClearFix>
-			</ClearFix>
-		</div>
-	);
+          </div>
+        </ClearFix>
+      </ClearFix>
+    </div>
+  );
 };
 
 const AnotherDevice = () => {
