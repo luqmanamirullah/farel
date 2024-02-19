@@ -28,18 +28,14 @@ const useStyles = createUseStyles({
     marginBottom: "0",
     position: "relative",
     textAlign: "center",
-    margin: "30px 0",
-    padding: "30px 0",
+    margin: "60px 0",
+    padding: "60px 0",
     overflow: "hidden",
-    maxWidth: "100%",
-    "@media (max-width: 768px)": {
-      textAlign: "center",
-    },
   },
   imageWrapper: {
     boxSizing: "border-box",
     marginTop: "30px !important",
-    gap: "20px",
+    marginBottom: "30px",
   },
   image: {
     color: "#555",
@@ -50,19 +46,12 @@ const useStyles = createUseStyles({
     maxWidth: "100%",
   },
   paragraph: {
-    marginTop: 20,
-    marginBottom: 20,
-    fontSize: 18,
-    lineHeight: "30px",
+    marginTop: 0,
+    marginBottom: 30,
+    fontSize: 15,
+    lineHeight: 1.8,
     textAlign: "left",
     fontFamily: "Poppins",
-    fontWeight: 500,
-    marginLeft: 40,
-    "@media (max-width: 640px)": {
-      textAlign: "center",
-      marginLeft: "auto",
-      marginright: "auto",
-    },
   },
   svaraLogo: {
     textAlign: "center !important",
@@ -71,84 +60,110 @@ const useStyles = createUseStyles({
     borderStyle: "none",
     maxWidth: "100%",
   },
-  contentWrapper: {
-    textAlign: "left",
-    width: "100%",
-    marginLeft: 40,
-    "@media (max-width: 640px)": {
-      textAlign: "center",
-      marginLeft: "auto",
-      marginRight: "auto",
-    },
-  },
-  border: {
-    marginBottom: 18,
-    fontSize: 40,
-    fontWeight: 700,
-    lineHeight: 1,
-    textAlign: "left",
-    "@media (max-width: 640px)": {
-      textAlign: "center",
-      marginLeft: "auto",
-      marginRight: "42px",
-    },
-  },
-  imageWrapper: {
-    marginBottom: 0,
-    marginTop: 0,
-  },
-  image: {
-    width: "464px",
-    height: "310px",
-    objectFit: "cover",
-  },
-  titleContainer: {
-    marginTop: "30px",
-    marginLeft: 40,
-  },
 });
 
 export default function CenteredGrid(props) {
   const classes = useStyles();
-
   return (
-    <Container fluid className={classes.wrapper} style={{ backgroundImage: props.background ? props.background : "" }}>
-      <ClearFix style={{ backgroundColor: "transparent" }}>
-        <Row>
+    <div
+      className={classes.wrapper}
+      style={{
+        backgroundImage: props.background ? props.background : "",
+        backgroundSize: "cover",
+        padding: "60px 0",
+      }}
+    >
+      <ClearFix
+        style={{
+          backgroundColor: "transparent",
+        }}
+      >
+        <Row style={{ paddingBottom: 0 }}>
           <Col lg={6} sm={12} md={12} xs={12}>
-            <div className={classes.imageWrapper} style={{ display: "flex", flexDirection: "column" }}>
-              <div className={classes.titleContainer}>
-                <h2
-                  className={classes.border}
+            <div className={classes.imageWrapper}>
+              <div>
+                <img
+                  src={props.logo}
                   style={{
-                    fontFamily: "Poppins",
-                    color: props.colorFont ? props.colorFont : "#000",
+                    display: "flex",
+                    marginBottom: "15px",
                   }}
-                >
-                  {props.headline}
-                </h2>
-                <span id="subtitle" style={{ textAlign: "left" }}>
-                  {props.subheadline}
-                </span>
+                />
               </div>
-              <div className={classes.contentWrapper}>
-                {props.additionalImages && props.additionalImages.length > 0 && props.additionalImages.map((additionalImage, index) => <img key={index} src={additionalImage.image} alt={`Image ${index}`} />)}
-              </div>
-              <p className={classes.paragraph} style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
+              <h1
+                style={{
+                  color: props.colorFont ? props.colorFont : "#eee",
+                  fontFamily: "Poppins",
+                  fontSize: 55,
+                  textAlign: "left",
+                  marginBottom: 0,
+                  marginTop: 50,
+                }}
+              >
+                {props.headline}
+              </h1>
+              <div
+                style={{
+                  borderTop: `5px solid ${
+                    props.colorFont ? props.colorFont : "#eee"
+                  }`,
+                  width: 175,
+                  borderRadius: 5,
+                }}
+              ></div>
+              <p
+                className={classes.paragraph}
+                style={{
+                  color: props.colorFont ? props.colorFont : "#eee",
+                  fontFamily: "Poppins",
+                  fontSize: 23.5,
+                  fontWeight: 400,
+                  lineHeight: "30px",
+                  letterSpacing: "0em",
+                  textAlign: "justify",
+                  marginTop: 10,
+                }}
+              >
                 {props.description}
               </p>
               {props.button && (
-                <a href="https://docs.google.com/spreadsheets/d/1W3wCxPHMtfLDYe6A9loaf2KJ8ecaZ-3p/edit?usp=sharing&ouid=105830318049801332349&rtpof=true&sd=true" target="_blank" style={{ float: "left" }}>
-                  <Button style={{ backgroundColor: props.colorFont }}>Show More Info</Button>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1W3wCxPHMtfLDYe6A9loaf2KJ8ecaZ-3p/edit?usp=sharing&ouid=105830318049801332349&rtpof=true&sd=true"
+                  target="_blank"
+                  style={{ float: "left" }}
+                >
+                  <Button
+                    style={{
+                      backgroundColor: props.colorFont,
+                      width: 187,
+                      height: 54,
+                      borderRadius: 20,
+                      fontFamily: "poppins",
+                      fontWeight: 600,
+                      fontSize: 20,
+                    }}
+                  >
+                    Show More Info
+                  </Button>
                 </a>
               )}
             </div>
           </Col>
-          <Col lg={6} xs={12}>
-            <div className={classes.imageWrapper}>{props.img && <img src={props.img} alt="Image" className={classes.image} />}</div>
+          <Col
+            lg={6}
+            xs={12}
+            style={{
+              background: props.backGround,
+              borderBottomLeftRadius: 30,
+              boxShadow: "cover",
+            }}
+          >
+            <div className={classes.imageWrapper}>
+              {props.image && <img src={props.image} alt="Image" />}
+            </div>
           </Col>
         </Row>
       </ClearFix>
-    </Container>
+    </div>
   );
 }
