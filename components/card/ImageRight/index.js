@@ -84,7 +84,8 @@ const useStyles = createUseStyles({
     logoSize: {
       width: "25%",
     },
-  },"@media (min-width : 1200px)": {
+  },
+  "@media (min-width : 1200px)": {
     fontCaption: {
       fontSize: 40,
     },
@@ -105,22 +106,23 @@ export default function CenteredGrid(props) {
     <Container
       className={classes.root}
       style={{
-        maxWidth: props.mw,
+        maxWidth: "100%",
         height: props.height && props.height,
-        background: props.backGround ? props.backGround : "",
-        margin: props.m ? props.m : "",
-        padding: props.p ? props.p : "",
-      }}>
+        background: props.backGround ? props.backGround : null,
+        margin: 0,
+        padding: 35,
+      }}
+    >
       <Row
         container
         style={{
           marginTop: props.marginTop && props.marginTop,
-          gap: props.g ? props.g : "50",
           alignItems: "center",
-        }}>
+        }}
+      >
         <Col item xs={12} sm={6} md={4} lg={4} xl={4}>
           <img
-            src={props.img}
+            src={props.image}
             className={classes.imageSize}
             data-animate="fadeInUp"
             data-delay="100"
@@ -135,12 +137,14 @@ export default function CenteredGrid(props) {
           />
           <h2
             className={classes.fontTitle}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
+          >
             {props.title}
           </h2>
           <span
             className={classes.fontCaption}
-            style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
+            style={{ color: props.colorFont ? props.colorFont : "#eee" }}
+          >
             {props.desc}
           </span>
         </Col>

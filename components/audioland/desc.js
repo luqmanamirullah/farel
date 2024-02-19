@@ -88,9 +88,10 @@ export default function Desc(props) {
       className={classes.root}
       style={{
         background: props.backGround,
-        maxWidth: props.mw,
-        margin: props.m,
-      }}>
+        maxWidth: "100%",
+        margin: 0,
+      }}
+    >
       {/* <h2
         className={classes.fontTitle}
         style={{ color: props.colorFont ? props.colorFont : "#eee" }}>
@@ -101,7 +102,8 @@ export default function Desc(props) {
         style={{
           color: props.colorFont ? props.colorFont : "#eee",
           padding: props.pp,
-        }}>
+        }}
+      >
         {props.desc}
       </p>
     </Container>

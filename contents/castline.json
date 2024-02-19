@@ -5,32 +5,14 @@
     "title": "",
     "desc": "For Community (Non-AM/FM Radio, Online Radio & TV)",
     "colorFont": "#377998",
-    "backGround": "linear-gradient(to left, rgba(255, 201, 138, 0) 85.57%, #FF5B51 100.21%)",
-    "m": "0px",
-    "p": "35px",
-    "g": 0,
-    "mw": "100%"
+    "backGround": "linear-gradient(to left, rgba(255, 201, 138, 0) 85.57%, #FF5B51 100.21%)"
   },
   "section2": {
     "headline": "SVARA CASTLINE",
     "description": "SVARA Platform implementation in various communities, including but not limited to Citizen Online Radio, Campus Radio, Government Radio",
     "colorFont": "#377998",
     "background": "url('Intersect.png')",
-    "image": "close-up.png",
-    "bc": "transparent",
-    "ff": "Poppins",
-    "fs": 55,
-    "fw": 700,
-    "ta": "left",
-    "bs": "cover",
-    "bt": "5px solid #377998",
-    "wd": 175,
-    "p": "0 35px",
-    "mb": 0,
-    "mt": "15px",
-    "fsp": 23.5,
-    "br": 5,
-    "mth1": "100px"
+    "image": "close-up.png"
   },
   "section3": {
     "desc": "Dengan kemudahan dalam penerapan di seluruh Total Partnership SVARA Castline: 10 Online Radios (Radio UNISBA, Radio BKKBN, Radio PAUD, Radio Batak Diaro, Radio Sekolah Al- Mumtaz, Radio Sekolah Al-Mustarih, School Radio Nur Hikmah, Radio IBIMA, Radio IOI, Radio BAKTI) The average SVARA Platform license fee is 50 million - 200 million / year",

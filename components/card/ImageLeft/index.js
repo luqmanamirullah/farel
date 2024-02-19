@@ -35,7 +35,7 @@ const useStyles = createUseStyles({
   imageWrapper: {
     boxSizing: "border-box",
     marginTop: "30px !important",
-    marginBottom: "30px"
+    marginBottom: "30px",
   },
   image: {
     color: "#555",
@@ -69,53 +69,60 @@ export default function CenteredGrid(props) {
       className={classes.wrapper}
       style={{
         backgroundImage: props.background ? props.background : "",
-        padding: props.p ? props.p : "60px 0",
-        backgroundSize: props.bs ? props.bs : "",
+        backgroundSize: "cover",
+        padding: "60px 0",
       }}
     >
       <ClearFix
-        style={{ 
-          backgroundColor: props.bc ? props.bc : "rgb(255,255,255,0.7)",
-          
+        style={{
+          backgroundColor: "transparent",
         }}
       >
-        <Row style={{ paddingBottom: props.pb}}>
+        <Row style={{ paddingBottom: 0 }}>
           <Col lg={6} sm={12} md={12} xs={12}>
             <div className={classes.imageWrapper}>
               <div>
                 <img
-                src={props.logo}
-                style={{
-                  display: "flex",
-                  marginBottom: "15px",
-                }}
+                  src={props.logo}
+                  style={{
+                    display: "flex",
+                    marginBottom: "15px",
+                  }}
                 />
               </div>
-                <h1
+              <h1
                 style={{
                   color: props.colorFont ? props.colorFont : "#eee",
-                  fontFamily: props.ff,
-                  fontSize: props.fs,
-                  textAlign: props.ta,
-                  marginBottom: props.mb,
-                  marginTop: props.mth1
+                  fontFamily: "Poppins",
+                  fontSize: 55,
+                  textAlign: "left",
+                  marginBottom: 0,
+                  marginTop: 50,
                 }}
-                >
-                  {props.headline}
+              >
+                {props.headline}
               </h1>
-              <div style={{ borderTop: props.bt, width: props.wd, borderRadius: props.br }}></div>
+              <div
+                style={{
+                  borderTop: `5px solid ${
+                    props.colorFont ? props.colorFont : "#eee"
+                  }`,
+                  width: 175,
+                  borderRadius: 5,
+                }}
+              ></div>
               <p
                 className={classes.paragraph}
                 style={{
-                color: props.colorFont ? props.colorFont : "#eee",
-                fontFamily: props.ff,
-                fontSize: props.fsp,
-                fontWeight: 400,
-                lineHeight: "30px",
-                letterSpacing: "0em",
-                textAlign: "justify",
-                marginTop: props.mt
-              }}
+                  color: props.colorFont ? props.colorFont : "#eee",
+                  fontFamily: "Poppins",
+                  fontSize: 23.5,
+                  fontWeight: 400,
+                  lineHeight: "30px",
+                  letterSpacing: "0em",
+                  textAlign: "justify",
+                  marginTop: 10,
+                }}
               >
                 {props.description}
               </p>
@@ -125,30 +132,34 @@ export default function CenteredGrid(props) {
                   target="_blank"
                   style={{ float: "left" }}
                 >
-                  <Button 
-                  style={{ 
-                    backgroundColor: props.colorFont,
-                    width: 187,
-                    height: 54,
-                    borderRadius: 20,
-                    fontFamily: "poppins",
-                    fontWeight: 600,
-                    fontSize: 20,
-                    }}>
+                  <Button
+                    style={{
+                      backgroundColor: props.colorFont,
+                      width: 187,
+                      height: 54,
+                      borderRadius: 20,
+                      fontFamily: "poppins",
+                      fontWeight: 600,
+                      fontSize: 20,
+                    }}
+                  >
                     Show More Info
                   </Button>
                 </a>
               )}
             </div>
           </Col>
-          <Col lg={6} xs={12} 
-          style={{ 
-            background: props.backGround , 
-            borderBottomLeftRadius: props.bblr , 
-            boxShadow: props.bs}}
-            >
+          <Col
+            lg={6}
+            xs={12}
+            style={{
+              background: props.backGround,
+              borderBottomLeftRadius: 30,
+              boxShadow: "cover",
+            }}
+          >
             <div className={classes.imageWrapper}>
-              {props.img && <img src={props.img} alt="Image" />}
+              {props.image && <img src={props.image} alt="Image" />}
             </div>
           </Col>
         </Row>
