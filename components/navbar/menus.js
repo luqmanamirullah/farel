@@ -46,6 +46,7 @@ export default [
     name: "About Us",
     slug: "/profile",
   },
+  
   // {
   //   name: "LOGIN",
   //   slug: "app.svara.id",

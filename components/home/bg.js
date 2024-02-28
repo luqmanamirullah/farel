@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselItem,
   Container,
+  Grid,
   Button,
   Row,
   Col,
@@ -13,66 +14,110 @@ import { createUseStyles } from "react-jss";
 import { down } from "theme/breakpoints";
 import ClearFix from "../container/ClearFix";
 import { useAudioPlayer } from "react-use-audio-player";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper/modules';
 
 const useStyles = createUseStyles({
   body: {
     backgroundImage: "url('bg.png')",
     backgroundRepeat: "center",
     backgroundSize: "cover",
-    height: 700,
+    minHeight: 400,
+    padding: "20px",
   },
   divTitle: {
-    marginTop: "90px",
-    paddingTop: 60,
-    paddingBottom: 46,
-    paddingLeft: 60,
-    backgroundColor: "rgb(255,255,255,.6)",
-    borderRadius: 30,
+    marginTop: "50px",
+    paddingTop: 40,
+    paddingBottom: 20,
+    paddingLeft: 40,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 0,
+    backgroundColor: "rgb(0,86,117,0.6)",
+    width: "100%",
+    maxWidth: "362px",
+    height: "auto",
   },
   title: {
-    // display: 'absolute'
-    color: "#377998",
-    fontSize: "48px",
-    fontFamily: "Poppins",
-    fontWeight: 600,
-  },
-  tagline: {
-    color: "#377998",
-    fontSize: "36px",
-    fontFamily: "Poppins",
-    fontWeight: 600,
-  },
-  desc: {
-    paddingTop: "30px",
-    color: "#377998",
+    color: "#FFFFFF",
     fontSize: "20px",
     fontFamily: "Poppins",
-    fontWeight: 400,
+    fontWeight: 600,
+    marginBottom: "5px",
+  },
+  tagline: {
+    color: "#FFFFFF",
+    fontSize: "16px",
+    fontFamily: "Poppins",
+    fontWeight: 600,
+    lineHeight: "20px",
+  },
+  desc: {
+    paddingTop: "10px",
+    color: "#FFFFFF",
+    fontSize: "14px",
+    fontFamily: "Poppins",
+    fontWeight: 300,
     paddingBottom: 16,
   },
-  [down("MD")]: {
-    divTitle: {
-      padding: 24,
-    },
-    body: {
-      height: "100%",
-      padding: "64px 0px",
-    },
-  },
-  img: {
-    marginBottom: 20,
+  swiper: {
     width: "100%",
+    height: "100%",
+  },
+  "swiper-slide": {
+    textAlign: "center",
+    width: "100% !important",
+    fontSize: "18px",
+    background: "#fff",
+
+    /* Center slide text vertically */
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  swiperslide: {
+    display: "block",
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  },
+
+  // carouselArrow: {
+  //   cursor: "pointer",
+  //   fontSize: "20px", // Sesuaikan ukuran font sesuai kebutuhan
+  //   marginRight: "5px", // Sesuaikan margin sesuai kebutuhan
+  // },
+
+  // Tambahkan gaya CSS untuk carousel di sini
+  // "@global": {
+  //   ".carousel-no-indicators .carousel-control-prev, .carousel-no-indicators .carousel-control-next":
+  //     {
+  //       bottom: "-40px",
+  //     },
+  //   ".carousel-no-indicators .carousel-indicators": {
+  //     display: "none",
+  //   },
+  // },
+
+  // Media query untuk layar berukuran kecil (misalnya: smartphone)
+  "@media (max-width: 768px)": {
+    body: {
+      height: "auto",
+    },
+    divTitle: {
+      width: "100%",
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 0,
+      padding: "20px",
+    },
   },
 });
 
 const Slider = () => {
   const classes = useStyles();
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
+  // const carouselRef = useRef(null); // Tambahkan ref untuk Carousel
   const player = useAudioPlayer();
   const [isPlaying, setIsPlaying] = React.useState(false);
+
   useEffect(() => {
     player.load(
       "https://stream-node0.rri.co.id/streaming/19/9119/rripurwokertopro2.mp3",
@@ -93,71 +138,221 @@ const Slider = () => {
     }
   };
 
+  // const prevSlide = () => {
+  //   if (carouselRef.current) {
+  //     carouselRef.current.prev();
+  //   }
+  // };
+
+  // const nextSlide = () => {
+  //   if (carouselRef.current) {
+  //     carouselRef.current.next();
+  //   }
+  // };
+
   const iconClassName = isPlaying ? "icon-pause" : "icon-play";
 
   return (
     <section className={classes.body}>
       <ClearFix noBg>
-        {/* <img /> */}
-        <div className={classes.divTitle}>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={8}>
-              <div className={classes.title}>{content.title}</div>
-              <div className={classes.tagline}>{content.headline}</div>
-              <div className={classes.desc}>"{content.subheadline1}"</div>
-              <Button
-                style={{
-                  backgroundColor: "transparent",
-                  borderColor: "#000",
-                  justifyContent: "center",
-                  fontWeight: 600,
-                  color: "#377998",
-                  borderRadius: 20,
-                }}
-                onClick={() => openInNewTab("https://app.svara.id")}
-              >
-                Explore Web App{" "}
-              </Button>
-              <i
-                className={iconClassName}
-                style={{
-                  backgroundColor: "transparent",
-                  borderColor: "#000",
-                  justifyContent: "center",
-                  fontWeight: 600,
-                  color: "#377998",
-                  borderRadius: 30,
-                  marginLeft: 15,
-                  padding: 5,
-                  border: "1px solid #000",
-                  position: "absolute",
-                  paddingRight: 10,
-                  paddingLeft: 10,
-                  cursor: "pointer",
-                }}
-                onClick={handlePlayPause}
-              />
-              {/* <div style={{ marginTop: 73 }}>
-                <figure>
-                  <figcaption>Listen to the T-Rex:</figcaption>
-                  <audio
-                    controls
-                    src="https://svara-stream.radioddns.net:8443/rmi_studio"
+        {/* <div
+          style={{
+            position: "absolute",
+            opacity: 0.9,
+            transform: "scaleX(-1)",
+          }}
+        >
+          <video
+            src={require("../../public/Comp_1_2_11.mp4")}
+            autoPlay
+            muted
+            loop
+            style={{ width: "100%" }}
+          />
+        </div> */}
+        <div style={{ position: "relative" }}>
+          <div style={{ position: "relative", zIndex: 100, height: "600px" }}>
+            <div className={classes.divTitle}>
+              <Row className="justify-content-md-left">
+                <Col xs={14} md={9}>
+                  <div className={classes.title}>{content.title}</div>
+                  <div className={classes.tagline}>{content.headline}</div>
+                  <div className={classes.desc}>{content.subheadline1}</div>
+                  <Button
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      justifyContent: "center",
+                      fontWeight: 600,
+                      color: "#377998",
+                      borderRadius: 10,
+                      marginRight: "24px",
+                    }}
+                    onClick={() => openInNewTab("https://app.svara.id")}
                   >
-                    <a href="/media/cc0-audio/t-rex-roar.mp3">Download audio</a>
-                  </audio>
-                </figure>
-              </div> */}
-            </Col>
-            <Col xs={12} md={4}>
-              {" "}
+                    Web App
+                  </Button>
+                  <Button
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      justifyContent: "center",
+                      fontWeight: 600,
+                      color: "#377998",
+                      borderRadius: 10,
+                    }}
+                    onClick={() => openInNewTab("https://app.svara.id")}
+                  >
+                    Mobile App
+                  </Button>
+                </Col>
+              </Row>
+            </div>
+            <div
+              style={{
+                backgroundColor: "#00AAEA",
+                fontWeight: 600,
+                color: "#FFFFFF",
+                borderRadius: 30,
+                cursor: "pointer",
+                borderTopRightRadius: 0,
+                borderTopLeftRadius: 0,
+                borderBottomRightRadius: 30,
+                borderBottomLeftRadius: 30,
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 40,
+                width: "100%",
+                height: "60px",
+                maxWidth: "362px",
+              }}
+            >
+              <i className={iconClassName} onClick={handlePlayPause} />
               <img
-                className={classes.img}
-                src="/asset-home.png"
-                style={{ height: 375, width: 357 }}
+                src="Rectangle 1.svg"
+                alt="Rectangle Icon"
+                style={{ marginLeft: "16px" }}
               />
-            </Col>
-          </Row>
+              <span style={{ marginLeft: "16px" }}>Stream Radio</span>
+            </div>
+            <Row className="justify-content-center mt-4">
+              <Col>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <p
+                    className="left"
+                    style={{
+                      paddingLeft: 40,
+                      fontWeight: 600,
+                      color: "#377998",
+                      fontFamily: "Poppins",
+                      fontSize: 16,
+                      marginBottom: 0,
+                    }}
+                  >
+                    Contact Us
+                  </p>
+                  <a href="" style={{ marginLeft: "75px" }}>
+                    <img src="assets_whatsapp.svg" alt="whatsapp icon" />
+                  </a>
+                  <a href="" style={{ marginLeft: "25px" }}>
+                    <img src="assets_email.svg" alt="email icon" />
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          <div
+            className="swiper-container"
+            style={{
+              position: "absolute",
+              top: 20,
+              right: 0,
+              width: "70%",
+              height: "400px",
+            }}
+          >
+            <Row className="justify-content-end mt-4">
+              <Swiper
+                slidesPerView={1}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src="assets_carousel_1.png" alt="First slide" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="assets_carousel_2.png" alt="First slide" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="assets_carousel_3.png" alt="First slide" />
+                </SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+              </Swiper>
+
+              {/* <Carousel
+                  ref={carouselRef} // Tambahkan ref yang telah dibuat sebelumnya
+                  controls={false}
+                  interval={5000}
+                  className={`carousel-no-indicators`} // Gunakan kelas carousel-no-indicators
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
+                  <Carousel.Item>
+                    <img
+                      src="assets_carousel_1.png"
+                      alt="First slide"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      src="assets_carousel_2.png"
+                      alt="Second slide"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      src="assets_carousel_3.png"
+                      alt="Third slide"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Carousel.Item>
+                </Carousel> */}
+              {/* Tombol navigasi Carousel */}
+              {/* <div className="d-flex justify-content-center mt-2">
+                <span
+                  className={`${classes.carouselArrow} carousel-arrow-left`}
+                  onClick={prevSlide}
+                >
+                  &lt;
+                </span>
+                <span
+                  className={`${classes.carouselArrow} carousel-arrow-right`}
+                  onClick={nextSlide}
+                >
+                  &gt;
+                </span>
+              </div> */}
+            </Row>
+          </div>
         </div>
       </ClearFix>
     </section>

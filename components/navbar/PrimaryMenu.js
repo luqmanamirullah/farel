@@ -37,7 +37,8 @@ const PrimaryMenu = ({ colorMenu, transparant, whiteLogo, isSticky }) => {
 						colorMenu={colorMenu}
 						transparant={transparant}
 						whiteLogo={whiteLogo}
-					/>
+          />
+          
 				))}
 			</ul>
 		</div>

@@ -13,7 +13,7 @@ const useStyles = createUseStyles((theme) => ({
     fontFamily: "Poppins",
   },
   container: {
-    margin: "0 90px",
+    margin: "0 10px",
   },
   si_large: {
     margin: "0 10px 10px 0",
@@ -94,7 +94,7 @@ const Footer = (props) => {
     <footer
       className={classes.footer}
       style={{
-        backgroundColor: "#225B76",
+        backgroundColor: "#002435",
         borderTop: 0,
       }}
     >
@@ -183,6 +183,7 @@ const Footer = (props) => {
             style={{
               color: "#fff",
               fontFamily: "Poppins",
+              fontSize: "10px",
             }}
           >
             Copyrights &copy; 2017 - 2023 All Rights Reserved by PT SVARA
@@ -193,20 +194,23 @@ const Footer = (props) => {
           <p style={{ color: "#fff", fontSize: 15 }}>
             <b>Alamat</b>
             <br />
-            Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung 40162
+            <span style={{ fontSize: 10 }}>
+              Jl. Bungur No 09 Kel. Cipedes Kec. Sukajadi, Bandung 40162
+            </span>
             <br />
-            (022) 82045711
+            <span style={{ fontSize: 10 }}>(022) 82045711</span>
             <br />
-            info@svarainnovation.co.id
+            <span style={{ fontSize: 10 }}>info@svarainnovation.co.id</span>
           </p>
         </Col>
+
         <Col style={{ paddingTop: 20 }}>
           <a
             href="https://legal.svara.id/privacy-policy/en/Svara?welcome=SVARA Platform&company=PT. SVARA Inovasi Indonesia&email=report@svara.fm"
             style={{
               color: "white",
               border: 0,
-              fontSize: 15,
+              fontSize: 12,
               marginLeft: 15,
               marginRight: 15,
             }}
@@ -219,7 +223,7 @@ const Footer = (props) => {
             style={{
               color: "white",
               border: 0,
-              fontSize: 15,
+              fontSize: 12,
               marginLeft: 15,
               marginRight: 15,
             }}
@@ -232,7 +236,7 @@ const Footer = (props) => {
             style={{
               color: "white",
               border: 0,
-              fontSize: 15,
+              fontSize: 12,
               marginLeft: 15,
               marginRight: 15,
             }}

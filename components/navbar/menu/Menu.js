@@ -30,10 +30,10 @@ const menuStyles = createUseStyles({
     color: "#000",
     listStyle: "none",
     lineHeight: "22px",
-    fontSize: 15,
+    fontSize: 16,
     letterSpacing: 1,
     textTransform: "uppercase",
-    fontFamily: "sans-serif",
+    fontFamily: "Poppins",
     boxSizing: "border-box",
     "&:hover": {
       fontFamily: "'arial black'",
@@ -116,7 +116,7 @@ export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
               style={
                 transparant && !isSticky
                   ? { color: "#fff" }
-                  : { color: "#225B76" }
+                  : { color: "#515151" }
               }>
               {menu.name}
             </div>
@@ -136,7 +136,7 @@ export const Menu = ({ menu, isSticky = false, colorMenu, transparant }) => {
               style={
                 transparant && !isSticky
                   ? { color: "#fff" }
-                  : { color: "#225B76" }
+                  : { color: "#515151" }
               }>
               {menu.name}
             </div>

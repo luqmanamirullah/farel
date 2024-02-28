@@ -13,7 +13,7 @@ const useStyles = createUseStyles((theme) => ({
     display: "block",
     position: "relative",
     backgroundColor: "transparent",
-    height: 100,
+    height: 77, //ini yang diubah
     transition: "height .4s ease, opacity .3s ease",
   },
   stickyHeader: {
@@ -33,10 +33,12 @@ const useStyles = createUseStyles((theme) => ({
     position: "fixed",
     top: 0,
     left: 0,
-    height: 60,
+    height: 77,
     width: "100%",
     backgroundColor: "#fff",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+    justifyitem: "center",
+    alignItems: "center",
   },
   container: {
     boxSizing: "border-box",
@@ -143,36 +145,36 @@ const Navbar = (props) => {
   }, [width]);
 
   return (
-    <header
-      className={clsx(classes.base, isSticky ? classes.stickyHeader : null)}
+  <header
+    className={clsx(classes.base, isSticky ? classes.stickyHeader : null)}
+  >
+    <div
+      className={clsx(
+        classes.wrapper,
+        isSticky ? classes.stickyWrapper : null
+      )}
     >
-      <div
-        className={clsx(
-          classes.wrapper,
-          isSticky ? classes.stickyWrapper : null
-        )}
-      >
-        <div className={classes.container}>
-          <MiniMenu onClick={onClick} />
-          <Logo
-            isSticky={isSticky}
-            logo={props.logo}
-            transparant={props.transparant}
-            whiteLogo={props.whiteLogo}
-          />
+      <div className={classes.container}>
+        <MiniMenu onClick={onClick} />
+        <Logo
+          isSticky={isSticky}
+          logo={props.logo}
+          transparant={props.transparant}
+          whiteLogo={props.whiteLogo}
+        />
 
-          {!isSmall ? (
-            <PrimaryMenu
-              isSticky={isSticky}
-              colorMenu={props.colorMenu}
-              transparant={props.transparant}
-            />
-          ) : (
-            <SecondaryMenu isOpen={isOpen} colorMenu={props.colorMenu} />
-          )}
-        </div>
+        {!isSmall ? (
+          <PrimaryMenu
+            isSticky={isSticky}
+            colorMenu={props.colorMenu}
+            transparant={props.transparant}
+          />
+        ) : (
+          <SecondaryMenu isOpen={isOpen} colorMenu={props.colorMenu} />
+        )}
       </div>
-    </header>
+    </div>
+  </header>
   );
 };
 

@@ -7,6 +7,10 @@ import "~/styles/font-icons.css";
 import Head from "next/head";
 import PageTransition from "~/components/wrapper/PageTransition";
 import { DefaultSeo } from "next-seo";
+import 'swiper/swiper.min.css'
+import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.min.css';
+
 
 function MyApp({ Component, pageProps, router }) {
   useEffect(() => {

@@ -91,7 +91,7 @@ const useStyles = createUseStyles({
 		animationDuration: '1s',
 		animationFillMode: 'both',
 		overflow: "visible",
-      	position: "relative"
+    position: "relative"
 	},
 	left: {
 		boxSizing: 'border-box',
@@ -181,7 +181,7 @@ const Slider = () => {
 						{/* </div>
 					</ClearFix> */}
 				</div>
-			 </div>
+			</div>
 		</section>
 	);
 };

@@ -9,6 +9,7 @@ const useStyles = createUseStyles({
     paddingTop: 100,
     width: "100%",
     minHeight: 700,
+
   },
   divTitle: {
     paddingTop: "120px",
@@ -28,14 +29,14 @@ const useStyles = createUseStyles({
 const Slider = () => {
   const classes = useStyles();
   return (
-    <ClearFix noBg>
-      <section className={classes.body}>
+    <section className={classes.body}>
+      <ClearFix noBg>
         <div className={classes.title}>
           Product Innovations of SVARA Platform
         </div>
         <Products />
-      </section>
-    </ClearFix>
+      </ClearFix>
+    </section>
   );
 };
 
